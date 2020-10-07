@@ -1,0 +1,28 @@
+{
+  "name": "com.mutmedia.unity-atoms-yarn",
+  "version": "0.1.0",
+  "displayName": "Unity Atoms Yarn",
+  "description": "Integration between Yarn Spinner and Unity Atoms",
+  "unity": "2019.2",
+  "dependencies": {
+    "com.mambojambostudios.unity-atoms-base-atoms": "4.0.2",
+    "com.mambojambostudios.unity-atoms-core": "4.0.2",
+    "dev.yarnspinner.unity": "1.2.6"
+  },
+  "keywords": [
+    "atoms",
+    "yarn",
+    "dialogue"
+  ],
+  "author": {
+    "name": "Mut",
+    "url": "https://gitlab.com/mutmedia/unity-atoms-yarn"
+  },
+  "samples": [
+    {
+      "displayName": "Space",
+      "description": "Modified yarn original sample to use atoms",
+      "path": "Samples/Space"
+    }
+  ]
+}

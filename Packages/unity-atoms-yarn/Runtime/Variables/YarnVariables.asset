@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f905a459d97c84162be2fdcd2bc3a39a, type: 3}
+  m_Name: YarnVariables
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _id: 
+  _value:
+    _serializedKeys:
+    - _usage: 0
+      _value: test
+      _constant: {fileID: 0}
+      _variable: {fileID: 0}
+      _variableInstancer: {fileID: 0}
+    - _usage: 0
+      _value: batatas
+      _constant: {fileID: 0}
+      _variable: {fileID: 0}
+      _variableInstancer: {fileID: 0}
+    _serializedValues:
+    - {fileID: 11400000, guid: 7e617d5af3a4f8746bc8e3c9183edbf7, type: 2}
+    - {fileID: 11400000, guid: a71fbfb0e5597174095e4135de4a1aaa, type: 2}
+    _duplicateKeyIndices: 
+  _added: {fileID: 0}
+  _removed: {fileID: 0}
+  _cleared: {fileID: 0}

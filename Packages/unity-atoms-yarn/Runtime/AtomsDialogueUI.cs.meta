@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 4806ca94d81938149ad179ebb91dfdb8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - TextSpeed: {fileID: 11400000, guid: 4742c9e7ecc75a5459c6c00454ed24c6, type: 2}
+  - NarratorName: {fileID: 11400000, guid: 6bb5503573888674893d14ee632eabda, type: 2}
+  - NarratorText: {fileID: 11400000, guid: 7b9d13a3f3496c94ab2b1be2c59066c1, type: 2}
+  - DialogueOptions: {fileID: 11400000, guid: 40e9c37830ae67a4eb17f6a0ec2d25ca, type: 2}
+  - NamedSpeakers: {fileID: 11400000, guid: e0b8e02cbf6bb8a42b0091dd6005e6e7, type: 2}
+  - CurrentSpeaker: {fileID: 11400000, guid: 6c2acfbcc81e71948bd24682eb201b72, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

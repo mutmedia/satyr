@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 941aa9e1389fe72498d83aee64b980ee
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - speakerText: {instanceID: 0}
+  - speakerScript: {instanceID: 0}
+  - namedSpeakers: {fileID: 11400000, guid: e0b8e02cbf6bb8a42b0091dd6005e6e7, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

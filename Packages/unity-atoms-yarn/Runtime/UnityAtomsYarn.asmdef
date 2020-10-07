@@ -1,0 +1,17 @@
+{
+    "name": "UnityAtomsYarn",
+    "references": [
+        "YarnSpinner.Unity",
+        "Unity.TextMeshPro",
+        "MamboJamboStudios.UnityAtomsBaseAtoms.Runtime",
+        "MamboJamboStudios.UnityAtomsCore.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d4d2d0debea35da4196d0deaabca6d0a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - OptionSelection: {fileID: 11400000, guid: b8f22b5668e1b6241a9ab4e3871ca709, type: 2}
+  - DialogueOptions: {fileID: 11400000, guid: 40e9c37830ae67a4eb17f6a0ec2d25ca, type: 2}
+  - ButtonPrefab: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
