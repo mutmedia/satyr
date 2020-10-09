@@ -12,6 +12,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Mat_Refl
+    second: {fileID: 2100000, guid: 44606e352f4cb2a44b5c08ea7980d9a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_ReflWindow
+    second: {fileID: 2100000, guid: 737fcf00c0d04c748ad8fcbd7b1b4465, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Mat_Standard
     second: {fileID: 2100000, guid: 0e12e29a3ea5c8d48941805cdd643e6e, type: 2}
   materials:
