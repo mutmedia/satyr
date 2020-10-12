@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ToonUnlitMat
+  m_Shader: {fileID: -6465566751694194690, guid: 88b150050f9f214439929a68de6f41bb,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_2503C3B6:
+        m_Texture: {fileID: 2800000, guid: cd49b7179a2f57e4d82f192844b19f5e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_2A58CDEF:
+        m_Texture: {fileID: 2800000, guid: 8bf29ed30985cf548a400486c30532b7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_1F7D2270: 0.1
+    - Vector1_1F87A225: 10
+    - Vector1_4CAD4482: 0
+    - Vector1_6C461C9: 0.05
+    - Vector1_D7FD3F47: 200
+    m_Colors:
+    - Color_893FD4E: {r: 1, g: 0.9851639, b: 0.8433962, a: 0}
+    - Color_E66B0FDD: {r: 0.2703809, g: 0.3382064, b: 0.6603774, a: 0}
+    - Vector2_97A0C00E: {r: 0.01, g: 1.16, b: 0, a: 0}
