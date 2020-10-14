@@ -6,8 +6,8 @@ TerrainLayer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AsssLayer1
-  m_DiffuseTexture: {fileID: 2800000, guid: ccb8bd7020a59124590e347405789115, type: 3}
+  m_Name: AsssLayer3
+  m_DiffuseTexture: {fileID: 2800000, guid: 268fa5b382fa97e4fbe84a9c77fe8f41, type: 3}
   m_NormalMapTexture: {fileID: 0}
   m_MaskMapTexture: {fileID: 0}
   m_TileSize: {x: 2, y: 2}
