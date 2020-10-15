@@ -22,3 +22,39 @@ Goblin: Oh, you just pressed W
 Goblin: Nice!
 Goblin: Nice you have {$potatoes}, thank you!
 ===
+title: CompanionBarks
+tags: 
+colorID: 0
+position: 39,-940
+---
+<< if $companionBarks eq 1>> 
+    Hunter: Hello one
+<< elseif $companionBarks eq 2>> 
+    Hunter: Hello two
+<< elseif $companionBarks eq 3>> 
+    Hunter: Hello three
+<< elseif $companionBarks eq 4>> 
+    Hunter: Hello four
+<< elseif $companionBarks eq 5>> 
+    Hunter: Hello five
+<< elseif $companionBarks eq 6>> 
+    Hunter: Hello six
+<< elseif $companionBarks eq 7>> 
+    Hunter: Hello seven
+<< elseif $companionBarks eq 8>> 
+    Hunter: Hello eighteitgh
+<< elseif $companionBarks eq 9>> 
+    Hunter: Hello one
+<< elseif $companionBarks eq 10>> 
+    Hunter: Hello one
+<< elseif $companionBarks eq 11>> 
+    Hunter: Hello one
+<< elseif $companionBarks eq 12>> 
+    Hunter: Hello one
+<< else >>
+    Hunter: Hello, nice to meet you
+    << set $companionBarks to 0>> 
+<< endif >>
+
+<<  set $companionBarks to $companionBarks + 1>>
+===
