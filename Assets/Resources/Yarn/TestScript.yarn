@@ -1,0 +1,24 @@
+title: StartNode
+tags: 
+colorID: 0
+position: 674,-759
+---
+The narrator says hello
+Am I even in this story?
+Hope not
+Goblin: Hello, I'm Goblin
+Goblin: Goblin Goblin
+Oh no
+Dressmaker: Hello yall
+<< set $variable to 10 >> 
+<< event setCamera1 >>
+===
+title: Testing
+tags: 
+colorID: 0
+position: 1044,-732
+---
+Goblin: Oh, you just pressed W
+Goblin: Nice!
+Goblin: Nice you have {$potatoes}, thank you!
+===

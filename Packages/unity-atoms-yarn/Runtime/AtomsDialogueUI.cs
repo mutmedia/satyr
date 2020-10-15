@@ -81,7 +81,6 @@ namespace UnityAtomsYarn
     [HideInInspector] [SerializeField] public bool LoadNamedSpeakersFromResources = true;
     [HideInInspector] [SerializeField] private string NamedSpeakersPath = "Yarn/Speakers";
 
-    [HideInInspector]
     [SerializeField]
     private AtomCollection NamedSpeakers;
 

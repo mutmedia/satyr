@@ -29,7 +29,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_5CC2414F:
-        m_Texture: {fileID: 2800000, guid: b5da4fbc7c5da114195709a52743ac61, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8bf29ed30985cf548a400486c30532b7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_69DBD19D:
@@ -37,7 +37,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_69E44C02:
-        m_Texture: {fileID: 2800000, guid: b5da4fbc7c5da114195709a52743ac61, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8bf29ed30985cf548a400486c30532b7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_9D1EB1D:
@@ -45,7 +45,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_D7F07FAF:
-        m_Texture: {fileID: 2800000, guid: b5da4fbc7c5da114195709a52743ac61, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8bf29ed30985cf548a400486c30532b7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_E9BF9A13:
@@ -57,7 +57,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_F7336ADD:
-        m_Texture: {fileID: 2800000, guid: dfccf9d1e2de7bb49a739b37a6cd44ff, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1b7b3d529ba3fbd47934fe6fccd22038, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal0:
@@ -69,14 +69,14 @@ Material:
     - Vector1_559C50A5: 200
     - Vector1_6734F098: 1
     - Vector1_79CB2280: 56.6
-    - Vector1_7BD29D89: 10
+    - Vector1_7BD29D89: 10.93
     - Vector1_7F490819: 1
     - Vector1_838B7223: 1
-    - Vector1_9B556BEC: 3
-    - Vector1_BFCAD982: 0.05
+    - Vector1_9B556BEC: 1.8
+    - Vector1_BFCAD982: 0.03
     - Vector1_EF33F37C: 0
-    - Vector1_F2EC335D: 50
+    - Vector1_F2EC335D: 63.23
     m_Colors:
     - Color_775FA4EF: {r: 0.77254903, g: 0.77254903, b: 0.77254903, a: 0}
-    - Color_AE9C198: {r: 0.77254903, g: 0.77254903, b: 0.77254903, a: 0}
+    - Color_AE9C198: {r: 1, g: 1, b: 1, a: 0}
     - Vector2_F5C766B6: {r: 0.01, g: 0.02, b: 0, a: 0}

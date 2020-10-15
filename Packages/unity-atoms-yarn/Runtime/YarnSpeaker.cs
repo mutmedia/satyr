@@ -16,7 +16,7 @@ namespace UnityAtomsYarn
       speakerName = name;
     }
 
-    private void Awake()
+    private void Start()
     {
       namedSpeakers.Value.Add(speakerName, speakerText);
       if (scriptToLoad != null)

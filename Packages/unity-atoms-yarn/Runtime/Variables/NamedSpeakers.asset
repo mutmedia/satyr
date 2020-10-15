@@ -15,9 +15,27 @@ MonoBehaviour:
   _developerDescription: 
   _id: 
   _value:
-    _serializedKeys: []
-    _serializedValues: []
-    _duplicateKeyIndices: 
+    _serializedKeys:
+    - _usage: 0
+      _value: Goblin
+      _constant: {fileID: 0}
+      _variable: {fileID: 0}
+      _variableInstancer: {fileID: 0}
+    - _usage: 0
+      _value: Goblin
+      _constant: {fileID: 0}
+      _variable: {fileID: 0}
+      _variableInstancer: {fileID: 0}
+    - _usage: 0
+      _value: Goblin
+      _constant: {fileID: 0}
+      _variable: {fileID: 0}
+      _variableInstancer: {fileID: 0}
+    _serializedValues:
+    - {fileID: 11400000, guid: da8dd63563d19f146b889fe85d965472, type: 2}
+    - {fileID: 11400000, guid: da8dd63563d19f146b889fe85d965472, type: 2}
+    - {fileID: 11400000, guid: da8dd63563d19f146b889fe85d965472, type: 2}
+    _duplicateKeyIndices: 01000000
   _added: {fileID: 0}
   _removed: {fileID: 0}
   _cleared: {fileID: 0}
