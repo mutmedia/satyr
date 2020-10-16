@@ -17,18 +17,18 @@ MonoBehaviour:
   _value:
     _serializedKeys:
     - _usage: 0
-      _value: test
+      _value: potatoes
       _constant: {fileID: 0}
       _variable: {fileID: 0}
       _variableInstancer: {fileID: 0}
     - _usage: 0
-      _value: batatas
+      _value: variable
       _constant: {fileID: 0}
       _variable: {fileID: 0}
       _variableInstancer: {fileID: 0}
     _serializedValues:
-    - {fileID: 11400000, guid: 7e617d5af3a4f8746bc8e3c9183edbf7, type: 2}
-    - {fileID: 11400000, guid: a71fbfb0e5597174095e4135de4a1aaa, type: 2}
+    - {fileID: 11400000, guid: 613d2a36f592b9448818402b175c308b, type: 2}
+    - {fileID: 0}
     _duplicateKeyIndices: 
   _added: {fileID: 0}
   _removed: {fileID: 0}
