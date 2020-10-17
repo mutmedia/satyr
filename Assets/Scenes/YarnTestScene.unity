@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1261,7 +1261,7 @@ MonoBehaviour:
   _actionResponses: []
   _replayEventBufferOnRegister: 1
   _eventReference:
-    _usage: 0
+    _usage: 2
     _event: {fileID: 11400000, guid: 33e64d7236fb4a6499350ca85d4d02f0, type: 2}
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
