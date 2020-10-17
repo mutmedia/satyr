@@ -9332,8 +9332,10 @@ MonoBehaviour:
   assetGuid: 
   m_IsSelectable: 1
   m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedEdges:
+  - a: 210
+    b: 211
+  m_SelectedVertices: d2000000d3000000
 --- !u!64 &7174451992073629065
 MeshCollider:
   m_ObjectHideFlags: 0
