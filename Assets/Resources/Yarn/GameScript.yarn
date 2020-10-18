@@ -1,71 +1,142 @@
 title: Dressmaker
-tags: Dressmaker
+tags: Dressmaker Intro
 colorID: 0
-position: 789,-696
+position: -359,-1523
 ---
-Dressmaker: Hello! I'm the Dressmaker!
+Dressmaker: Hmm you seem a bit wimpy to be our saviour.
+Dressmaker: I don't know why the elder would pick you.
+Dressmaker: Ah, well. As long as I do not die.
+Dressmaker: Have fun defeating Godzilla! He's up there.
 ===
 title: DressmakersFather
-tags: DressmakersFather
+tags: DressmakersFather Intro
 colorID: 0
-position: 416,-699
+position: -584,-1304
 ---
-DressmakersFather: I'm the Dressmaker's Father...
+DressmakersFather: Hmf.
+DressmakersFather: Hmm...
+DressmakersFather: Good enough.
+DressmakersFather: Godzilla go you.
 ===
 title: StephenTheDisaster
-tags: StephenTheDisaster
+tags: StephenTheDisaster Intro
 colorID: 0
-position: -111,1
+position: -583,-1523
 ---
-StephenTheDisaster: I'm Stephen
+StephenTheDisaster: Hmmm what are you doing in my house??
+StephenTheDisaster: Ahhhmmmm please go away???
+StephenTheDisaster: Godzilla? Never heard of him!!
 ===
 title: SeaWoman
-tags: SeaWoman
+tags: SeaWoman Intro
 colorID: 0
-position: 1078,75
+position: -287,-1807
 ---
-SeaWoman: I love the sea!
+*as you pass the old sea woman, she says this*
+
+SeaWoman: Oh you are here to save us? What joy! The monster has plagued our little community for so long. 
+SeaWoman: Go! Go! Up there is where Godzilla is!! 
+SeaWoman: Me? I’ll be here. 
+SeaWoman: The sea calms my old, weathered nerves.
 ===
 title: FlowerWoman
-tags: FlowerWoman
+tags: FlowerWoman Intro
 colorID: 0
-position: 1323,71
+position: -142,-1304
 ---
-FlowerWoman: Flowers are lovely, aren'd they?
+FlowerWoman: Oh! Hmm... I do hope that nasty Godzilla goes soon.
+FlowerWoman: That is why you're here, yes?
+FlowerWoman: My bouquets are not nearly as lovely with him looming...
 ===
 title: Shopkeep
-tags: Shopkeep
+tags: Shopkeep Intro
 colorID: 0
-position: -20,-354
+position: -145,-1520
 ---
-Shopkeep: I sell all the warez!!
+Shopkeep: Oh!! Hello hello!! Our saviour!!
+Shopkeep: Do you have any money?
+Shopkeep: To give me!!
+Shopkeep: OH! For my wares!
+Shopkeep: No?
+Shopkeep: Hm.
+Shopkeep: Okay, I will still tell everyone that the great hero who slayed Godzilla came to my store.
+Shopkeep: Have fun, buddy!!
 ===
 title: LostBoys
-tags: LostBoys
+tags: LostBoys Intro
 colorID: 0
-position: 1181,-260
+position: -363,-1306
 ---
-LostBoys: One! Two... THREEEEEEE!!!!
+LostBoys: One, two, three please look at me!
+LostBoys: With rhymes we speak, we are not meek!
+LostBoys: Godzilla go you, we know this true!!
+LostBoys: Come see us.... soon!
 ===
 title: Woofcutter
-tags: Woofcutter
+tags: Woofcutter Intro
 colorID: 0
-position: 358,-39
+position: 69,-1421
 ---
-Woofcutter: woof
+Woofcutter: woof woof!
+Woofcutter: A merry woodcutter I be!!
+Woofcutter: Is it Godzilla you seek?
+Woofcutter: The hunter was after him.
+Woofcutter: I wonder what became of them?
+Woofcutter: Must get back to my wood! Chop chop!!
 ===
 title: Hunter
-tags: Hunter
+tags: Hunter Intro
 colorID: 0
-position: 1314,-836
+position: -578,-756
 ---
-Let me help you out!!!
-YAAAAAY =)
+*As you walk down the ridge from godzilla, hunter is at the bottom. Dialogue is forced when you get close*
+
+Hunter: Ah you’re trying to get godzilla too? I’ve been trying to get ‘im for weeks. 
+Hunter: You seem like a strapping hero-type. I’ll come with you!
+
+*Hands ui appears, and hunter is in your hand*
 ===
 title: Elder
-tags: Elder
+tags: Elder Intro
 colorID: 0
-position: 1604,-422
+position: -549,-2250
 ---
-Hope everyone is doing well
+Elder: Hey you. You're finally awake. 
+Elder: Finally, the hero we need.
+Elder: You will defeat the monster that plagues us!!
+Elder: You're here!
+===
+title: Elder After Bench
+tags: Elder Intro
+colorID: 0
+position: -546,-2031
+---
+*once the bench lands, if elder is clicked on*
+
+Elder: Don't mind me, I'm just parking the bench!
+===
+title: Godzilla
+tags: Godzilla Intro
+colorID: 0
+position: -581,-968
+---
+*after staring at the lava for a while, a shadow appears and this text begins*
+
+Godzilla: Why are you looking in my bath?
+...
+...
+...
+Godzilla: Jeez, you’re a quiet thing, aren’t ya? I heard talk of a hero, is that you?
+Godzilla: Hmm.. well just in case you are, here’s my shopping list.
+Godzilla: You can do that right? 
+Godzilla: Great, thanks.
+
+*shopping list ui instructions set active, hunter set active*
+===
+title: Node
+tags: 
+colorID: 0
+position: -206,-293
+---
+Empty Text
 ===
