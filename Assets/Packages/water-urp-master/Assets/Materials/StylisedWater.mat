@@ -75,7 +75,7 @@ Material:
     - _EnvironmentReflections: 1
     - _FlowSpeed: 0.00002
     - _FlowStrength: 0.0001
-    - _FoamDistance: 0.2
+    - _FoamDistance: 2
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0

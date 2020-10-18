@@ -2,7 +2,6 @@
 
 Shader "Skybox/PanoramicRotatable" {
 Properties {
-    _Pitch ("Pitch", Range(0, 360)) = 0
     _Tint ("Tint Color", Color) = (.5, .5, .5, .5)
     _Tint2 ("Tint Color2", Color) = (.5, .5, .5, .5)
     [Gamma] _Exposure ("Exposure", Range(0, 8)) = 1.0
@@ -12,6 +11,8 @@ Properties {
     [Enum(360 Degrees, 0, 180 Degrees, 1)] _ImageType("Image Type", Float) = 0
     [Toggle] _MirrorOnBack("Mirror on Back", Float) = 0
     [Enum(None, 0, Side by Side, 1, Over Under, 2)] _Layout("3D Layout", Float) = 0
+    _Pitch ("Pitch", Range(0, 360)) = 0
+    _TextureOffset ("TexOffset", Range(0, 1)) = 0.25
 }
 
 SubShader {
@@ -35,6 +36,7 @@ SubShader {
         half _Exposure;
         float _Rotation;
         float _Pitch;
+        float _TextureOffset;
 #ifndef _MAPPING_6_FRAMES_LAYOUT
         bool _MirrorOnBack;
         int _ImageType;
@@ -83,6 +85,14 @@ SubShader {
             return float3(mul(m, vertex.xz), vertex.y).xzy;
         }
 
+        float3 RotateAroundXInDegrees (float3 vertex, float degrees)
+        {
+            float alpha = degrees * UNITY_PI / 180.0 + UNITY_PI / 180.0;
+            float sina, cosa;
+            sincos(alpha, sina, cosa);
+            float2x2 m = float2x2(cosa, -sina, sina, cosa);
+            return float3(mul(m, vertex.zy), vertex.x).zyx;
+        }
         float3 RotateAroundZInDegrees (float3 vertex, float degrees)
         {
             float alpha = degrees * UNITY_PI / 180.0;
@@ -119,7 +129,7 @@ SubShader {
             UNITY_SETUP_INSTANCE_ID(v);
             UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
             float3 rotated = RotateAroundYInDegrees(v.vertex, _Rotation);
-            rotated = RotateAroundZInDegrees(rotated, _Pitch);
+            rotated = RotateAroundXInDegrees(rotated, _Pitch);
             o.vertex = UnityObjectToClipPos(rotated);
             o.texcoord = v.vertex.xyz;
 #ifdef _MAPPING_6_FRAMES_LAYOUT
@@ -204,7 +214,9 @@ SubShader {
             tc.x = fmod(tc.x*i.image180ScaleAndCutoff[0], 1);
             tc = (tc + i.layout3DScaleAndOffset.xy) * i.layout3DScaleAndOffset.zw;
 #endif
-
+            tc.y *= 0.5;
+            tc.y += 0.5 * _TextureOffset;
+            tc.y = fmod(tc.y, 1);
             half4 tex = tex2D (_MainTex, tc);
             half3 c = DecodeHDR (tex, _MainTex_HDR);
             c = c * _Tint.rgb * unity_ColorSpaceDouble.rgb;

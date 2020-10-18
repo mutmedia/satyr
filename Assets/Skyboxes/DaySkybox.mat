@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DaySkybox
-  m_Shader: {fileID: 4800000, guid: 6cba31603ec0775419adc0d0859638d1, type: 3}
+  m_Shader: {fileID: 4800000, guid: 4f47c8199048692428b0fba9104a27fa, type: 3}
   m_ShaderKeywords: _MAPPING_LATITUDE_LONGITUDE_LAYOUT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -65,9 +65,10 @@ Material:
     - _Metallic: 0
     - _MirrorOnBack: 0
     - _OcclusionStrength: 1
+    - _Pitch: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Rotation: 114
+    - _Rotation: 92
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -81,6 +82,7 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _Tint2: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
 --- !u!114 &4165719455252613751
 MonoBehaviour:
   m_ObjectHideFlags: 11
