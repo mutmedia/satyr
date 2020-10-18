@@ -114,8 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 941aa9e1389fe72498d83aee64b980ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerName: Dressmaker's Father
-  speakerText: {fileID: 0}
+  speakerName: DressmakersFather
+  speakerText: {fileID: 11400000, guid: 5f7420a87b1e4874c88e1f8f7a2a34e9, type: 2}
   scriptToLoad: {fileID: 0}
   namedSpeakers: {fileID: 11400000, guid: e0b8e02cbf6bb8a42b0091dd6005e6e7, type: 2}
 --- !u!1 &604460552817361938
@@ -2242,6 +2242,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Raycast Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
+        type: 3}
+      propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: DressmakersFather
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e926a21db5a906e489d6686b06a702e7, type: 3}

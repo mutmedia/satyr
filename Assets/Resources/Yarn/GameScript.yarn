@@ -1,18 +1,56 @@
-title: AlderLeafBeetle
-tags: 
+title: Dressmaker
+tags: Dressmaker
 colorID: 0
-position: 1008,-407
+position: 789,-696
 ---
-AlderLeafBeetle: Hello my friend
-AlderLeafBeetle: My day is going amazing!
-AlderLeafBeetle: What about yours?
+Dressmaker: Hello! I'm the Dressmaker!
 ===
-title: DeathStalkerScorpion
-tags: 
+title: DressmakersFather
+tags: DressmakersFather
 colorID: 0
-position: 1116,-713
+position: 416,-699
 ---
-DeathStalkerScorpion: I am the gatekeeper!!!!!!
-DeathStalkerScorpion: !!!!!!!
-DeathStalkerScorpion: Don't cross the gates please...
+DressmakersFather: I'm the Dressmaker's Father...
+===
+title: StephenTheDisaster
+tags: StephenTheDisaster
+colorID: 0
+position: -250,56
+---
+StephenTheDisaster: I'm Stephen
+===
+title: SeaWoman
+tags: SeaWoman
+colorID: 0
+position: 1078,75
+---
+SeaWoman: I love the sea!
+===
+title: FlowerWoman
+tags: FlowerWoman
+colorID: 0
+position: 1341,78
+---
+FlowerWoman: Flowers are lovely, aren'd they?
+===
+title: Shopkeep
+tags: Shopkeep
+colorID: 0
+position: -6,-259
+---
+Shopkeep: I sell all the warez!!
+===
+title: LostBoys
+tags: LostBoys
+colorID: 0
+position: 1181,-260
+---
+LostBoys: One! Two... THREEEEEEE!!!!
+===
+title: Woofcutter
+tags: Woofcutter
+colorID: 0
+position: 282,59
+---
+Woofcutter: woof
 ===

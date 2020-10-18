@@ -84,6 +84,9 @@ namespace UnityAtomsYarn
     [SerializeField]
     private AtomCollection NamedSpeakers;
 
+    [SerializeField]
+    private StringVariable CurrentText;
+
     public StringVariable CurrentSpeaker;
 
     // When true, the user has indicated that they want to proceed to

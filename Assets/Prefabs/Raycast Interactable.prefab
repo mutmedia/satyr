@@ -390,7 +390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5016651376192723272}
-  - component: {fileID: 5016651376192723279}
+  - component: {fileID: 1252279298595807071}
   m_Layer: 8
   m_Name: PlayerInteract
   m_TagString: Untagged
@@ -412,7 +412,7 @@ Transform:
   m_Father: {fileID: 5016651374493653118}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5016651376192723279
+--- !u!114 &1252279298595807071
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -421,11 +421,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5016651376192723273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2458933140c54c9db0aec7a69c1b617, type: 3}
+  m_Script: {fileID: 11500000, guid: 057832dc962f80b4fbd1ad9d559ad521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _developerDescription: 
-  _unityEventResponse:
+  Key: 323
+  Type: 0
+  Event:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5016651376038706309}
@@ -439,24 +440,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 8cdb2ef2a77371c47b419d7116f2090a, type: 2}
-        m_MethodName: set_Value
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _actionResponses: []
-  _replayEventBufferOnRegister: 0
-  _eventReference:
-    _usage: 0
-    _event: {fileID: 11400000, guid: bd38f2807909023459d8bdf26b8fbf00, type: 2}
-    _eventInstancer: {fileID: 0}
-    _collection: {fileID: 0}
-    _list: {fileID: 0}
-    _collectionInstancer: {fileID: 0}
-    _listInstancer: {fileID: 0}
