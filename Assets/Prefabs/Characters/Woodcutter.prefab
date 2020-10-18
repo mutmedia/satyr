@@ -1376,6 +1376,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Raycast Interactable
       objectReference: {fileID: 0}
+    - target: {fileID: 5016651375900167498, guid: e926a21db5a906e489d6686b06a702e7,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2.61
+      objectReference: {fileID: 0}
     - target: {fileID: 5016651375900167499, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
       propertyPath: m_LocalPosition.y

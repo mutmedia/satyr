@@ -3524,7 +3524,7 @@ PrefabInstance:
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Elder
+      value: Hunter
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e926a21db5a906e489d6686b06a702e7, type: 3}

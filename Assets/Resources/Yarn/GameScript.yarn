@@ -15,7 +15,7 @@ DressmakersFather: I'm the Dressmaker's Father...
 title: StephenTheDisaster
 tags: StephenTheDisaster
 colorID: 0
-position: -250,56
+position: -111,1
 ---
 StephenTheDisaster: I'm Stephen
 ===
@@ -29,14 +29,14 @@ SeaWoman: I love the sea!
 title: FlowerWoman
 tags: FlowerWoman
 colorID: 0
-position: 1341,78
+position: 1323,71
 ---
 FlowerWoman: Flowers are lovely, aren'd they?
 ===
 title: Shopkeep
 tags: Shopkeep
 colorID: 0
-position: -6,-259
+position: -20,-354
 ---
 Shopkeep: I sell all the warez!!
 ===
@@ -50,7 +50,22 @@ LostBoys: One! Two... THREEEEEEE!!!!
 title: Woofcutter
 tags: Woofcutter
 colorID: 0
-position: 282,59
+position: 358,-39
 ---
 Woofcutter: woof
+===
+title: Hunter
+tags: Hunter
+colorID: 0
+position: 1314,-836
+---
+Let me help you out!!!
+YAAAAAY =)
+===
+title: Elder
+tags: Elder
+colorID: 0
+position: 1604,-422
+---
+Hope everyone is doing well
 ===
