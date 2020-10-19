@@ -133,10 +133,214 @@ Godzilla: Great, thanks.
 
 *shopping list ui instructions set active, hunter set active*
 ===
-title: Node
+title: Godzilla_2
+tags: Godzilla Intro
+colorID: 0
+position: 1306,-1450
+---
+*before dress gotten*
+
+Godzilla: Hey you got that dress yet?
+Godzilla: They won't let me go to the store here.
+Godzilla: They just scream and say I'm going to "crush their place of business".
+
+*after dress gotten*
+Godzilla: Oh sweet you got the dress thanks. Don't forget about the other stuff!
+===
+title: Dressmaker Gift 1
+tags: Dressmaker Gift1
+colorID: 0
+position: 1138,-2224
+---
+Dressmaker: Uhmm hello?
+Dressmaker: Weren't you supposed to be killing Godzilla?
+Dressmaker: He needs.. What?? A dress???!
+Dressmaker: I... well I haven't made any dresses recently!!
+Dressmaker: Because of Godzilla! He totally wrecks my vibe.
+Dressmaker: Of course I don't have any more dresses,
+Dressmaker: My last is with the shopkeep duh.
+Dressmaker: For selling! Not for.. anything else.
+Dressmaker: It's not like I like them or anything haha!!
+Dressmaker: ...
+Dressmaker: Uhh you can go get it from them. The shopkeep I mean.
+Dressmaker: ...
+Dressmaker: Bye!
+===
+title: StephenTheDisaster Gift1
+tags: StephenTheDisaster Gift1
+colorID: 0
+position: 1091,-1450
+---
+StephenTheDisaster: Hey you are in my house!
+StephenTheDisaster: Please leave!
+StephenTheDisaster: I'm trying to........ plan.
+StephenTheDisaster: Goodbye weirdo!!
+===
+title: Shopkeep Gift1
+tags: Shopkeep Gift1
+colorID: 0
+position: 1209,-2009
+---
+Shopkeep: Oh! Hey man how's the Godzilla hunt going?
+Shopkeep: Ohh yeah that dress?
+Shopkeep: It's ahhm.. I don't have it.
+Shopkeep: I don't have it because I tore it.
+Shopkeep: Whoops haha!
+Shopkeep: I put it on the windowsill of the dressmaker's dad's place.
+Shopkeep: He's a fix-em-up kinda guy y'know?
+Shopkeep: The dressmaker? She's a great pal! 
+Shopkeep: I tend to break stuff! She's super patient.
+Shopkeep: Haha alright later, brah.
+===
+title: Woofcutter and DressmakersFather Gift1
+tags: Woofcutter DressmakersFather Gift1
+colorID: 0
+position: 1136,-1792
+---
+Woofcutter: Hey come on, I left this wood outside your house this morning!!
+DressmakersFather: Not here.
+Woofcutter: I know it!! It was here.
+DressmakersFather: Hmm... Yes hero?
+Woofcutter: I was talking to you!!
+DressmakersFather: The dress is here, yes.
+Woofcutter: It's not a dress it's wood!! It's wood I know it is!
+DressmakersFather: Open the box, hero.
+
+*dress appears in hand*
+
+Woofcutter: I- Oh.
+DressmakersFather: Hmm...
+Woofcutter: Welp! Must get back to my wood! Chop chop!!
+===
+title: Stage Direction
+tags: Stage
+colorID: 0
+position: 560,-1423
+---
+Elder is now by sea woman
+===
+title: Intro
 tags: 
 colorID: 0
-position: -206,-293
+position: -275,-2504
 ---
 Empty Text
+===
+title: Gift 1 - Dress
+tags: 
+colorID: 0
+position: 1233,-2477
+---
+Empty Text
+===
+title: Godzilla_3
+tags: Godzilla Intro
+colorID: 0
+position: 2240,-1451
+---
+*before dress gotten*
+
+Godzilla: Hey you got that dress yet?
+Godzilla: They won't let me go to the store here.
+Godzilla: They just scream and say I'm going to "crush their place of business".
+
+*after dress gotten*
+Godzilla: Oh sweet you got the dress thanks. Don't forget about the other stuff!
+===
+title: StephenTheDisaster Gift1_2
+tags: StephenTheDisaster Gift1
+colorID: 0
+position: 2025,-1451
+---
+StephenTheDisaster: Hey you are in my house!
+StephenTheDisaster: Please leave!
+StephenTheDisaster: I'm trying to........ plan.
+StephenTheDisaster: Goodbye weirdo!!
+===
+title: Woofcutter and DressmakersFather Gift1_2
+tags: Woofcutter DressmakersFather Gift1
+colorID: 0
+position: 2070,-1793
+---
+Woofcutter: Hey come on, I left this wood outside your house this morning!!
+DressmakersFather: Not here.
+Woofcutter: I know it!! It was here.
+DressmakersFather: Hmm... Yes hero?
+Woofcutter: I was talking to you!!
+DressmakersFather: The dress is here, yes.
+Woofcutter: It's not a dress it's wood!! It's wood I know it is!
+DressmakersFather: Open the box, hero.
+
+*dress appears in hand*
+
+Woofcutter: I- Oh.
+DressmakersFather: Hmm...
+Woofcutter: Welp! Must get back to my wood! Chop chop!!
+===
+title: Shopkeep Gift1_2
+tags: Shopkeep Gift1
+colorID: 0
+position: 2143,-2010
+---
+Shopkeep: Oh! Hey man how's the Godzilla hunt going?
+Shopkeep: Ohh yeah that dress?
+Shopkeep: It's ahhm.. I don't have it.
+Shopkeep: I don't have it because I tore it.
+Shopkeep: Whoops haha!
+Shopkeep: I put it on the windowsill of the dressmaker's dad's place.
+Shopkeep: He's a fix-em-up kinda guy y'know?
+Shopkeep: The dressmaker? She's a great pal! 
+Shopkeep: I tend to break stuff! She's super patient.
+Shopkeep: Haha alright later, brah.
+===
+title: Dressmaker Gift 1_2
+tags: Dressmaker Gift1
+colorID: 0
+position: 2072,-2225
+---
+Dressmaker: Uhmm hello?
+Dressmaker: Weren't you supposed to be killing Godzilla?
+Dressmaker: He needs.. What?? A dress???!
+Dressmaker: I... well I haven't made any dresses recently!!
+Dressmaker: Because of Godzilla! He totally wrecks my vibe.
+Dressmaker: Of course I don't have any more dresses,
+Dressmaker: My last is with the shopkeep duh.
+Dressmaker: For selling! Not for.. anything else.
+Dressmaker: It's not like I like them or anything haha!!
+Dressmaker: ...
+Dressmaker: Uhh you can go get it from them. The shopkeep I mean.
+Dressmaker: ...
+Dressmaker: Bye!
+===
+title: Gift 2 - Chairs
+tags: 
+colorID: 0
+position: 2167,-2478
+---
+Empty Text
+===
+title: Stage Direction_2
+tags: Stage
+colorID: 0
+position: 1675,-1442
+---
+Elder is now by sea woman
+===
+title: Hunter Bark Dialogue
+tags: Hunter Bark
+colorID: 0
+position: 2426,-821
+---
+*dialogue appears at random times, in order, as you wander*
+
+*before any gifts gotten*
+Hunter: Hey I'm glad you're helping me out I uhmm.. think we'll be great buds.
+Hunter: Uhh so this shopping list is going to defeat Godzilla? Alright, I guess.
+
+*after dress*
+Hunter: Hey it was real nice of you to try to clue in the shopkeep to the dressmaker's interests but they ah.. swing the other way??
+Hunter: Maybe the woodcutter would be a better match for the dressmaker, but then who would the shopkeep be with?
+Hunter: We're doing a good thing, yeah? We'll just help out where we can!!
+
+*after chairs
 ===
