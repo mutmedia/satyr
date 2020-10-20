@@ -580,3 +580,17 @@ position: -323,-2302
 ---
 Elder: Don't worry about me! Just parking the bench!
 ===
+title: List
+tags: 
+colorID: 8
+position: 1722,-3013
+---
+<< if $listActive eq true >>
+Dress
+Chairs
+Ring
+Flowers
+Shells
+You need {$giftsNeeded} more gifts.
+<< endif >>
+===
