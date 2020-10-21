@@ -1,4 +1,4 @@
-title: Dressmaker Intro
+title: Dressmaker_Intro
 tags: Dressmaker Intro
 colorID: 5
 position: -396,-1756
@@ -8,7 +8,7 @@ Dressmaker: I don't know why the elder would pick you.
 Dressmaker: Ah, well. As long as I do not die.
 Dressmaker: Have fun defeating Godzilla! He's up there.
 ===
-title: DressmakersFather Intro
+title: DressmakersFather_Intro
 tags: DressmakersFather Intro
 colorID: 5
 position: -621,-1537
@@ -18,7 +18,7 @@ DressmakersFather: Hmm...
 DressmakersFather: Good enough.
 DressmakersFather: Godzilla go you.
 ===
-title: StephenTheDisaster Intro
+title: StephenTheDisaster_Intro
 tags: StephenTheDisaster Intro
 colorID: 5
 position: -620,-1756
@@ -27,7 +27,7 @@ StephenTheDisaster: Hmmm what are you doing in my house??
 StephenTheDisaster: Ahhhmmmm please go away???
 StephenTheDisaster: Godzilla? Never heard of him!!
 ===
-title: SeaWoman Intro
+title: SeaWoman_Intro
 tags: SeaWoman Intro
 colorID: 5
 position: -324,-2040
@@ -39,7 +39,7 @@ SeaWoman: Go! Go! Up there is where Godzilla is!!
 SeaWoman: Me? I’ll be here. 
 SeaWoman: The sea calms my old, weathered nerves.
 ===
-title: FlowerWoman Intro
+title: FlowerWoman_Intro
 tags: FlowerWoman Intro
 colorID: 5
 position: -179,-1537
@@ -48,7 +48,7 @@ FlowerWoman: Oh! Hmm... I do hope that nasty Godzilla goes soon.
 FlowerWoman: That is why you're here, yes?
 FlowerWoman: My bouquets are not nearly as lovely with him looming...
 ===
-title: Shopkeep Intro
+title: Shopkeep_Intro
 tags: Shopkeep Intro
 colorID: 5
 position: -182,-1753
@@ -62,7 +62,7 @@ Shopkeep: Hm.
 Shopkeep: Okay, I will still tell everyone that the great hero who slayed Godzilla came to my store.
 Shopkeep: Have fun, buddy!!
 ===
-title: LostBoys Intro
+title: LostBoys_Intro
 tags: LostBoys Intro
 colorID: 5
 position: -400,-1539
@@ -72,7 +72,7 @@ LostBoys: With rhymes we speak, we are not meek!
 LostBoys: Godzilla go you, we know this true!!
 LostBoys: Come see us.... soon!
 ===
-title: Woofcutter Intro
+title: Woofcutter_Intro
 tags: Woofcutter Intro
 colorID: 5
 position: 32,-1654
@@ -84,7 +84,7 @@ Woofcutter: The hunter was after him.
 Woofcutter: I wonder what became of them?
 Woofcutter: Must get back to my wood! Chop chop!!
 ===
-title: Hunter Intro
+title: Hunter_Intro
 tags: Hunter Intro
 colorID: 5
 position: -619,-973
@@ -110,7 +110,7 @@ Elder: You're here!
 
 << set $benchDone to true>>
 ===
-title: Godzilla Intro
+title: Godzilla_Intro
 tags: Godzilla Intro
 colorID: 5
 position: -618,-1197
@@ -128,7 +128,7 @@ Godzilla: Great, thanks.
 
 *shopping list ui instructions set active, hunter set active*
 ===
-title: Dressmaker Gift 1
+title: Dressmaker_Gift_1
 tags: Dressmaker Gift1
 colorID: 4
 position: 1071,-2538
@@ -147,7 +147,7 @@ Dressmaker: Uhh you can go get it from them. The shopkeep I mean.
 Dressmaker: ...
 Dressmaker: Bye!
 ===
-title: StephenTheDisaster Gift1
+title: StephenTheDisaster_Gift1
 tags: StephenTheDisaster Gift1
 colorID: 4
 position: 1094,-1763
@@ -157,14 +157,14 @@ StephenTheDisaster: Please leave!
 StephenTheDisaster: I'm trying to........ plan.
 StephenTheDisaster: Goodbye weirdo!!
 ===
-title: Shopkeep Gift1
+title: Shopkeep_Gift1
 tags: Shopkeep Gift1
 colorID: 4
 position: 1142,-2323
 ---
 <<if visited("Dressmaker Gift1")>>
 Shopkeep: Oh! Hey man how's the Godzilla hunt going?
-Shopkeep: Ohh yeah [i]that[/i] dress?
+Shopkeep: Ohh yeah <i>that</i> dress?
 Shopkeep: It's ahhm.. I don't have it.
 Shopkeep: I don't have it because I tore it.
 Shopkeep: Whoops haha!
@@ -179,7 +179,7 @@ Shopkeep: A dress? Nah brah I don't know anything about that!!
 Shopkeep: Haha later man.
 <<endif>>
 ===
-title: Woofcutter and DressmakersFather Gift1
+title: Woofcutter_and_DressmakersFather_Gift1
 tags: Woofcutter DressmakersFather Gift1
 colorID: 4
 position: 1083,-2102
@@ -205,14 +205,14 @@ DressmakersFather: Not here.
 Woofcutter: Mrrrghh...
 << endif >>
 ===
-title: Stage Direction
+title: Stage_Direction
 tags: Stage
 colorID: 0
 position: 523,-1656
 ---
 Elder is now by sea woman
 ===
-title: StephenTheDisaster Gift2
+title: StephenTheDisaster_Gift2
 tags: StephenTheDisaster Gift2
 colorID: 3
 position: 1931,-1749
@@ -225,7 +225,7 @@ StephenTheDisaster: Hhghgg!!
 StephenTheDisaster: I am sadly alone in my hole!!
 StephenTheDisaster: Goodbye!!!
 ===
-title: Woofcutter Gift2
+title: Woofcutter_Gift2
 tags: Woofcutter Gift2
 colorID: 3
 position: 2004,-2534
@@ -251,7 +251,7 @@ Woofcutter: .... Please don't tell her I asked.
 Woofcutter: Uhh bye I guess.
 << endif >>
 ===
-title: Shopkeep Gift2
+title: Shopkeep_Gift2
 tags: Shopkeep Gift2
 colorID: 3
 position: 2141,-1754
@@ -262,7 +262,7 @@ Shopkeep: Maybe you'll find me my soul mate!!
 Shopkeep: Haha I'm just kidding, have fun with your hero-ing!
 Shopkeep: Later, man!
 ===
-title: Dressmaker Gift 2
+title: Dressmaker_Gift_2
 tags: Dressmaker Gift2
 colorID: 3
 position: 2069,-2318
@@ -271,7 +271,7 @@ position: 2069,-2318
 Dressmaker: The woodcutter said what?
 Dressmaker: Do I like them? 
 Dressmaker: The chairs are fine??
-Dressmaker: O-oh!! [i]Them[/i]!! Uh-mmmm!!
+Dressmaker: O-oh!! <i>Them</i>!! Uh-mmmm!!
 Dressmaker: I.. They're good yeahh.
 Dressmaker: I'm having some trouble getting over the shopkeep but....
 Dressmaker: I think the woodcutter may be... better.
@@ -287,14 +287,14 @@ Dressmaker: Uhmm I think the woodcutter might know more about that.
 Dressmaker: I'll see you later though! Bubye!
 << endif >>
 ===
-title: Stage Direction_2
+title: Stage_Direction_2
 tags: Stage
 colorID: 0
 position: 1582,-2124
 ---
 Elder is now by sea woman
 ===
-title: DressmakersFather Gift2
+title: DressmakersFather_Gift2
 tags: DressmakersFather Gift2
 colorID: 3
 position: 2013,-2109
@@ -316,7 +316,7 @@ DressmakersFather: Maybe ask the woodcutter, or my daughter.
 DressmakersFather: Goodbye.
 << endif >>
 ===
-title: Hunter Bark Dialogue
+title: Hunter_Bark_Dialogue
 tags: Hunter Bark
 colorID: 8
 position: 1408,-2856
@@ -348,14 +348,14 @@ Godzilla: They just scream and say I'm going to "crush their place of business".
 *after dress gotten*
 Godzilla: Oh sweet you got the dress thanks. Don't forget about the other stuff!
 ===
-title: Stage Direction_3
+title: Stage_Direction_3
 tags: Stage
 colorID: 0
 position: 2639,-2161
 ---
 Elder is now by sea woman
 ===
-title: StephenTheDisaster Gift3
+title: StephenTheDisaster_Gift3
 tags: StephenTheDisaster Gift3
 colorID: 2
 position: 3075,-2323
@@ -384,7 +384,7 @@ StephenTheDisaster: Umm bye...
 StephenTheDisaster: Thanks.... friend.
 << endif >>
 ===
-title: Shopkeep Gift3
+title: Shopkeep_Gift3
 tags: Shopkeep Gift2
 colorID: 2
 position: 3022,-2107
@@ -404,7 +404,7 @@ Shopkeep: I'm working right now, though, you wanna come back later?
 Shopkeep: See ya!
 << endif >>
 ===
-title: DressmakersFather Gift3
+title: DressmakersFather_Gift3
 tags: DressmakersFather Gift3
 colorID: 2
 position: 2920,-1781
@@ -414,7 +414,7 @@ DressmakersFather: Yes Stephen is a bother but he is a good kid.
 DressmakersFather: He just needs to love himself.
 DressmakersFather: That is all.
 ===
-title: Dressmaker Gift 3
+title: Dressmaker_Gift_3
 tags: Dressmaker Gift3
 colorID: 2
 position: 3018,-2531
@@ -428,7 +428,7 @@ Dressmaker: I do not want Stephen bothering me!!
 Dressmaker: You're a hero, you go chat with him!
 Dressmaker: Thanks bye!!
 ===
-title: Woofcutter Gift3
+title: Woofcutter_Gift3
 tags: Woofcutter Gift3
 colorID: 2
 position: 3132,-1780
@@ -440,140 +440,140 @@ Woofcutter: I think she likes me.
 Woofcutter: But yeah, Stephen likes to try to.. third wheel.
 Woofcutter: He'll figure it out though! He's doing his best, I think.
 ===
-title: ElderMain
+title: Elder
 tags: Elder Main
 colorID: 0
 position: -1681,-2771
 ---
 <<if $currectAct eq "intro">>
-  [[Elder Intro]]
+  [[Elder_Intro]]
 << endif>>
 ===
-title: GodzillaMain
+title: Godzilla
 tags: Godzilla Main
 colorID: 0
 position: -1684,-2524
 ---
 <<if $currectAct eq "intro">>
-  [[Godzilla Intro]]
+  [[Godzilla_Intro]]
 <<else>>
   [[ Godzilla_2 ]]
 << endif>>
 ===
-title: HunterMain
+title: Hunter
 tags: Hunter Main
 colorID: 0
 position: -1683,-2295
 ---
 <<if $currectAct eq "intro">>
-  [[Hunter Intro]]
+  [[Hunter_Intro]]
 << else>> 
-  [[Hunter Bark Dialogue]]
+  [[Hunter_Bark_Dialogue]]
 << endif>>
 ===
-title: SeaWomanMain
+title: SeaWoman
 tags: SeaWoman Main
 colorID: 0
 position: -1690,-435
 ---
 <<if $currectAct eq "intro">>
-  [[SeaWoman Intro]]
+  [[SeaWoman_Intro]]
 << endif>>
 ===
-title: FlowerWomanMain
+title: FlowerWoman
 tags: FlowerWoman Main
 colorID: 0
 position: -1684,-672
 ---
 <<if $currectAct eq "intro">>
-  [[FlowerWoman Intro]]
+  [[FlowerWoman_Intro]]
 << endif>>
 ===
-title: StephenTheDisasterMain
+title: StephenTheDisaster
 tags: StephenTheDisaster Main
 colorID: 0
 position: -1678,-2055
 ---
 <<if $currectAct eq "intro">>
-  [[StephenTheDisaster Intro]]
+  [[StephenTheDisaster_Intro]]
 <<elseif $currectAct eq "gift1">>
-  [[StephenTheDisaster Gift1]]
+  [[StephenTheDisaster_Gift1]]
 <<elseif $currectAct eq "gift2">>
-  [[StephenTheDisaster Gift2]]
+  [[StephenTheDisaster_Gift2]]
 <<elseif $currectAct eq "gift3">>
-  [[StephenTheDisaster Gift3]]
+  [[StephenTheDisaster_Gift3]]
 <<endif>>
 ===
-title: DressmakerMain
+title: Dressmaker
 tags: Dressmaker Main
 colorID: 0
 position: -1685,-1818
 ---
 <<if $currectAct eq "intro">>
-  [[Dressmaker Intro]]
+  [[Dressmaker_Intro]]
 <<elseif $currectAct eq "gift1">>
-  [[Dressmaker Gift 1]]
+  [[Dressmaker_Gift_1]]
 <<elseif $currectAct eq "gift2">>
-  [[Dressmaker Gift 2]]
+  [[Dressmaker_Gift_2]]
 <<elseif $currectAct eq "gift3">>
-  [[Dressmaker Gift 3]]
+  [[Dressmaker_Gift_3]]
 <<endif>>
 ===
-title: ShopkeepMain
+title: Shopkeep
 tags: Shopkeep Main
 colorID: 0
 position: -1678,-1580
 ---
 <<if $currectAct eq "intro">>
-  [[Shopkeep Intro]]
+  [[Shopkeep_Intro]]
 <<elseif $currectAct eq "gift1">>
-  [[Shopkeep Gift1]]
+  [[Shopkeep_Gift1]]
 <<elseif $currectAct eq "gift2">>
-  [[Shopkeep Gift2]]
+  [[Shopkeep_Gift2]]
 <<elseif $currectAct eq "gift3">>
-  [[Shopkeep Gift3]]
+  [[Shopkeep_Gift3]]
 <<endif>>
 ===
-title: WoofcutterMain
+title: Woofcutter
 tags: Woofcutter Main
 colorID: 0
 position: -1672,-1360
 ---
 <<if $currectAct eq "intro">>
-  [[Woofcutter Intro]]
+  [[Woofcutter_Intro]]
 <<elseif $currectAct eq "gift1">>
-  [[Woofcutter and DressmakersFather Gift1]]
+  [[Woofcutter_and_DressmakersFather_Gift1]]
 <<elseif $currectAct eq "gift2">>
-  [[Woofcutter Gift2]]
+  [[Woofcutter_Gift2]]
 <<elseif $currectAct eq "gift3">>
-  [[Woofcutter Gift3]]
+  [[Woofcutter_Gift3]]
 <<endif>>
 ===
-title: DressmakersFatherMain
+title: DressmakersFather
 tags: DressmakersFather Main
 colorID: 0
 position: -1682,-1135
 ---
 <<if $currectAct eq "intro">>
-  [[DressmakersFather Intro]]
+  [[DressmakersFather_Intro]]
 <<elseif $currectAct eq "gift1">>
-  [[Woofcutter and DressmakersFather Gift1]]
+  [[Woofcutter_and_DressmakersFather_Gift1]]
 <<elseif $currectAct eq "gift2">>
-  [[DressmakersFather Gift2]]
+  [[DressmakersFather_Gift2]]
 <<elseif $currectAct eq "gift3">>
-  [[DressmakersFather Gift3]]
+  [[DressmakersFather_Gift3]]
 <<endif>>
 ===
-title: LostBoysMain
+title: LostBoys
 tags: LostBoys Main
 colorID: 0
 position: -1682,-905
 ---
 <<if $currectAct eq "intro">>
-  [[LostBoys Intro]]
+  [[LostBoys_Intro]]
 << endif>>
 ===
-title: Elder Intro
+title: Elder_Intro
 tags: Elder Intro
 colorID: 5
 position: -323,-2302
