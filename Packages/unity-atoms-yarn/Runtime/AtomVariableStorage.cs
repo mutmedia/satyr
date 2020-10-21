@@ -59,7 +59,7 @@ namespace UnityAtomsYarn
     /// Set a variable's value
     public override void SetValue(string variableName, Yarn.Value value)
     {
-      variableName = variableName.Substring(1).ToLower();
+      variableName = variableName.Substring(1);
       var variable = variables.Value.Get<AtomBaseVariable>(variableName);
 
       if (variable == null)
