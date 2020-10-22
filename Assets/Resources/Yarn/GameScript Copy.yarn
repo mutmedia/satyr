@@ -208,7 +208,7 @@ Woofcutter: Mrrrghh...
 title: Stage_Direction
 tags: Stage
 colorID: 0
-position: 523,-1656
+position: 301,-1669
 ---
 Elder is now by sea woman
 ===
@@ -287,13 +287,6 @@ Dressmaker: Uhmm I think the woodcutter might know more about that.
 Dressmaker: I'll see you later though! Bubye!
 << endif >>
 ===
-title: Stage_Direction_2
-tags: Stage
-colorID: 0
-position: 1582,-2124
----
-Elder is now by sea woman
-===
 title: DressmakersFather_Gift2
 tags: DressmakersFather Gift2
 colorID: 3
@@ -347,13 +340,6 @@ Godzilla: They just scream and say I'm going to "crush their place of business".
 
 *after dress gotten*
 Godzilla: Oh sweet you got the dress thanks. Don't forget about the other stuff!
-===
-title: Stage_Direction_3
-tags: Stage
-colorID: 0
-position: 2639,-2161
----
-Elder is now by sea woman
 ===
 title: StephenTheDisaster_Gift3
 tags: StephenTheDisaster Gift3
@@ -447,6 +433,12 @@ position: -1685,-2771
 ---
 <<if $currentAct eq "intro">>
   [[Elder_Intro]]
+<<elseif $currentAct2 eq "gift4">>
+  [[Elder_Gift4]]
+<<elseif $currentAct2 eq "gift5">>
+  [[Elder_Gift5]]
+<<elseif $currentAct2 eq "final" and $currentAct eq "final">>
+  [[Elder_Final]]
 << endif>>
 ===
 title: Godzilla
@@ -456,6 +448,8 @@ position: -1684,-2524
 ---
 <<if $currentAct eq "intro">>
   [[Godzilla_Intro]]
+<<elseif $currentAct eq "final">>
+  [[Godzilla_Final]]
 <<else>>
   [[ Godzilla_2 ]]
 << endif>>
@@ -467,6 +461,8 @@ position: -1683,-2295
 ---
 <<if $currentAct eq "intro">>
   [[Hunter_Intro]]
+<<elseif $currentAct eq "final">>
+  [[Hunter_Final]]
 << else>> 
   [[Hunter_Bark_Dialogue]]
 << endif>>
@@ -474,10 +470,16 @@ position: -1683,-2295
 title: SeaWoman
 tags: SeaWoman Main
 colorID: 0
-position: -1685,-410
+position: -1685,-416
 ---
-<<if $currentAct eq "intro">>
+<<if $currentAct2 eq "intro">>
   [[SeaWoman_Intro]]
+<<elseif $currentAct2 eq "gift4">>
+  [[SeaWoman_Gift4]]
+<<elseif $currentAct2 eq "gift5">>
+  [[SeaWoman_Gift5]]
+<<elseif $currentAct2 eq "final">>
+  [[SeaWoman_Final]]
 << endif>>
 ===
 title: FlowerWoman
@@ -485,14 +487,20 @@ tags: FlowerWoman Main
 colorID: 0
 position: -1688,-672
 ---
-<<if $currentAct eq "intro">>
+<<elseif $currentAct2 eq "intro">>
   [[FlowerWoman_Intro]]
+<<elseif $currentAct2 eq "gift4">>
+  [[FlowerWoman_Gift4]]
+<<elseif $currentAct2 eq "gift5">>
+  [[FlowerWoman_Gift5]]
+<<elseif $currentAct2 eq "final">>
+  [[FlowerWoman_Final]]
 << endif>>
 ===
 title: StephenTheDisaster
 tags: StephenTheDisaster Main
 colorID: 0
-position: -1678,-2055
+position: -1681,-2055
 ---
 <<if $currentAct eq "intro">>
   [[StephenTheDisaster_Intro]]
@@ -502,6 +510,8 @@ position: -1678,-2055
   [[StephenTheDisaster_Gift2]]
 <<elseif $currentAct eq "gift3">>
   [[StephenTheDisaster_Gift3]]
+<<elseif $currentAct eq "final">>
+  [[StephenTheDisaster_Final]]
 <<endif>>
 ===
 title: Dressmaker
@@ -517,6 +527,8 @@ position: -1685,-1818
   [[Dressmaker_Gift_2]]
 <<elseif $currentAct eq "gift3">>
   [[Dressmaker_Gift_3]]
+<<elseif $currentAct eq "final">>
+  [[Dressmaker_Final]]
 <<endif>>
 ===
 title: Shopkeep
@@ -532,12 +544,14 @@ position: -1678,-1580
   [[Shopkeep_Gift2]]
 <<elseif $currentAct eq "gift3">>
   [[Shopkeep_Gift3]]
+<<if $currentAct eq "final">>
+  [[Shopkeep_Final]]
 <<endif>>
 ===
 title: Woofcutter
 tags: Woofcutter Main
 colorID: 0
-position: -1672,-1360
+position: -1678,-1365
 ---
 <<if $currentAct eq "intro">>
   [[Woofcutter_Intro]]
@@ -547,12 +561,14 @@ position: -1672,-1360
   [[Woofcutter_Gift2]]
 <<elseif $currentAct eq "gift3">>
   [[Woofcutter_Gift3]]
+<<elseif $currentAct eq "final">>
+  [[Woofcutter_Final]]
 <<endif>>
 ===
 title: DressmakersFather
 tags: DressmakersFather Main
 colorID: 0
-position: -1682,-1135
+position: -1682,-1134
 ---
 <<if $currentAct eq "intro">>
   [[DressmakersFather_Intro]]
@@ -562,15 +578,23 @@ position: -1682,-1135
   [[DressmakersFather_Gift2]]
 <<elseif $currentAct eq "gift3">>
   [[DressmakersFather_Gift3]]
+<<elseif $currentAct eq "final">>
+  [[DressmakersFather_Final]]
 <<endif>>
 ===
 title: LostBoys
 tags: LostBoys Main
 colorID: 0
-position: -1682,-905
+position: -1684,-905
 ---
-<<if $currentAct eq "intro">>
+<<if $currentAct2 eq "intro">>
   [[LostBoys_Intro]]
+<<elseif $currentAct2 eq "gift4">>
+  [[LostBoys_Gift4]]
+<<elseif $currentAct2 eq "gift5">>
+  [[LostBoys_Gift5]]
+<<elseif $currentAct2 eq "final">>
+  [[LostBoys_Final]]
 << endif>>
 ===
 title: Elder_Intro
@@ -653,7 +677,7 @@ FlowerWoman:
 title: LostBoys_Gift4
 tags: LostBoys Gift4
 colorID: 6
-position: 1190,-1318
+position: 1190,-1324
 ---
 LostBoys:
 ===
