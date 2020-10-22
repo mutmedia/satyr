@@ -445,7 +445,7 @@ tags: Elder Main
 colorID: 0
 position: -1685,-2771
 ---
-<<if $currectAct eq "intro">>
+<<if $currentAct eq "intro">>
   [[Elder_Intro]]
 << endif>>
 ===
@@ -454,7 +454,7 @@ tags: Godzilla Main
 colorID: 0
 position: -1684,-2524
 ---
-<<if $currectAct eq "intro">>
+<<if $currentAct eq "intro">>
   [[Godzilla_Intro]]
 <<else>>
   [[ Godzilla_2 ]]
@@ -465,7 +465,7 @@ tags: Hunter Main
 colorID: 0
 position: -1683,-2295
 ---
-<<if $currectAct eq "intro">>
+<<if $currentAct eq "intro">>
   [[Hunter_Intro]]
 << else>> 
   [[Hunter_Bark_Dialogue]]
@@ -476,7 +476,7 @@ tags: SeaWoman Main
 colorID: 0
 position: -1685,-410
 ---
-<<if $currectAct eq "intro">>
+<<if $currentAct eq "intro">>
   [[SeaWoman_Intro]]
 << endif>>
 ===
@@ -485,7 +485,7 @@ tags: FlowerWoman Main
 colorID: 0
 position: -1688,-672
 ---
-<<if $currectAct eq "intro">>
+<<if $currentAct eq "intro">>
   [[FlowerWoman_Intro]]
 << endif>>
 ===
@@ -494,13 +494,13 @@ tags: StephenTheDisaster Main
 colorID: 0
 position: -1678,-2055
 ---
-<<if $currectAct eq "intro">>
+<<if $currentAct eq "intro">>
   [[StephenTheDisaster_Intro]]
-<<elseif $currectAct eq "gift1">>
+<<elseif $currentAct eq "gift1">>
   [[StephenTheDisaster_Gift1]]
-<<elseif $currectAct eq "gift2">>
+<<elseif $currentAct eq "gift2">>
   [[StephenTheDisaster_Gift2]]
-<<elseif $currectAct eq "gift3">>
+<<elseif $currentAct eq "gift3">>
   [[StephenTheDisaster_Gift3]]
 <<endif>>
 ===
@@ -509,13 +509,13 @@ tags: Dressmaker Main
 colorID: 0
 position: -1685,-1818
 ---
-<<if $currectAct eq "intro">>
+<<if $currentAct eq "intro">>
   [[Dressmaker_Intro]]
-<<elseif $currectAct eq "gift1">>
+<<elseif $currentAct eq "gift1">>
   [[Dressmaker_Gift_1]]
-<<elseif $currectAct eq "gift2">>
+<<elseif $currentAct eq "gift2">>
   [[Dressmaker_Gift_2]]
-<<elseif $currectAct eq "gift3">>
+<<elseif $currentAct eq "gift3">>
   [[Dressmaker_Gift_3]]
 <<endif>>
 ===
@@ -524,13 +524,13 @@ tags: Shopkeep Main
 colorID: 0
 position: -1678,-1580
 ---
-<<if $currectAct eq "intro">>
+<<if $currentAct eq "intro">>
   [[Shopkeep_Intro]]
-<<elseif $currectAct eq "gift1">>
+<<elseif $currentAct eq "gift1">>
   [[Shopkeep_Gift1]]
-<<elseif $currectAct eq "gift2">>
+<<elseif $currentAct eq "gift2">>
   [[Shopkeep_Gift2]]
-<<elseif $currectAct eq "gift3">>
+<<elseif $currentAct eq "gift3">>
   [[Shopkeep_Gift3]]
 <<endif>>
 ===
@@ -539,13 +539,13 @@ tags: Woofcutter Main
 colorID: 0
 position: -1672,-1360
 ---
-<<if $currectAct eq "intro">>
+<<if $currentAct eq "intro">>
   [[Woofcutter_Intro]]
-<<elseif $currectAct eq "gift1">>
+<<elseif $currentAct eq "gift1">>
   [[Woofcutter_and_DressmakersFather_Gift1]]
-<<elseif $currectAct eq "gift2">>
+<<elseif $currentAct eq "gift2">>
   [[Woofcutter_Gift2]]
-<<elseif $currectAct eq "gift3">>
+<<elseif $currentAct eq "gift3">>
   [[Woofcutter_Gift3]]
 <<endif>>
 ===
@@ -554,13 +554,13 @@ tags: DressmakersFather Main
 colorID: 0
 position: -1682,-1135
 ---
-<<if $currectAct eq "intro">>
+<<if $currentAct eq "intro">>
   [[DressmakersFather_Intro]]
-<<elseif $currectAct eq "gift1">>
+<<elseif $currentAct eq "gift1">>
   [[Woofcutter_and_DressmakersFather_Gift1]]
-<<elseif $currectAct eq "gift2">>
+<<elseif $currentAct eq "gift2">>
   [[DressmakersFather_Gift2]]
-<<elseif $currectAct eq "gift3">>
+<<elseif $currentAct eq "gift3">>
   [[DressmakersFather_Gift3]]
 <<endif>>
 ===
@@ -569,7 +569,7 @@ tags: LostBoys Main
 colorID: 0
 position: -1682,-905
 ---
-<<if $currectAct eq "intro">>
+<<if $currentAct eq "intro">>
   [[LostBoys_Intro]]
 << endif>>
 ===
@@ -599,15 +599,15 @@ tags: GiftBox
 colorID: 0
 position: -1237,68
 ---
-<<elseif $currectAct eq "gift1">>
-  [[GiftBox Gift1]]
-<<elseif $currectAct eq "gift2">>
-  [[GiftBox Gift2]]
-<<elseif $currectAct eq "gift3">>
-  [[GiftBox Gift3]]
+<<if $currentAct eq "gift1">>
+  [[GiftBox_Gift1]]
+<<elseif $currentAct eq "gift2">>
+  [[GiftBox_Gift2]]
+<<elseif $currentAct eq "gift3">>
+  [[GiftBox_Gift3]]
 <<endif>>
 ===
-title: GiftBox Gift1
+title: GiftBox_Gift1
 tags: 
 colorID: 0
 position: 957,-2047
@@ -619,7 +619,7 @@ Elder is now by sea woman
 
 << endif >>
 ===
-title: GiftBox Gift2
+title: GiftBox_Gift2
 tags: 
 colorID: 0
 position: 1745,-2073
@@ -631,7 +631,7 @@ Elder is now by sea woman
 
 << endif >>
 ===
-title: GiftBox Gift3
+title: GiftBox_Gift3
 tags: 
 colorID: 0
 position: 2493,-2091
@@ -643,35 +643,35 @@ Elder is now by sea woman
 
 << endif >>
 ===
-title: FlowerWoman Gift4
+title: FlowerWoman_Gift4
 tags: FlowerWoman Gift4
 colorID: 6
 position: 1236,-1113
 ---
 FlowerWoman:
 ===
-title: LostBoys Gift4
+title: LostBoys_Gift4
 tags: LostBoys Gift4
 colorID: 6
 position: 1190,-1318
 ---
 LostBoys:
 ===
-title: SeaWoman Gift4
+title: SeaWoman_Gift4
 tags: SeaWoman Intro
 colorID: 6
 position: 1176,-901
 ---
 SeaWoman:
 ===
-title: Elder Gift4
+title: Elder_Gift4
 tags: Elder Intro
 colorID: 6
 position: 1243,-689
 ---
 Elder:
 ===
-title: GiftBox Gift4
+title: GiftBox_Gift4
 tags: 
 colorID: 0
 position: 1604,-1003
@@ -683,35 +683,35 @@ Elder is now by sea woman
 
 << endif >>
 ===
-title: SeaWoman Gift5
+title: SeaWoman_Gift5
 tags: SeaWoman Intro
 colorID: 7
 position: 2030,-883
 ---
 SeaWoman:
 ===
-title: Elder Gift5
+title: Elder_Gift5
 tags: Elder Intro
 colorID: 7
 position: 2097,-671
 ---
 Elder:
 ===
-title: FlowerWoman Gift5
+title: FlowerWoman_Gift5
 tags: FlowerWoman Gift5
 colorID: 7
 position: 2090,-1095
 ---
 FlowerWoman:
 ===
-title: LostBoys Gift5
+title: LostBoys_Gift5
 tags: LostBoys Gift5
 colorID: 7
 position: 2044,-1300
 ---
 LostBoys:
 ===
-title: GiftBox Gift5
+title: GiftBox_Gift5
 tags: 
 colorID: 0
 position: 2410,-989
@@ -723,77 +723,77 @@ Elder is now by sea woman
 
 << endif >>
 ===
-title: Hunter Final
+title: Hunter_Final
 tags: Hunter Final
 colorID: 8
 position: 3439,-935
 ---
 Hunter:
 ===
-title: Godzilla Final
+title: Godzilla_Final
 tags: Godzilla Final
 colorID: 8
 position: 3368,-2158
 ---
 Godzilla:
 ===
-title: DressmakersFather Final
+title: DressmakersFather_Final
 tags: DressmakersFather Final
 colorID: 8
 position: 2996,-1311
 ---
 DressmakersFather:
 ===
-title: LostBoys Final
+title: LostBoys_Final
 tags: LostBoys Final
 colorID: 8
 position: 3206,-1313
 ---
 LostBoys:
 ===
-title: Dressmaker Final
+title: Dressmaker_Final
 tags: Dressmaker Final
 colorID: 8
 position: 3210,-1530
 ---
 Dressmaker:
 ===
-title: StephenTheDisaster Final
+title: StephenTheDisaster_Final
 tags: StephenTheDisaster Final
 colorID: 8
 position: 2996,-1532
 ---
 StephenTheDisaster:
 ===
-title: SeaWoman Final
+title: SeaWoman_Final
 tags: SeaWoman Final
 colorID: 8
 position: 3630,-1310
 ---
 SeaWoman:
 ===
-title: FlowerWoman Final
+title: FlowerWoman_Final
 tags: FlowerWoman Final
 colorID: 8
 position: 3421,-1310
 ---
 FlowerWoman:
 ===
-title: Shopkeep Final
+title: Shopkeep_Final
 tags: Shopkeep Final
 colorID: 8
 position: 3418,-1526
 ---
 Shopkeep:
 ===
-title: Elder Final
+title: Elder_Final
 tags: Elder Final
 colorID: 8
 position: 3362,-1892
 ---
 Elder:
 ===
-title: Woofcutter Final
+title: Woofcutter_Final
 tags: Woofcutter Final
 colorID: 8
 position: 3629,-1525
@@ -805,9 +805,9 @@ tags: GiftBox
 colorID: 0
 position: -681,72
 ---
-<<elseif $currectAct2 eq "gift4">>
-  [[GiftBox Gift4]]
-<<elseif $currectAct2 eq "gift5">>
-  [[GiftBox Gift5]]
+<<if $currentAct2 eq "gift4">>
+  [[GiftBox_Gift4]]
+<<elseif $currentAct2 eq "gift5">>
+  [[GiftBox_Gift5]]
 <<endif>>
 ===
