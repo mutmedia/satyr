@@ -43,10 +43,11 @@ namespace MutCommon.UnityAtoms.UI
       slider.value = CurrentValue.Value;
       slider.minValue = MinValue.Value;
       slider.maxValue = MaxValue.Value;
+      slider.onValueChanged.AddListener((f) => CurrentValue.SetValue(f));
       CurrentValue.SetChangedIfNull()?.Register(v =>
       {
         CurrentValueText.text = CurrentValue.Value.ToString(numberFormat);
-        slider.value = v;
+        slider.SetValueWithoutNotify(v);
       });
       MinValue.GetChanged()?.Register(v =>
       {

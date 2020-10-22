@@ -42,7 +42,7 @@ public class FirstPersonDrifter : MonoBehaviour
   private bool grounded = false;
   private CharacterController controller;
   private Transform myTransform;
-  private float speed;
+  private float speed => (enableRunning.Value && isRunning) ? runSpeed.Value : walkSpeed.Value;
   private RaycastHit hit;
   private float fallStartLevel;
   private bool falling;
@@ -61,7 +61,6 @@ public class FirstPersonDrifter : MonoBehaviour
   {
     controller = GetComponent<CharacterController>();
     myTransform = transform;
-    speed = walkSpeed.Value;
     rayDistance = controller.height * .5f + controller.radius;
     slideLimit = controller.slopeLimit - .1f;
     jumpTimer = antiBunnyHopFactor;
@@ -94,11 +93,6 @@ public class FirstPersonDrifter : MonoBehaviour
         falling = false;
         if (myTransform.position.y < fallStartLevel - fallingDamageThreshold)
           FallingDamageAlert(fallStartLevel - myTransform.position.y);
-      }
-
-      if (enableRunning.Value)
-      {
-        speed = isRunning ? runSpeed.Value : walkSpeed.Value;
       }
 
       // If sliding (and it's allowed), or if we're on an object tagged "Slide", get a vector pointing down the slope we're on
