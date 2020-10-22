@@ -96,17 +96,21 @@ Hunter: You seem like a strapping hero-type. I’ll come with you!
 
 *Hands ui appears, and hunter is in your hand*
 
-<< set $benchDone to "gift1">>
+//<< set $benchDone to "gift1">>
 ===
 title: Start
 tags: Start Intro
 colorID: 6
 position: -306,-2984
 ---
+<<if not $benchDone>>
 Elder: Hey you. You're finally awake. 
 Elder: Finally, the hero we need.
 Elder: You will defeat the monster that plagues us!!
 Elder: You're here!
+<<else>>
+Elder: We'll be arriving shortly...
+<<endif>>
 
 << set $benchDone to true>>
 ===

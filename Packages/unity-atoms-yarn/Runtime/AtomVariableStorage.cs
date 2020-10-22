@@ -123,7 +123,7 @@ namespace UnityAtomsYarn
     public override Yarn.Value GetValue(string variableName)
     {
       // If we don't have a variable with this name, return the null value
-      variableName = variableName.Substring(1).ToLower();
+      variableName = variableName.Substring(1);
       var variable = variables.Value.Get<AtomBaseVariable>(variableName);
       if (variable == null)
         return Yarn.Value.NULL;
