@@ -166,7 +166,7 @@ tags: Shopkeep Gift1
 colorID: 4
 position: 624,-2334
 ---
-<<if visited("Dressmaker Gift1")>>
+<<if visited("Dressmaker_Gift1")>>
 Shopkeep: Oh! Hey man how's the Godzilla hunt going?
 Shopkeep: Ohh yeah <i>that</i> dress?
 Shopkeep: It's ahhm.. I don't have it.
@@ -188,7 +188,7 @@ tags: Woofcutter DressmakersFather Gift1
 colorID: 4
 position: 565,-2113
 ---
-<<if visited("Shopkeep Gift1")>>
+<<if visited("Shopkeep_Gift1")>>
 Woofcutter: Hey come on, I left this wood outside your house this morning!!
 DressmakersFather: Not here.
 Woofcutter: I know it!! It was here.
@@ -234,7 +234,7 @@ tags: Woofcutter Gift2
 colorID: 3
 position: 1311,-2539
 ---
-<<if visited("DressmakersFather Gift2")>>
+<<if visited("DressmakersFather_Gift2")>>
 Woofcutter: Alright! All the chairs are here!
 Woofcutter: Oh! Uhh thanks for talking to the dressmaker for me.
 Woofcutter: I.. Yeah we'll talk in person later...
@@ -271,7 +271,7 @@ tags: Dressmaker Gift2
 colorID: 3
 position: 1376,-2323
 ---
-<<if visited("Woofcutter Gift2")>>
+<<if visited("Woofcutter_Gift2")>>
 Dressmaker: The woodcutter said what?
 Dressmaker: Do I like them? 
 Dressmaker: The chairs are fine??
@@ -294,12 +294,9 @@ Dressmaker: I'll see you later though! Bubye!
 title: DressmakersFather_Gift2
 tags: DressmakersFather Gift2
 colorID: 3
-position: 1320,-2114
+position: 1305,-2110
 ---
-*before dressmaker*
-
-
-<<if visited("Dressmaker Gift2")>>
+<<if visited("Dressmaker_Gift2")>>
 DressmakersFather: Hm.
 DressmakersFather: Yes, the chairs are in the back.
 DressmakersFather: My daughter is interested in the woodcutter.
@@ -350,7 +347,7 @@ tags: StephenTheDisaster Gift3
 colorID: 2
 position: 2135,-2299
 ---
-<<if visited("Shopkeep Gift3")>>
+<<if visited("Shopkeep_Gift3")>>
 StephenTheDisaster: Oh!! You got the shopkeeper to come over??
 StephenTheDisaster: Ohmygod he's wayyy out of my league??????
 StephenTheDisaster: I have to clean up!!
@@ -379,7 +376,7 @@ tags: Shopkeep Gift2
 colorID: 2
 position: 2082,-2083
 ---
-<<if visited("StephenTheDisaster Gift3")>>
+<<if visited("StephenTheDisaster_Gift3")>>
 Shopkeep: Hmm? Oh hey dude, what's up?
 Shopkeep: Yeah, I know Stephen, why?
 Shopkeep: Oh! He's lonely?? Doesn't he just sit in his hole all day?
@@ -641,7 +638,7 @@ colorID: 0
 position: 957,-2047
 ---
 << if $giftHolding eq ("Dress")>> 
-Elder is now by sea woman
+Current act is 2
 
 << set $currentAct to "gift2">>
 
@@ -653,7 +650,7 @@ colorID: 0
 position: 1745,-2073
 ---
 << if $giftHolding eq ("Chairs")>> 
-Elder is now by sea woman
+Current Act is 3
 
 << set $currentAct to "gift3">>
 
@@ -665,7 +662,7 @@ colorID: 0
 position: 2493,-2091
 ---
 << if $giftHolding eq ("Ring")>> 
-Elder is now by sea woman
+Current act is done, have you finished the other storyline? There are two.
 
 << set $currentAct to "done">>
 
@@ -674,30 +671,69 @@ Elder is now by sea woman
 title: FlowerWoman_Gift4
 tags: FlowerWoman Gift4
 colorID: 6
-position: 1236,-1113
+position: 1208,-1330
 ---
-FlowerWoman:
+<<if visited("SeaWoman_Gift4")>>
+FlowerWoman: Oh, has no one caught your eye?
+FlowerWoman: Do not worry my dear, I have your bouquet.
+FlowerWoman: Thank you for trying, anyways.
+<< else >> 
+FlowerWoman: Oh hello, dear. What do you need?
+FlowerWoman: Flowers? Well.. this bouquet was for someone I could love..
+FlowerWoman: But I could make you another, darling!
+FlowerWoman: Sadly... I do not have someone to love yet.
+FlowerWoman: Maybe...
+FlowerWoman: Dearie, while I am making this bouquet
+FlowerWoman: If it is not too much trouble..
+FlowerWoman: Will you please see if there is someone around who will love me?
+FlowerWoman: I do not usually leave this field, so I do not really know.
+FlowerWoman: Thank you my dear, I will see you soon.
+<< endif >>
 ===
 title: LostBoys_Gift4
 tags: LostBoys Gift4
 colorID: 6
-position: 1190,-1324
+position: 1202,-799
 ---
-LostBoys:
+LostBoys: Ohh haha why's that lady just pickin flowers?
+LostBoys: Haha are you here to pick flowers too?
+LostBoys: You nerd!!
 ===
 title: SeaWoman_Gift4
 tags: SeaWoman Intro
 colorID: 6
-position: 1176,-901
+position: 1323,-1113
 ---
-SeaWoman:
+SeaWoman: Ah-hah!! Our hero!!
+SeaWoman: Oh dear! Shells? I lost all of them in the sea when Godzilla arrived.
+SeaWoman: I'll need more time to get them all again!
+<<if visited("FlowerWoman_Gift4")>>
+SeaWoman: Someone to love??
+SeaWoman: Oh my, I'm much too old for you ha-hah!!
+SeaWoman: Maybe if you were a little older!
+<<  endif >>
 ===
 title: Elder_Gift4
 tags: Elder Intro
 colorID: 6
-position: 1243,-689
+position: 1105,-1110
 ---
-Elder:
+<<if visited("FlowerWoman_Gift4")>>
+Elder: Hm-mmm??
+Elder: Oh, no no I could never love the flower woman.
+Elder: She is like..... A sister to me!!
+Elder: Oh ho ho!! Imagine it!!
+Elder: No I am.. too close to anyone on this island to love them...
+Elder: H-ahh no.. I'll just accept that I am to be alone.
+Elder: Unless... no, that can't be why he's here...
+Elder: I'll see you later, good luck on your quest, hero.
+<< else >> 
+Elder: Hm-mm?? No do not mind me.
+Elder: I was just wondering...
+Elder: Why has this terrible Godzilla befallen us?
+Elder: Why is he here?
+Elder: It couldn't be because I.... No.. of course not.
+<< endif >>
 ===
 title: GiftBox_Gift4
 tags: 
@@ -705,7 +741,7 @@ colorID: 0
 position: 1604,-1003
 ---
 << if $giftHolding eq ("Bouquet")>> 
-Elder is now by sea woman
+Current act 2 is 5
 
 << set $currentAct2 to "gift5">>
 
@@ -742,10 +778,10 @@ LostBoys:
 title: GiftBox_Gift5
 tags: 
 colorID: 0
-position: 2410,-989
+position: 2413,-1016
 ---
 << if $giftHolding eq ("Shells")>> 
-Elder is now by sea woman
+Current act 2 is done, have you finished the other storyline? There are two.
 
 << set $currentAct2 to "done">>
 
