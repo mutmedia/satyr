@@ -480,14 +480,14 @@ position: -1685,-416
   [[SeaWoman_Gift5]]
 <<elseif $currentAct2 eq "final">>
   [[SeaWoman_Final]]
-<< endif>>
+<<endif>>
 ===
 title: FlowerWoman
 tags: FlowerWoman Main
 colorID: 0
 position: -1688,-672
 ---
-<<elseif $currentAct2 eq "intro">>
+<<if $currentAct2 eq "intro">>
   [[FlowerWoman_Intro]]
 <<elseif $currentAct2 eq "gift4">>
   [[FlowerWoman_Gift4]]
@@ -495,7 +495,7 @@ position: -1688,-672
   [[FlowerWoman_Gift5]]
 <<elseif $currentAct2 eq "final">>
   [[FlowerWoman_Final]]
-<< endif>>
+<<endif>>
 ===
 title: StephenTheDisaster
 tags: StephenTheDisaster Main
@@ -529,23 +529,6 @@ position: -1685,-1818
   [[Dressmaker_Gift_3]]
 <<elseif $currentAct eq "final">>
   [[Dressmaker_Final]]
-<<endif>>
-===
-title: Shopkeep
-tags: Shopkeep Main
-colorID: 0
-position: -1678,-1580
----
-<<if $currentAct eq "intro">>
-  [[Shopkeep_Intro]]
-<<elseif $currentAct eq "gift1">>
-  [[Shopkeep_Gift1]]
-<<elseif $currentAct eq "gift2">>
-  [[Shopkeep_Gift2]]
-<<elseif $currentAct eq "gift3">>
-  [[Shopkeep_Gift3]]
-<<if $currentAct eq "final">>
-  [[Shopkeep_Final]]
 <<endif>>
 ===
 title: Woofcutter
@@ -1011,4 +994,21 @@ Hunter: I'd still like to go as friends though.
 Hunter: We'll have a great time!!
 
 *end sequence where godzilla walks off into the sunset w the elder. Sillouheted ands reach out and clasp in the foreground.*
+===
+title: Shopkeep
+tags: Shopkeep Main
+colorID: 0
+position: -1686,-1593
+---
+<<if $currentAct eq "intro">>
+  [[Shopkeep_Intro]]
+<<elseif $currentAct eq "gift1">>
+  [[Shopkeep_Gift1]]
+<<elseif $currentAct eq "gift2">>
+  [[Shopkeep_Gift2]]
+<<elseif $currentAct eq "gift3">>
+  [[Shopkeep_Gift3]]
+<<elseif $currentAct eq "final">>
+  [[Shopkeep_Final]]
+<<endif>>
 ===
