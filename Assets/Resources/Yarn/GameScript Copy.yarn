@@ -96,21 +96,17 @@ Hunter: You seem like a strapping hero-type. I’ll come with you!
 
 *Hands ui appears, and hunter is in your hand*
 
-//<< set $benchDone to "gift1">>
+<< set $benchDone to "gift1">>
 ===
 title: Start
 tags: Start Intro
 colorID: 6
 position: -306,-2984
 ---
-<<if not $benchDone>>
 Elder: Hey you. You're finally awake. 
 Elder: Finally, the hero we need.
 Elder: You will defeat the monster that plagues us!!
 Elder: You're here!
-<<else>>
-Elder: We'll be arriving shortly...
-<<endif>>
 
 << set $benchDone to true>>
 ===
@@ -750,30 +746,59 @@ Current act 2 is 5
 title: SeaWoman_Gift5
 tags: SeaWoman Intro
 colorID: 7
-position: 2030,-883
+position: 2029,-1334
 ---
-SeaWoman:
+<<if visited("FlowerWoman_Gift5")>>
+SeaWoman: Oh!! Someone wants to love me??
+SeaWoman: I will go, immediately!! Take these shells!!
+*sea woman disappears, and goes to the flower woman's side. You have shells in your hand now*
+
+<< else >> 
+SeaWoman: Hmm-mm! Yeah I have some more shells now!
+SeaWoman: But I could get many more... if you find me someone to love!!
+SeaWoman: I know you mentioned it but... I am not interested in you!
+SeaWoman: I have been with my shells for so long, I do not know who could love me!
+SeaWoman: Please! You will have many many more shells if you do this!!
+SeaWoman: Goodbye and good luck, hero!!
+<< endif >>
 ===
 title: Elder_Gift5
 tags: Elder Intro
 colorID: 7
-position: 2097,-671
+position: 2148,-807
 ---
-Elder:
+Elder: Oh how I love to see my friends fall in love...
+Elder: Maybe someday, I will feel that love as well.
+Elder: Fare thee well, hero.
+Elder: Leave an old man to his sadness.
 ===
 title: FlowerWoman_Gift5
 tags: FlowerWoman Gift5
 colorID: 7
-position: 2090,-1095
+position: 2078,-1125
 ---
-FlowerWoman:
+<<if visited("SeaWoman_Gift5")>>
+FlowerWoman: ... yes dear?
+FlowerWoman: Oh, you know someone who may be interested in me?
+FlowerWoman: Hmm.. I cannot leave though. I must care for the flowers!! 
+FlowerWoman: Maybe you could.. bring them here? Thank you!
+FlowerWoman: I really appreciate it my dear.
+FlowerWoman: I will see you soon!
+<< endif >>
 ===
 title: LostBoys_Gift5
 tags: LostBoys Gift5
 colorID: 7
-position: 2044,-1300
+position: 1938,-803
 ---
-LostBoys:
+LostBoys: Hehehe that lady likes pickin flowers
+LostBoys: We only do cool stuff, like skateboards!!
+<<if visited("SeaWoman_Gift5")>>
+LostBoys: But... they said they would adopt us...
+LostBoys: Maybe.. we should end our nasty kid ways...
+LostBoys: We will become a gang of do gooders!!
+LostBoys: We'll be heroes, like you!!
+<< endif >>
 ===
 title: GiftBox_Gift5
 tags: 
