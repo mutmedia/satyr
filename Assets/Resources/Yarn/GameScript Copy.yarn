@@ -67,10 +67,10 @@ tags: LostBoys Intro
 colorID: 5
 position: -400,-1539
 ---
-LostBoys: One, two, three please look at me!
-LostBoys: With rhymes we speak, we are not meek!
-LostBoys: Godzilla go you, we know this true!!
-LostBoys: Come see us.... soon!
+LostBoys: Oh man a new nerd!! >:P
+LostBoys: Godzilla's really riling up everyone!!
+LostBoys: We're cooler than all the weirdos here.
+LostBoys: Gonna just keep skateboarding, loser!! >:3
 ===
 title: Woofcutter_Intro
 tags: Woofcutter Intro
@@ -93,20 +93,25 @@ position: -619,-973
 
 Hunter: Ah you’re trying to get godzilla too? I’ve been trying to get ‘im for weeks. 
 Hunter: You seem like a strapping hero-type. I’ll come with you!
-
-*Hands ui appears, and hunter is in your hand*
-
+<<set $showHandUI to true>>
+*hunter is in your hand*
 << set $benchDone to "gift1">>
 ===
 title: Start
 tags: Start Intro
 colorID: 6
-position: -306,-2984
+position: -329,-2803
 ---
 Elder: Hey you. You're finally awake. 
 Elder: Finally, the hero we need.
 Elder: You will defeat the monster that plagues us!!
-Elder: You're here!
+Elder: Godzilla he calls himself.
+Elder: Rudest man I ever met!!
+Elder: The island shakes with his footsteps!!
+Elder: He disrupts our peace!!
+Elder: Goodness knows why he's here at all...
+Elder: But as elder it is my job to solve the issue!
+Elder: And here you are!!
 
 << set $benchDone to true>>
 ===
@@ -454,12 +459,10 @@ position: -1684,-2524
 title: Hunter
 tags: Hunter Main
 colorID: 0
-position: -1683,-2295
+position: -1681,-2295
 ---
 <<if $currentAct eq "intro">>
   [[Hunter_Intro]]
-<<elseif $currentAct eq "final">>
-  [[Hunter_Final]]
 << else>> 
   [[Hunter_Bark_Dialogue]]
 << endif>>
@@ -691,9 +694,9 @@ tags: LostBoys Gift4
 colorID: 6
 position: 1202,-799
 ---
-LostBoys: Ohh haha why's that lady just pickin flowers?
+LostBoys: Ohh haha why's that lady just pickin flowers? >:P
 LostBoys: Haha are you here to pick flowers too?
-LostBoys: You nerd!!
+LostBoys: You nerd!! |:V
 ===
 title: SeaWoman_Gift4
 tags: SeaWoman Intro
@@ -791,13 +794,13 @@ tags: LostBoys Gift5
 colorID: 7
 position: 1938,-803
 ---
-LostBoys: Hehehe that lady likes pickin flowers
+LostBoys: Hehehe that lady likes pickin flowers >:)
 LostBoys: We only do cool stuff, like skateboards!!
 <<if visited("SeaWoman_Gift5")>>
-LostBoys: But... they said they would adopt us...
+LostBoys: But... they said they would adopt us... T.T
 LostBoys: Maybe.. we should end our nasty kid ways...
 LostBoys: We will become a gang of do gooders!!
-LostBoys: We'll be heroes, like you!!
+LostBoys: We'll be heroes, like you!! >:D
 << endif >>
 ===
 title: GiftBox_Gift5
@@ -815,79 +818,166 @@ Current act 2 is done, have you finished the other storyline? There are two.
 title: Hunter_Final
 tags: Hunter Final
 colorID: 8
-position: 3439,-935
+position: 3606,-1823
 ---
-Hunter:
+*hunter leaves your hand and is set active in front of you, where you are still facing the crowd, you do not have camera control rn*
+Hunter: I... I was so nervous that you loved Godzilla...
+Hunter: I didn't know how to tell you.... that I am really in love with you!!
+Hunter: Despite my confidence.. I am no hero, and I was never able to confront Godzilla the way you were.
+Hunter: You really saved everyone!!!
+Hunter: Would... Will you maybe.. go to the wedding.. as my date?
+[[Yes!!|HunterYes]]
+[[No|HunterNo]]
 ===
 title: Godzilla_Final
 tags: Godzilla Final
 colorID: 8
 position: 3368,-2158
 ---
-Godzilla:
+<<if visited("Elder_Final")>>
+Godzilla: Ah you brought him!!
+Godzilla: I knew it was you, shouting from this hilltop!!
+Godzilla: You, who asked for lifelong accompaniment!!
+Godzilla: Elder of this village!!!!!!
+Elder: .....
+Godzilla: I ask for your hand in marriage!!
+Godzilla: So that we can go off, and destroy capitalism!!!
+Godzilla: Together!!!!!
+Elder: !! Oh-ho!! Uh-humm!!
+Elder: Y-yes I do believe I can.. I could do that!!
+Godzilla: Excellent!! We will be married at once!!
+<<set $showHandUI to false>>
+*camera spins and all the townspeople are in a crowd behind you*
+Yay!!! Hooray!! Yay!!
+  [[Hunter_Final]]
+<< else >> 
+Godzilla: Ah yessss, all of the gifts!!
+Godzilla: Thank you little hero.
+Godzilla: Now I only need one more thing!!
+Godzilla: I need.... the hand of the one who summoned me!!
+Godzilla: I will give you no hints, fool!!!!!!
+Godzilla: Have fun, bubye!!!
+<< endif >>
 ===
 title: DressmakersFather_Final
 tags: DressmakersFather Final
 colorID: 8
-position: 2996,-1311
+position: 3046,-1074
 ---
-DressmakersFather:
+DressmakersFather: Hm.
+DressmakersFather: You've done good.
+DressmakersFather: Thank you, hero.
 ===
 title: LostBoys_Final
 tags: LostBoys Final
 colorID: 8
-position: 3206,-1313
+position: 3256,-1076
 ---
-LostBoys:
+LostBoys: Heeehehee
+LostBoys: We didn't have any moms
+LostBoys: Now we have two >:3
+LostBoys: We're the coolest kids here
+LostBoys: They only let us skateboard with helmets on though.
+LostBoys: Rude as hell
+LostBoys: But they're cool I guess. ¯\_(ツ)_/¯
 ===
 title: Dressmaker_Final
 tags: Dressmaker Final
 colorID: 8
-position: 3210,-1530
+position: 3260,-1293
 ---
-Dressmaker:
+Dressmaker: Hmm, yes? 
+Dressmaker: Oh, hello hero!
+Dressmaker: I have been doing very well, thank you.
+Dressmaker: The woodcutter and I.. make a smashing pair, don't we?
+Dressmaker: Mmm... thank you hero! I will see you later!
 ===
 title: StephenTheDisaster_Final
 tags: StephenTheDisaster Final
 colorID: 8
-position: 2996,-1532
+position: 3046,-1295
 ---
-StephenTheDisaster:
+StephenTheDisaster: O-oh yes I am now glad you're in my hole.
+StephenTheDisaster: We're friends now!!
+StephenTheDisaster: Th-thank you for setting me up with the shopkeeper!!!
+StephenTheDisaster: We're doing really really well...
+StephenTheDisaster: I've been working on.. confidence and loving myself..
+StephenTheDisaster: Trying not to push people away!!
+StephenTheDisaster: Okay okay I know you have things to do, goodbye friend!!
 ===
 title: SeaWoman_Final
 tags: SeaWoman Final
 colorID: 8
-position: 3630,-1310
+position: 3680,-1073
 ---
-SeaWoman:
+SeaWoman: Oh, hero! You have made me very happy!!!
+SeaWoman: Thank you!! You may have as many shells as you desire!!
+SeaWoman: Oh? Who summoned Godzilla? Hmm-mm I don't know!
+SeaWoman: Maybe ask the elder? 
+SeaWoman: I will see you later, hero!
 ===
 title: FlowerWoman_Final
 tags: FlowerWoman Final
 colorID: 8
-position: 3421,-1310
+position: 3471,-1073
 ---
-FlowerWoman:
+FlowerWoman: Oh, hello my dear hero.
+FlowerWoman: We are getting on just fine!
+FlowerWoman: Thank you for all your help.
+FlowerWoman: I am no longer bothered by Godzilla.
+FlowerWoman: Oh you need to know who summoned him?
+FlowerWoman: Hmm... I am not sure. The elder brought you here right, dearie?
+FlowerWoman: Maybe he will know.
 ===
 title: Shopkeep_Final
 tags: Shopkeep Final
 colorID: 8
-position: 3418,-1526
+position: 3468,-1289
 ---
-Shopkeep:
+Shopkeep: Hey brah, how's it going?
+Shopkeep: Oh yeah Stephen and I are doing just fine!
+Shopkeep: Great dude, he's coming out of his shell, I love to see it!
+Shopkeep: Oh, you want to know who summoned Godzilla?
+Shopkeep: Hmm.. I really don't know.. everyone here wants things to stay peaceful..
+Shopkeep: I couldn't tell you!
+Shopkeep: Maybe the elder knows, he's very wise!
+Shopkeep: Later dude!
 ===
 title: Elder_Final
 tags: Elder Final
 colorID: 8
-position: 3362,-1892
+position: 3239,-1931
 ---
-Elder:
+Elder: Oh ho!! What! What makes you believe I summoned Godzilla??
+Elder: Ah- ho! ... ho?
+Elder: Ah.. alright.
+Elder: Yes. I summoned Godzilla. But not on purpose!!!
+Elder: I love all those who live here!!
+Elder: I was just.. a little lonely that's all...
+Elder: Wait what is it you need?
+Elder: My HAND???
+Elder: Nonono I will give you no such thing!!
+Elder: But... alright I will come with you.
+Elder: I started this, I will see its end. No matter what it takes.
+Elder: For my friends.
+
+<< set $giftHolding to "Elder">>
+*set wedding active*
 ===
 title: Woofcutter_Final
 tags: Woofcutter Final
 colorID: 8
-position: 3629,-1525
+position: 3679,-1288
 ---
-Woofcutter:
+Woofcutter: Hm? O-oh yes the dressmaker and I are doing very well, thank you!
+Woofcutter: We are taking things slowly, but she is.. a very beautiful person!!
+Woofcutter: I like her very much!!
+Woofcutter: Oh, who summoned Godzilla??
+Woofcutter: I couldn't say I have been........ preoccupied!
+Woofcutter: Maybe.. the elder would know?
+Woofcutter: But I have no clue.
+Woofcutter: He usually solves things.
+Woofcutter: Goodbye hero!!
 ===
 title: GiftBox_2
 tags: GiftBox
@@ -899,4 +989,26 @@ position: -681,72
 <<elseif $currentAct2 eq "gift5">>
   [[GiftBox_Gift5]]
 <<endif>>
+===
+title: HunterYes
+tags: 
+colorID: 8
+position: 4012,-1605
+---
+Hunter: R-really?
+Hunter: I'm so glad we feel the same!!
+Hunter: We'll have a great time!!
+
+*end sequence where godzilla walks off into the sunset w the elder. Sillouheted faces reach out and smooch in the foreground.*
+===
+title: HunterNo
+tags: 
+colorID: 8
+position: 4004,-2042
+---
+Hunter: Oh, that's alright.
+Hunter: I'd still like to go as friends though.
+Hunter: We'll have a great time!!
+
+*end sequence where godzilla walks off into the sunset w the elder. Sillouheted ands reach out and clasp in the foreground.*
 ===
