@@ -1,0 +1,813 @@
+title: Dressmaker_Intro
+tags: Dressmaker Intro
+colorID: 5
+position: -396,-1756
+---
+Dressmaker: Hmm you seem a bit wimpy to be our saviour.
+Dressmaker: I don't know why the elder would pick you.
+Dressmaker: Ah, well. As long as I do not die.
+Dressmaker: Have fun defeating Godzilla! He's up there.
+===
+title: DressmakersFather_Intro
+tags: DressmakersFather Intro
+colorID: 5
+position: -621,-1537
+---
+DressmakersFather: Hmf.
+DressmakersFather: Hmm...
+DressmakersFather: Good enough.
+DressmakersFather: Godzilla go you.
+===
+title: StephenTheDisaster_Intro
+tags: StephenTheDisaster Intro
+colorID: 5
+position: -620,-1756
+---
+StephenTheDisaster: Hmmm what are you doing in my house??
+StephenTheDisaster: Ahhhmmmm please go away???
+StephenTheDisaster: Godzilla? Never heard of him!!
+===
+title: SeaWoman_Intro
+tags: SeaWoman Intro
+colorID: 5
+position: -324,-2040
+---
+*as you pass the old sea woman, she says this*
+
+SeaWoman: Oh you are here to save us? What joy! The monster has plagued our little community for so long. 
+SeaWoman: Go! Go! Up there is where Godzilla is!! 
+SeaWoman: Me? I’ll be here. 
+SeaWoman: The sea calms my old, weathered nerves.
+===
+title: FlowerWoman_Intro
+tags: FlowerWoman Intro
+colorID: 5
+position: -179,-1537
+---
+FlowerWoman: Oh! Hmm... I do hope that nasty Godzilla goes soon.
+FlowerWoman: That is why you're here, yes?
+FlowerWoman: My bouquets are not nearly as lovely with him looming...
+===
+title: Shopkeep_Intro
+tags: Shopkeep Intro
+colorID: 5
+position: -182,-1753
+---
+Shopkeep: Oh!! Hello hello!! Our saviour!!
+Shopkeep: Do you have any money?
+Shopkeep: To give me!!
+Shopkeep: OH! For my wares!
+Shopkeep: No?
+Shopkeep: Hm.
+Shopkeep: Okay, I will still tell everyone that the great hero who slayed Godzilla came to my store.
+Shopkeep: Have fun, buddy!!
+===
+title: LostBoys_Intro
+tags: LostBoys Intro
+colorID: 5
+position: -400,-1539
+---
+LostBoys: One, two, three please look at me!
+LostBoys: With rhymes we speak, we are not meek!
+LostBoys: Godzilla go you, we know this true!!
+LostBoys: Come see us.... soon!
+===
+title: Woofcutter_Intro
+tags: Woofcutter Intro
+colorID: 5
+position: 32,-1654
+---
+Woofcutter: woof woof!
+Woofcutter: A merry woodcutter I be!!
+Woofcutter: Is it Godzilla you seek?
+Woofcutter: The hunter was after him.
+Woofcutter: I wonder what became of them?
+Woofcutter: Must get back to my wood! Chop chop!!
+===
+title: Hunter_Intro
+tags: Hunter Intro
+colorID: 5
+position: -619,-973
+---
+*As you walk down the ridge from godzilla, hunter is at the bottom. Dialogue is forced when you get close*
+
+Hunter: Ah you’re trying to get godzilla too? I’ve been trying to get ‘im for weeks. 
+Hunter: You seem like a strapping hero-type. I’ll come with you!
+
+*Hands ui appears, and hunter is in your hand*
+
+<< set $benchDone to "gift1">>
+===
+title: Start
+tags: Start Intro
+colorID: 6
+position: -306,-2984
+---
+Elder: Hey you. You're finally awake. 
+Elder: Finally, the hero we need.
+Elder: You will defeat the monster that plagues us!!
+Elder: You're here!
+
+<< set $benchDone to true>>
+===
+title: Godzilla_Intro
+tags: Godzilla Intro
+colorID: 5
+position: -618,-1197
+---
+*after staring at the lava for a while, a shadow appears and this text begins*
+
+Godzilla: Why are you looking in my bath?
+...
+...
+...
+Godzilla: Jeez, you’re a quiet thing, aren’t ya? I heard talk of a hero, is that you?
+Godzilla: Hmm.. well just in case you are, here’s my shopping list.
+Godzilla: You can do that right? 
+Godzilla: Great, thanks.
+
+*shopping list ui instructions set active, hunter set active*
+===
+title: Dressmaker_Gift_1
+tags: Dressmaker Gift1
+colorID: 4
+position: 553,-2549
+---
+Dressmaker: Uhmm hello?
+Dressmaker: Weren't you supposed to be killing Godzilla?
+Dressmaker: He needs.. What?? A dress???!
+Dressmaker: I... well I haven't made any dresses recently!!
+Dressmaker: Because of Godzilla! He totally wrecks my vibe.
+Dressmaker: Of course I don't have any more dresses,
+Dressmaker: My last is with the shopkeep duh.
+Dressmaker: For selling! Not for.. anything else.
+Dressmaker: It's not like I like them or anything haha!!
+Dressmaker: ...
+Dressmaker: Uhh you can go get it from them. The shopkeep I mean.
+Dressmaker: ...
+Dressmaker: Bye!
+===
+title: StephenTheDisaster_Gift1
+tags: StephenTheDisaster Gift1
+colorID: 4
+position: 576,-1774
+---
+StephenTheDisaster: Hey you are in my house!
+StephenTheDisaster: Please leave!
+StephenTheDisaster: I'm trying to........ plan.
+StephenTheDisaster: Goodbye weirdo!!
+===
+title: Shopkeep_Gift1
+tags: Shopkeep Gift1
+colorID: 4
+position: 624,-2334
+---
+<<if visited("Dressmaker Gift1")>>
+Shopkeep: Oh! Hey man how's the Godzilla hunt going?
+Shopkeep: Ohh yeah <i>that</i> dress?
+Shopkeep: It's ahhm.. I don't have it.
+Shopkeep: I don't have it because I tore it.
+Shopkeep: Whoops haha!
+Shopkeep: I put it on the windowsill of the dressmaker's dad's place.
+Shopkeep: He's a fix-em-up kinda guy y'know?
+Shopkeep: The dressmaker? She's a great pal! 
+Shopkeep: I tend to break stuff! She's super patient.
+Shopkeep: Haha alright later, brah.
+<<else>>
+Shopkeep: Oh! Hey man how's the Godzilla hunt going?
+Shopkeep: A dress? Nah brah I don't know anything about that!!
+Shopkeep: Haha later man.
+<<endif>>
+===
+title: Woofcutter_and_DressmakersFather_Gift1
+tags: Woofcutter DressmakersFather Gift1
+colorID: 4
+position: 565,-2113
+---
+<<if visited("Shopkeep Gift1")>>
+Woofcutter: Hey come on, I left this wood outside your house this morning!!
+DressmakersFather: Not here.
+Woofcutter: I know it!! It was here.
+DressmakersFather: Hmm... Yes hero?
+Woofcutter: I was talking to you!!
+DressmakersFather: The dress is here, yes.
+Woofcutter: It's not a dress it's wood!! It's wood I know it is!
+DressmakersFather: Open the box, hero.
+
+*dress appears in hand*
+
+Woofcutter: I- Oh.
+DressmakersFather: Hmm...
+Woofcutter: Welp! Must get back to my wood! Chop chop!!
+<< else >> 
+Woofcutter: Hey come on, I left this wood outside your house this morning!!
+DressmakersFather: Not here.
+Woofcutter: Mrrrghh...
+<< endif >>
+===
+title: Stage_Direction
+tags: Stage
+colorID: 0
+position: 523,-1656
+---
+Elder is now by sea woman
+===
+title: StephenTheDisaster_Gift2
+tags: StephenTheDisaster Gift2
+colorID: 3
+position: 1238,-1754
+---
+StephenTheDisaster: Hmmm!!
+StephenTheDisaster: Please leave my home.
+StephenTheDisaster: I know that the dressmaker is not enamored with the shopkeep anymore....
+StephenTheDisaster: But now she is interested in the woodcutter!!!
+StephenTheDisaster: Hhghgg!!
+StephenTheDisaster: I am sadly alone in my hole!!
+StephenTheDisaster: Goodbye!!!
+===
+title: Woofcutter_Gift2
+tags: Woofcutter Gift2
+colorID: 3
+position: 1311,-2539
+---
+<<if visited("DressmakersFather Gift2")>>
+Woofcutter: Alright! All the chairs are here!
+Woofcutter: Oh! Uhh thanks for talking to the dressmaker for me.
+Woofcutter: I.. Yeah we'll talk in person later...
+Woofcutter: Uhh you can just take these now.
+Woofcutter: Bye!!
+<< else >>
+Woofcutter: Oh hey, how's it going?
+Woofcutter: Did Godzilla like that dress?
+Woofcutter: Chairs?? Yeah I make chairs but uhh..
+Woofcutter: They're kind of all over.
+Woofcutter: I can grab them but..
+Woofcutter: O-oh while you're waiting maybe ask uhhhm...
+Woofcutter: If the dressmaker likes them???
+Woofcutter: Or uhh.. if she likes me??
+Woofcutter: I-if that's fine!! If you have time, I mean.
+Woofcutter: I know you're busy and all that.
+Woofcutter: .... Please don't tell her I asked.
+Woofcutter: Uhh bye I guess.
+<< endif >>
+===
+title: Shopkeep_Gift2
+tags: Shopkeep Gift2
+colorID: 3
+position: 1448,-1759
+---
+Shopkeep: Oh hey brah!
+Shopkeep: I hear y'all heroes are setting people up!
+Shopkeep: Maybe you'll find me my soul mate!!
+Shopkeep: Haha I'm just kidding, have fun with your hero-ing!
+Shopkeep: Later, man!
+===
+title: Dressmaker_Gift_2
+tags: Dressmaker Gift2
+colorID: 3
+position: 1376,-2323
+---
+<<if visited("Woofcutter Gift2")>>
+Dressmaker: The woodcutter said what?
+Dressmaker: Do I like them? 
+Dressmaker: The chairs are fine??
+Dressmaker: O-oh!! <i>Them</i>!! Uh-mmmm!!
+Dressmaker: I.. They're good yeahh.
+Dressmaker: I'm having some trouble getting over the shopkeep but....
+Dressmaker: I think the woodcutter may be... better.
+Dressmaker: Ahhm! It's fine I'll uhh
+Dressmaker: I'll talk to the woodcutter later
+Dressmaker: But uhh if you're still waiting for the chairs uuhh
+Dressmaker: My dad is waiting for me but I'm.. busy
+Dressmaker: Will you let him know I'll be late?
+Dressmaker: Bubye!!
+<< else >>
+Dressmaker: Oh, chairs? 
+Dressmaker: Uhmm I think the woodcutter might know more about that.
+Dressmaker: I'll see you later though! Bubye!
+<< endif >>
+===
+title: Stage_Direction_2
+tags: Stage
+colorID: 0
+position: 1582,-2124
+---
+Elder is now by sea woman
+===
+title: DressmakersFather_Gift2
+tags: DressmakersFather Gift2
+colorID: 3
+position: 1320,-2114
+---
+*before dressmaker*
+
+
+<<if visited("Dressmaker Gift2")>>
+DressmakersFather: Hm.
+DressmakersFather: Yes, the chairs are in the back.
+DressmakersFather: My daughter is interested in the woodcutter.
+DressmakersFather: Hmm.
+DressmakersFather: Good. They've got a good head on their shoulders.
+DressmakersFather: Goodbye.
+<< else >>
+DressmakersFather: Hm. 
+DressmakersFather: Chairs?
+DressmakersFather: Maybe ask the woodcutter, or my daughter.
+DressmakersFather: Goodbye.
+<< endif >>
+===
+title: Hunter_Bark_Dialogue
+tags: Hunter Bark
+colorID: 8
+position: 1403,-2857
+---
+*dialogue appears at random times, in order, as you wander*
+
+*before any gifts gotten*
+Hunter: Hey I'm glad you're helping me out I uhmm.. think we'll be great buds.
+Hunter: Uhh so this shopping list is going to defeat Godzilla? Alright, I guess.
+
+*after dress*
+Hunter: Hey it was real nice of you to try to clue in the shopkeep to the dressmaker's interests but they ah.. swing the other way??
+Hunter: Maybe the woodcutter would be a better match for the dressmaker, but then who would the shopkeep be with?
+Hunter: We're doing a good thing, yeah? We'll just help out where we can!!
+
+*after chairs
+===
+title: Godzilla_2
+tags: Godzilla Intro
+colorID: 8
+position: 1411,-3110
+---
+*before dress gotten*
+
+Godzilla: Hey you got that dress yet?
+Godzilla: They won't let me go to the store here.
+Godzilla: They just scream and say I'm going to "crush their place of business".
+
+*after dress gotten*
+Godzilla: Oh sweet you got the dress thanks. Don't forget about the other stuff!
+===
+title: Stage_Direction_3
+tags: Stage
+colorID: 0
+position: 2639,-2161
+---
+Elder is now by sea woman
+===
+title: StephenTheDisaster_Gift3
+tags: StephenTheDisaster Gift3
+colorID: 2
+position: 2135,-2299
+---
+<<if visited("Shopkeep Gift3")>>
+StephenTheDisaster: Oh!! You got the shopkeeper to come over??
+StephenTheDisaster: Ohmygod he's wayyy out of my league??????
+StephenTheDisaster: I have to clean up!!
+StephenTheDisaster: Ahhhhhghgh!!
+StephenTheDisaster: Take this ring I don't know what I'd do with it anyway.
+StephenTheDisaster: Go away go away, I gotta clean!!!
+<< else >> 
+StephenTheDisaster: You are back in my home!!
+StephenTheDisaster: I cannot believe this!!
+StephenTheDisaster: The dressmaker?
+StephenTheDisaster: Yeah I like her, but I didn't realize I was a bother.
+StephenTheDisaster: I'll leave her alone from now on.
+StephenTheDisaster: I'm just lonely, you see?
+StephenTheDisaster: No one around here.. really talks to me.
+StephenTheDisaster: I know maybe I should leave my hole every once in a while.
+StephenTheDisaster: Hey, if you come across someone who's.. interested in being friends...
+StephenTheDisaster: Would you mind... maybe asking.... if they'd come say hi?
+StephenTheDisaster: Uhh...
+StephenTheDisaster: Yeah.
+StephenTheDisaster: Umm bye...
+StephenTheDisaster: Thanks.... friend.
+<< endif >>
+===
+title: Shopkeep_Gift3
+tags: Shopkeep Gift2
+colorID: 2
+position: 2082,-2083
+---
+<<if visited("StephenTheDisaster Gift3")>>
+Shopkeep: Hmm? Oh hey dude, what's up?
+Shopkeep: Yeah, I know Stephen, why?
+Shopkeep: Oh! He's lonely?? Doesn't he just sit in his hole all day?
+Shopkeep: Yeah, I can go say hi!
+Shopkeep: Maybe he'll feel better making other friends then.
+Shopkeep: I don't want him to be lonely y'know?
+Shopkeep: Let him know I'll come over after work!
+<< else >>
+Shopkeep: Hey brah, you need anything for hero-ing?
+Shopkeep: No? That's fine man, I like hanging out with you!
+Shopkeep: I'm working right now, though, you wanna come back later?
+Shopkeep: See ya!
+<< endif >>
+===
+title: DressmakersFather_Gift3
+tags: DressmakersFather Gift3
+colorID: 2
+position: 1980,-1757
+---
+DressmakersFather: Hm. 
+DressmakersFather: Yes Stephen is a bother but he is a good kid.
+DressmakersFather: He just needs to love himself.
+DressmakersFather: That is all.
+===
+title: Dressmaker_Gift_3
+tags: Dressmaker Gift3
+colorID: 2
+position: 2078,-2507
+---
+Dressmaker: A ring? I don't have any of those sorry, I have hooves.
+Dressmaker: Maybe someone else will have one??
+Dressmaker: I've got my hooves full with.. Stephen.
+Dressmaker: He just will not leave me alone!
+Dressmaker: Now that the woodcutter and I are.. seeing each other..
+Dressmaker: I do not want Stephen bothering me!!
+Dressmaker: You're a hero, you go chat with him!
+Dressmaker: Thanks bye!!
+===
+title: Woofcutter_Gift3
+tags: Woofcutter Gift3
+colorID: 2
+position: 2192,-1756
+---
+Woofcutter: Uhh yeah the dressmaker and I have been hanging out.
+Woofcutter: It's nice!!
+Woofcutter: She's very cool...
+Woofcutter: I think she likes me.
+Woofcutter: But yeah, Stephen likes to try to.. third wheel.
+Woofcutter: He'll figure it out though! He's doing his best, I think.
+===
+title: Elder
+tags: Elder Main
+colorID: 0
+position: -1685,-2771
+---
+<<if $currentAct eq "intro">>
+  [[Elder_Intro]]
+<< endif>>
+===
+title: Godzilla
+tags: Godzilla Main
+colorID: 0
+position: -1684,-2524
+---
+<<if $currentAct eq "intro">>
+  [[Godzilla_Intro]]
+<<else>>
+  [[ Godzilla_2 ]]
+<< endif>>
+===
+title: Hunter
+tags: Hunter Main
+colorID: 0
+position: -1683,-2295
+---
+<<if $currentAct eq "intro">>
+  [[Hunter_Intro]]
+<< else>> 
+  [[Hunter_Bark_Dialogue]]
+<< endif>>
+===
+title: SeaWoman
+tags: SeaWoman Main
+colorID: 0
+position: -1685,-410
+---
+<<if $currentAct eq "intro">>
+  [[SeaWoman_Intro]]
+<< endif>>
+===
+title: FlowerWoman
+tags: FlowerWoman Main
+colorID: 0
+position: -1688,-672
+---
+<<if $currentAct eq "intro">>
+  [[FlowerWoman_Intro]]
+<< endif>>
+===
+title: StephenTheDisaster
+tags: StephenTheDisaster Main
+colorID: 0
+position: -1678,-2055
+---
+<<if $currentAct eq "intro">>
+  [[StephenTheDisaster_Intro]]
+<<elseif $currentAct eq "gift1">>
+  [[StephenTheDisaster_Gift1]]
+<<elseif $currentAct eq "gift2">>
+  [[StephenTheDisaster_Gift2]]
+<<elseif $currentAct eq "gift3">>
+  [[StephenTheDisaster_Gift3]]
+<<endif>>
+===
+title: Dressmaker
+tags: Dressmaker Main
+colorID: 0
+position: -1685,-1818
+---
+<<if $currentAct eq "intro">>
+  [[Dressmaker_Intro]]
+<<elseif $currentAct eq "gift1">>
+  [[Dressmaker_Gift_1]]
+<<elseif $currentAct eq "gift2">>
+  [[Dressmaker_Gift_2]]
+<<elseif $currentAct eq "gift3">>
+  [[Dressmaker_Gift_3]]
+<<endif>>
+===
+title: Shopkeep
+tags: Shopkeep Main
+colorID: 0
+position: -1678,-1580
+---
+<<if $currentAct eq "intro">>
+  [[Shopkeep_Intro]]
+<<elseif $currentAct eq "gift1">>
+  [[Shopkeep_Gift1]]
+<<elseif $currentAct eq "gift2">>
+  [[Shopkeep_Gift2]]
+<<elseif $currentAct eq "gift3">>
+  [[Shopkeep_Gift3]]
+<<endif>>
+===
+title: Woofcutter
+tags: Woofcutter Main
+colorID: 0
+position: -1672,-1360
+---
+<<if $currentAct eq "intro">>
+  [[Woofcutter_Intro]]
+<<elseif $currentAct eq "gift1">>
+  [[Woofcutter_and_DressmakersFather_Gift1]]
+<<elseif $currentAct eq "gift2">>
+  [[Woofcutter_Gift2]]
+<<elseif $currentAct eq "gift3">>
+  [[Woofcutter_Gift3]]
+<<endif>>
+===
+title: DressmakersFather
+tags: DressmakersFather Main
+colorID: 0
+position: -1682,-1135
+---
+<<if $currentAct eq "intro">>
+  [[DressmakersFather_Intro]]
+<<elseif $currentAct eq "gift1">>
+  [[Woofcutter_and_DressmakersFather_Gift1]]
+<<elseif $currentAct eq "gift2">>
+  [[DressmakersFather_Gift2]]
+<<elseif $currentAct eq "gift3">>
+  [[DressmakersFather_Gift3]]
+<<endif>>
+===
+title: LostBoys
+tags: LostBoys Main
+colorID: 0
+position: -1682,-905
+---
+<<if $currentAct eq "intro">>
+  [[LostBoys_Intro]]
+<< endif>>
+===
+title: Elder_Intro
+tags: Elder Intro
+colorID: 5
+position: -323,-2302
+---
+Elder: Don't worry about me! Just parking the bench!
+===
+title: List
+tags: 
+colorID: 8
+position: 1722,-3013
+---
+<< if $listActive eq true >>
+Dress
+Chairs
+Ring
+Flowers
+Shells
+You need {$giftsNeeded} more gifts.
+<< endif >>
+===
+title: GiftBox
+tags: GiftBox
+colorID: 0
+position: -1237,68
+---
+<<if $currentAct eq "gift1">>
+  [[GiftBox_Gift1]]
+<<elseif $currentAct eq "gift2">>
+  [[GiftBox_Gift2]]
+<<elseif $currentAct eq "gift3">>
+  [[GiftBox_Gift3]]
+<<endif>>
+===
+title: GiftBox_Gift1
+tags: 
+colorID: 0
+position: 957,-2047
+---
+<< if $giftHolding eq ("Dress")>> 
+Elder is now by sea woman
+
+<< set $currentAct to "gift2">>
+
+<< endif >>
+===
+title: GiftBox_Gift2
+tags: 
+colorID: 0
+position: 1745,-2073
+---
+<< if $giftHolding eq ("Chairs")>> 
+Elder is now by sea woman
+
+<< set $currentAct to "gift3">>
+
+<< endif >>
+===
+title: GiftBox_Gift3
+tags: 
+colorID: 0
+position: 2493,-2091
+---
+<< if $giftHolding eq ("Ring")>> 
+Elder is now by sea woman
+
+<< set $currentAct to "done">>
+
+<< endif >>
+===
+title: FlowerWoman_Gift4
+tags: FlowerWoman Gift4
+colorID: 6
+position: 1236,-1113
+---
+FlowerWoman:
+===
+title: LostBoys_Gift4
+tags: LostBoys Gift4
+colorID: 6
+position: 1190,-1318
+---
+LostBoys:
+===
+title: SeaWoman_Gift4
+tags: SeaWoman Intro
+colorID: 6
+position: 1176,-901
+---
+SeaWoman:
+===
+title: Elder_Gift4
+tags: Elder Intro
+colorID: 6
+position: 1243,-689
+---
+Elder:
+===
+title: GiftBox_Gift4
+tags: 
+colorID: 0
+position: 1604,-1003
+---
+<< if $giftHolding eq ("Bouquet")>> 
+Elder is now by sea woman
+
+<< set $currentAct2 to "gift5">>
+
+<< endif >>
+===
+title: SeaWoman_Gift5
+tags: SeaWoman Intro
+colorID: 7
+position: 2030,-883
+---
+SeaWoman:
+===
+title: Elder_Gift5
+tags: Elder Intro
+colorID: 7
+position: 2097,-671
+---
+Elder:
+===
+title: FlowerWoman_Gift5
+tags: FlowerWoman Gift5
+colorID: 7
+position: 2090,-1095
+---
+FlowerWoman:
+===
+title: LostBoys_Gift5
+tags: LostBoys Gift5
+colorID: 7
+position: 2044,-1300
+---
+LostBoys:
+===
+title: GiftBox_Gift5
+tags: 
+colorID: 0
+position: 2410,-989
+---
+<< if $giftHolding eq ("Shells")>> 
+Elder is now by sea woman
+
+<< set $currentAct2 to "done">>
+
+<< endif >>
+===
+title: Hunter_Final
+tags: Hunter Final
+colorID: 8
+position: 3439,-935
+---
+Hunter:
+===
+title: Godzilla_Final
+tags: Godzilla Final
+colorID: 8
+position: 3368,-2158
+---
+Godzilla:
+===
+title: DressmakersFather_Final
+tags: DressmakersFather Final
+colorID: 8
+position: 2996,-1311
+---
+DressmakersFather:
+===
+title: LostBoys_Final
+tags: LostBoys Final
+colorID: 8
+position: 3206,-1313
+---
+LostBoys:
+===
+title: Dressmaker_Final
+tags: Dressmaker Final
+colorID: 8
+position: 3210,-1530
+---
+Dressmaker:
+===
+title: StephenTheDisaster_Final
+tags: StephenTheDisaster Final
+colorID: 8
+position: 2996,-1532
+---
+StephenTheDisaster:
+===
+title: SeaWoman_Final
+tags: SeaWoman Final
+colorID: 8
+position: 3630,-1310
+---
+SeaWoman:
+===
+title: FlowerWoman_Final
+tags: FlowerWoman Final
+colorID: 8
+position: 3421,-1310
+---
+FlowerWoman:
+===
+title: Shopkeep_Final
+tags: Shopkeep Final
+colorID: 8
+position: 3418,-1526
+---
+Shopkeep:
+===
+title: Elder_Final
+tags: Elder Final
+colorID: 8
+position: 3362,-1892
+---
+Elder:
+===
+title: Woofcutter_Final
+tags: Woofcutter Final
+colorID: 8
+position: 3629,-1525
+---
+Woofcutter:
+===
+title: GiftBox_2
+tags: GiftBox
+colorID: 0
+position: -681,72
+---
+<<if $currentAct2 eq "gift4">>
+  [[GiftBox_Gift4]]
+<<elseif $currentAct2 eq "gift5">>
+  [[GiftBox_Gift5]]
+<<endif>>
+===
