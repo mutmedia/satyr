@@ -18,10 +18,15 @@ public class ChangePortraitWithString : MonoBehaviour
   public void SetPortraitByString(string text)
   {
     var newSprite = sprites.FirstOrDefault(sprite => sprite.name.ToLowerInvariant().Contains(text.ToLowerInvariant()));
+    img.sprite = newSprite ?? emptySprite;
     if (newSprite == null)
     {
       Debug.LogWarning($"Could not find {text} portrait");
+      img.enabled = false;
     }
-    img.sprite = newSprite ?? emptySprite;
+    else
+    {
+      img.enabled = true;
+    }
   }
 }
