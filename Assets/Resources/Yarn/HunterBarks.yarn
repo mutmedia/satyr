@@ -1,0 +1,212 @@
+title: Hunter_Bark_Dialogue
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+*dialogue appears at random times, in order, as you wander*
+<<if not visited("Hunter_Bark_0")>>
+  [[Hunter_Bark_0]]
+<<endif>>
+<<elseif not visited("Hunter_Bark_1")>>
+  [[Hunter_Bark_1]]
+<<endif>>
+<<elseif not visited("Hunter_Bark_2")>>
+  [[Hunter_Bark_2]]
+<<endif>>
+<< if $giftCount gte 1>> 
+  <<elseif not visited("Hunter_Bark_3")>>
+    [[Hunter_Bark_3]]
+  <<endif>>
+  <<elseif not visited("Hunter_Bark_4")>>
+    [[Hunter_Bark_4]]
+  <<endif>>
+  <<elseif not visited("Hunter_Bark_5")>>
+    [[Hunter_Bark_5]]
+  <<endif>>
+  <<elseif not visited("Hunter_Bark_6")>>
+    [[Hunter_Bark_6]]
+  <<endif>>
+<<endif>>
+<< if $giftCount gte 2>> 
+  <<elseif not visited("Hunter_Bark_7")>>
+    [[Hunter_Bark_7]]
+  <<endif>>
+  <<elseif not visited("Hunter_Bark_8")>>
+    [[Hunter_Bark_8]]
+  <<endif>>
+  <<elseif not visited("Hunter_Bark_9")>>
+    [[Hunter_Bark_9]]
+  <<endif>>
+<<endif>>
+<< if $giftCount gte 3>> 
+  <<elseif not visited("Hunter_Bark_10")>>
+    [[Hunter_Bark_10]]
+  <<endif>>
+  <<elseif not visited("Hunter_Bark_11")>>
+    [[Hunter_Bark_11]]
+  <<endif>>
+  <<elseif not visited("Hunter_Bark_12")>>
+    [[Hunter_Bark_12]]
+  <<endif>>
+<<endif>>
+<< if $giftCount gte 4>> 
+  <<elseif not visited("Hunter_Bark_13")>>
+    [[Hunter_Bark_13]]
+  <<endif>>
+  <<elseif not visited("Hunter_Bark_14")>>
+    [[Hunter_Bark_14]]
+  <<endif>>
+  <<elseif not visited("Hunter_Bark_15")>>
+    [[Hunter_Bark_15]]
+  <<endif>>
+<<endif>>
+<< if $giftCount gte 5>> 
+  <<elseif not visited("Hunter_Bark_16")>>
+    [[Hunter_Bark_16]]
+  <<endif>>
+  <<elseif not visited("Hunter_Bark_17")>>
+    [[Hunter_Bark_17]]
+  <<endif>>
+  <<elseif not visited("Hunter_Bark_18")>>
+    [[Hunter_Bark_18]]
+  <<endif>>
+<<endif>>
+===
+title: Hunter_Bark_0
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: Hey I'm glad you're helping me out I uhmm.. think we'll be great buds.
+===
+title: Hunter_Bark_1
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: Uhh so this shopping list is going to defeat Godzilla? Alright, I guess.
+===
+title: Hunter_Bark_2
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: Oh uhm w-wow you're kinda strong.. Thanks for giving me a lift...
+===
+title: Hunter_Bark_3
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: Hey it was real nice of you to try to clue in the shopkeep to the dressmaker's interests but they ah.. swing the other way??
+===
+title: Hunter_Bark_4
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: Maybe the woodcutter would be a better match for the dressmaker, but then who would the shopkeep be with?
+===
+title: Hunter_Bark_5
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: We're doing a good thing, yeah? We'll just help out where we can!!
+===
+title: Hunter_Bark_6
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: H-hey are you.. single? Oh I mean if you're comfortable answering!! Uh! Nevermind!!
+===
+title: Hunter_Bark_7
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: Oh since we're uhh setting up all these other people uhh what's your ideal date?
+===
+title: Hunter_Bark_8
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: Uhh don't worry about that uhh-mmm!!
+===
+title: Hunter_Bark_9
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: It's all okay I'm okay
+===
+title: Hunter_Bark_10
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: Oh you're looking really good today! 
+===
+title: Hunter_Bark_11
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: O-oh uhh you don't have to say it back,,,,
+===
+title: Hunter_Bark_12
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: I just think you're real nice!
+===
+title: Hunter_Bark_13
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: It's... so good you're doing this for other people...
+===
+title: Hunter_Bark_14
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: Are you doing all this... for Godzilla??
+===
+title: Hunter_Bark_15
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: What... what do you think of me..?? .... Do you think of me...?
+===
+title: Hunter_Bark_16
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: Hm... I am nervous that you like Godzilla more than me?
+===
+title: Hunter_Bark_17
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: Maybe that's silly..
+===
+title: Hunter_Bark_18
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---
+Hunter: But maybe I am just a silly hunter.. I cannot even defeat Godzilla on my own...
+===
+title: Hunter_Bark_19
+tags: Hunter Bark
+colorID: 8
+position: 1421,-2862
+---

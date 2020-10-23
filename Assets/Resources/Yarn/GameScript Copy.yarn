@@ -327,23 +327,29 @@ Hunter: Hey it was real nice of you to try to clue in the shopkeep to the dressm
 Hunter: Maybe the woodcutter would be a better match for the dressmaker, but then who would the shopkeep be with?
 Hunter: We're doing a good thing, yeah? We'll just help out where we can!!
 Hunter: H-hey are you.. single? Oh I mean if you're comfortable answering!! Uh! Nevermind!!
+<<endif>>
 << if $giftCount gte 2>> 
 Hunter: Oh since we're uhh setting up all these other people uhh what's your ideal date?
 Hunter: Uhh don't worry about that uhh-mmm!!
 Hunter: It's all okay I'm okay
+<<endif>>
 << if $giftCount gte 3>> 
 Hunter: Oh you're looking really good today! 
 Hunter: O-oh uhh you don't have to say it back,,,,
 Hunter: I just think you're real nice!
+<<endif>>
 << if $giftCount gte 4>> 
 Hunter: It's... so good you're doing this for other people...
 Hunter: Are you doing all this... for Godzilla??
 Hunter: What... what do you think of me..?? .... Do you think of me...?
+<<endif>>
 << if $giftCount gte 5>> 
 Hunter: Hm... I am nervous that you like Godzilla more than me?
 Hunter: Maybe that's silly..
 Hunter: But maybe I am just a silly hunter.. I cannot even defeat Godzilla on my own...
 <<endif>>
+
+<<set $hunterBark to $hunterBark + 1>>
 ===
 title: Godzilla_2
 tags: Godzilla Intro
