@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0fdbbdbe4268c4d729a51bde5e681e8c, type: 3}
-  m_Name: giftHolding
+  m_Name: rightHand
   m_EditorClassIdentifier: 
   _developerDescription: 
   _id: 
   _value: intro
   _changed: {fileID: 0}
   _changedWithHistory: {fileID: 0}
-  _triggerChangedOnOnEnable: 0
+  _triggerChangedOnOnEnable: 1
   _triggerChangedWithHistoryOnOnEnable: 0
   _oldValue: intro
-  _initialValue: intro
+  _initialValue: empty
   _preChangeTransformers: []
