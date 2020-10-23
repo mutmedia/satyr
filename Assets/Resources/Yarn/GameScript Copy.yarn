@@ -102,6 +102,7 @@ tags: Start Intro
 colorID: 6
 position: -329,-2803
 ---
+<< sest $giftCount to 0>> 
 Elder: Hey you. You're finally awake. 
 Elder: Finally, the hero we need.
 Elder: You will defeat the monster that plagues us!!
@@ -314,34 +315,61 @@ DressmakersFather: Goodbye.
 title: Hunter_Bark_Dialogue
 tags: Hunter Bark
 colorID: 8
-position: 1403,-2857
+position: 1421,-2862
 ---
 *dialogue appears at random times, in order, as you wander*
 
-*before any gifts gotten*
 Hunter: Hey I'm glad you're helping me out I uhmm.. think we'll be great buds.
 Hunter: Uhh so this shopping list is going to defeat Godzilla? Alright, I guess.
-
-*after dress*
+Hunter: Oh uhm w-wow you're kinda strong.. Thanks for giving me a lift...
+<< if $giftCount gte 1>> 
 Hunter: Hey it was real nice of you to try to clue in the shopkeep to the dressmaker's interests but they ah.. swing the other way??
 Hunter: Maybe the woodcutter would be a better match for the dressmaker, but then who would the shopkeep be with?
 Hunter: We're doing a good thing, yeah? We'll just help out where we can!!
-
-*after chairs
+Hunter: H-hey are you.. single? Oh I mean if you're comfortable answering!! Uh! Nevermind!!
+<< if $giftCount gte 2>> 
+Hunter: Oh since we're uhh setting up all these other people uhh what's your ideal date?
+Hunter: Uhh don't worry about that uhh-mmm!!
+Hunter: It's all okay I'm okay
+<< if $giftCount gte 3>> 
+Hunter: Oh you're looking really good today! 
+Hunter: O-oh uhh you don't have to say it back,,,,
+Hunter: I just think you're real nice!
+<< if $giftCount gte 4>> 
+Hunter: It's... so good you're doing this for other people...
+Hunter: Are you doing all this... for Godzilla??
+Hunter: What... what do you think of me..?? .... Do you think of me...?
+<< if $giftCount gte 5>> 
+Hunter: Hm... I am nervous that you like Godzilla more than me?
+Hunter: Maybe that's silly..
+Hunter: But maybe I am just a silly hunter.. I cannot even defeat Godzilla on my own...
+<<endif>>
 ===
 title: Godzilla_2
 tags: Godzilla Intro
 colorID: 8
-position: 1411,-3110
+position: 1413,-3110
 ---
-*before dress gotten*
-
-Godzilla: Hey you got that dress yet?
-Godzilla: They won't let me go to the store here.
-Godzilla: They just scream and say I'm going to "crush their place of business".
-
-*after dress gotten*
+<< if $giftCount eq 0>> 
+Godzilla: You have not gotten any gifts yet!!
+Godzilla: Go get them!!
+Godzilla: Don't forget to put them in the mail box, so I can get them!!
+<< endif >>
+<<if visited("GiftBox_Gift1")>>
 Godzilla: Oh sweet you got the dress thanks. Don't forget about the other stuff!
+<< endif >>
+<<if visited("GiftBox_Gift2")>>
+Godzilla: You got the chairs!! Enough seating. Yes.
+<< endif >>
+<<if visited("GiftBox_Gift3")>>
+Godzilla: Oh, the ring, yes that is the most important one, I'm so glad to have it.
+<< endif >>
+<<if visited("GiftBox_Gift4")>>
+Godzilla: Ah the flowers! Perfect.
+<< endif >>
+<<if visited("GiftBox_Gift5")>>
+Godzilla: Ohh the shells! Yes this is incredible.
+<< endif >>
 ===
 title: StephenTheDisaster_Gift3
 tags: StephenTheDisaster Gift3
@@ -622,7 +650,10 @@ position: 957,-2047
 << if $giftHolding eq ("Dress")>> 
 Current act is 2
 
+<< set $giftCount to ($giftCount +1)>> 
+
 << set $currentAct to "gift2">>
+
 
 << endif >>
 ===
@@ -634,7 +665,10 @@ position: 1745,-2073
 << if $giftHolding eq ("Chairs")>> 
 Current Act is 3
 
+<< set $giftCount to ($giftCount +1)>> 
+
 << set $currentAct to "gift3">>
+
 
 << endif >>
 ===
@@ -645,6 +679,7 @@ position: 2493,-2091
 ---
 << if $giftHolding eq ("Ring")>> 
 Current act is done, have you finished the other storyline? There are two.
+<< set $giftCount to ($giftCount +1)>> 
 
 << set $currentAct to "done">>
 
@@ -724,6 +759,7 @@ position: 1604,-1003
 ---
 << if $giftHolding eq ("Bouquet")>> 
 Current act 2 is 5
+<< set $giftCount to ($giftCount +1)>> 
 
 << set $currentAct2 to "gift5">>
 
@@ -732,7 +768,7 @@ Current act 2 is 5
 title: SeaWoman_Gift5
 tags: SeaWoman Intro
 colorID: 7
-position: 2029,-1334
+position: 2085,-1340
 ---
 <<if visited("FlowerWoman_Gift5")>>
 SeaWoman: Oh!! Someone wants to love me??
@@ -793,6 +829,8 @@ position: 2413,-1016
 ---
 << if $giftHolding eq ("Shells")>> 
 Current act 2 is done, have you finished the other storyline? There are two.
+
+<< set $giftCount to ($giftCount +1)>> 
 
 << set $currentAct2 to "done">>
 
