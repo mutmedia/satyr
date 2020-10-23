@@ -9,12 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d1d60487ae3c4028a8888c56931abc7, type: 3}
-  m_Name: GiveJumpHeightBuff
+  m_Script: {fileID: 11500000, guid: 04d35e2eb934747da9d77a3af62bb8ca, type: 3}
+  m_Name: godzillaIntroOver
   m_EditorClassIdentifier: 
-  _developerDescription: 
-  Cleared: {fileID: 0}
-  _startCleared: 0
-  Added: {fileID: 0}
-  Removed: {fileID: 0}
-  list: []
+  _developerDescription: 'shopping list ui instructions set active
+
+    hunter set
+    active'
+  _replayBufferSize: 1

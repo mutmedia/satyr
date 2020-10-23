@@ -28,7 +28,8 @@ public class ChangeSpriteWithString : MonoBehaviour
     var newSprite = sprites.FirstOrDefault(sprite => sprite.name.ToLowerInvariant().Contains(text.ToLowerInvariant()));
     if (newSprite == null)
     {
-      Debug.LogWarning($"Could not find {text} portrait");
+      var resourcesLog = GetFromResources ? $" in Resources/{PathInResources}" : "";
+      Debug.LogWarning($"Could not find {text} sprite{resourcesLog}.");
       img.enabled = false;
     }
     else

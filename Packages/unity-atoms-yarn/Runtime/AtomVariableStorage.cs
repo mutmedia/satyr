@@ -24,10 +24,10 @@ namespace UnityAtomsYarn
       var loadedVariables = Resources.LoadAll<AtomBaseVariable>(variablesPath);
       foreach (var v in loadedVariables)
       {
-        var existing = variables.Value.Get<AtomBaseVariable>(v.name.ToLower());
+        var existing = variables.Value.Get<AtomBaseVariable>(v.name);
         if (existing == null)
         {
-          variables.Value.Add(v.name.ToLower(), v);
+          variables.Value.Add(v.name, v);
         }
         else
         {
@@ -126,7 +126,10 @@ namespace UnityAtomsYarn
       variableName = variableName.Substring(1);
       var variable = variables.Value.Get<AtomBaseVariable>(variableName);
       if (variable == null)
+      {
+        Debug.LogWarning($"No variable named {variableName}");
         return Yarn.Value.NULL;
+      }
 
       return new Yarn.Value(variable.BaseValue);
     }

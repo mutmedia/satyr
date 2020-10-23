@@ -12,7 +12,7 @@ namespace MutCommon
 
     [SerializeField] private float maxDistance = 1000;
 
-    private RaycastTarget currentTarget;
+    [SerializeField] private RaycastTarget currentTarget;
 
     private void OnValidate()
     {
@@ -41,6 +41,7 @@ namespace MutCommon
           currentTarget.OnCollisionStay.Invoke();
         }
       }
+
 
       if (!acquiredTarget && currentTarget != null)
       {
