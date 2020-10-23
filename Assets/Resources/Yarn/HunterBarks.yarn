@@ -6,67 +6,49 @@ position: 1421,-2862
 *dialogue appears at random times, in order, as you wander*
 <<if not visited("Hunter_Bark_0")>>
   [[Hunter_Bark_0]]
-<<endif>>
 <<elseif not visited("Hunter_Bark_1")>>
   [[Hunter_Bark_1]]
-<<endif>>
 <<elseif not visited("Hunter_Bark_2")>>
   [[Hunter_Bark_2]]
-<<endif>>
-<< if $giftCount gte 1>> 
-  <<elseif not visited("Hunter_Bark_3")>>
+<<elseif $giftCount gte 1>> 
+  <<if not visited("Hunter_Bark_3")>>
     [[Hunter_Bark_3]]
-  <<endif>>
   <<elseif not visited("Hunter_Bark_4")>>
     [[Hunter_Bark_4]]
-  <<endif>>
   <<elseif not visited("Hunter_Bark_5")>>
     [[Hunter_Bark_5]]
-  <<endif>>
   <<elseif not visited("Hunter_Bark_6")>>
     [[Hunter_Bark_6]]
   <<endif>>
-<<endif>>
-<< if $giftCount gte 2>> 
-  <<elseif not visited("Hunter_Bark_7")>>
+<<elseif $giftCount gte 2>> 
+  <<if not visited("Hunter_Bark_7")>>
     [[Hunter_Bark_7]]
-  <<endif>>
   <<elseif not visited("Hunter_Bark_8")>>
     [[Hunter_Bark_8]]
-  <<endif>>
   <<elseif not visited("Hunter_Bark_9")>>
     [[Hunter_Bark_9]]
   <<endif>>
-<<endif>>
-<< if $giftCount gte 3>> 
-  <<elseif not visited("Hunter_Bark_10")>>
+<<elseif $giftCount gte 3>> 
+  <<if not visited("Hunter_Bark_10")>>
     [[Hunter_Bark_10]]
-  <<endif>>
   <<elseif not visited("Hunter_Bark_11")>>
     [[Hunter_Bark_11]]
-  <<endif>>
   <<elseif not visited("Hunter_Bark_12")>>
     [[Hunter_Bark_12]]
   <<endif>>
-<<endif>>
-<< if $giftCount gte 4>> 
-  <<elseif not visited("Hunter_Bark_13")>>
+<<elseif $giftCount gte 4>> 
+  <<if not visited("Hunter_Bark_13")>>
     [[Hunter_Bark_13]]
-  <<endif>>
   <<elseif not visited("Hunter_Bark_14")>>
     [[Hunter_Bark_14]]
-  <<endif>>
   <<elseif not visited("Hunter_Bark_15")>>
     [[Hunter_Bark_15]]
   <<endif>>
-<<endif>>
-<< if $giftCount gte 5>> 
-  <<elseif not visited("Hunter_Bark_16")>>
+<<elseif $giftCount gte 5>> 
+  <<if not visited("Hunter_Bark_16")>>
     [[Hunter_Bark_16]]
-  <<endif>>
   <<elseif not visited("Hunter_Bark_17")>>
     [[Hunter_Bark_17]]
-  <<endif>>
   <<elseif not visited("Hunter_Bark_18")>>
     [[Hunter_Bark_18]]
   <<endif>>
@@ -210,3 +192,4 @@ tags: Hunter Bark
 colorID: 8
 position: 1421,-2862
 ---
+===

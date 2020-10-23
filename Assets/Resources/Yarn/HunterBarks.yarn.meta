@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: 3b8d4df6d7dc95d4ba1c684bbdaaa9e2
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - HunterBarks-Hunter_Bark_Dialogue-0
+  - HunterBarks-Hunter_Bark_0-1
+  - HunterBarks-Hunter_Bark_1-2
+  - HunterBarks-Hunter_Bark_2-3
+  - HunterBarks-Hunter_Bark_3-4
+  - HunterBarks-Hunter_Bark_4-5
+  - HunterBarks-Hunter_Bark_5-6
+  - HunterBarks-Hunter_Bark_6-7
+  - HunterBarks-Hunter_Bark_7-8
+  - HunterBarks-Hunter_Bark_8-9
+  - HunterBarks-Hunter_Bark_9-10
+  - HunterBarks-Hunter_Bark_10-11
+  - HunterBarks-Hunter_Bark_11-12
+  - HunterBarks-Hunter_Bark_12-13
+  - HunterBarks-Hunter_Bark_13-14
+  - HunterBarks-Hunter_Bark_14-15
+  - HunterBarks-Hunter_Bark_15-16
+  - HunterBarks-Hunter_Bark_16-17
+  - HunterBarks-Hunter_Bark_17-18
+  - HunterBarks-Hunter_Bark_18-19
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: "Error on line 10 at position 3:\nno viable alternative
+    at input '<<elseif '\r\n<<elseif not visited(\"Hunter_Bark_1\")>>\r\r\n  ^^^^^^^"
+  baseLanguage: {fileID: 7128917941130120860, guid: 3b8d4df6d7dc95d4ba1c684bbdaaa9e2,
+    type: 3}
+  localizations: []
