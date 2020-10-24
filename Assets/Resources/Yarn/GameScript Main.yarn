@@ -98,22 +98,26 @@ Hunter: You seem like a strapping hero-type. I’ll come with you!
 <<set $currentAct to "gift1">>
 <<set $currentAct2 to "gift4">>
 ===
-title: Start
-tags: Start Intro
+title: Elder_Driving
+tags: Elder Start Intro
 colorID: 6
 position: -329,-2803
 ---
-Elder: Hey you. You're finally awake. 
-Elder: Finally, the hero we need.
-Elder: You will defeat the monster that plagues us!!
-Elder: Godzilla he calls himself.
-Elder: Rudest man I ever met!!
-Elder: The island shakes with his footsteps!!
-Elder: He disrupts our peace!!
-Elder: Goodness knows why he's here at all...
-Elder: But as elder it is my job to solve the issue!
-Elder: And here you are!!
-<< set $benchDone to true>>
+<<if not visited("Elder_Driving")>>
+  Elder: Hey you. You're finally awake. 
+  Elder: Finally, the hero we need.
+  Elder: You will defeat the monster that plagues us!!
+  Elder: Godzilla he calls himself.
+  Elder: Rudest man I ever met!!
+  Elder: The island shakes with his footsteps!!
+  Elder: He disrupts our peace!!
+  Elder: Goodness knows why he's here at all...
+  Elder: But as elder it is my job to solve the issue!
+  Elder: And here you are!!
+<<else>>
+  Elder: We'll be arriving shortly.
+  Elder: Enjoy the view and relax while you can!
+<<endif>>
 ===
 title: Godzilla_Intro
 tags: Godzilla Intro
@@ -240,7 +244,7 @@ Woofcutter: Alright! All the chairs are here!
 Woofcutter: Oh! Uhh thanks for talking to the dressmaker for me.
 Woofcutter: I.. Yeah we'll talk in person later...
 Woofcutter: Uhh you can just take these now.
-<<event giveItem chairs>>
+<<event giveItem chair>>
 Woofcutter: Bye!!
 << else >>
 Woofcutter: Oh hey, how's it going?
@@ -429,15 +433,19 @@ tags: Elder Main
 colorID: 0
 position: -1685,-2771
 ---
-<<if $currentAct eq "intro">>
-  [[Elder_Intro]]
-<<elseif $currentAct2 eq "gift4">>
-  [[Elder_Gift4]]
-<<elseif $currentAct2 eq "gift5">>
-  [[Elder_Gift5]]
-<<elseif $currentAct2 eq "final" and $currentAct eq "final">>
-  [[Elder_Final]]
-<< endif>>
+<<if not $picnicTableParked>>
+    [[Elder_Driving]]
+<<else>>
+  <<if $currentAct eq "intro">>
+    [[Elder_Intro]]
+  <<elseif $currentAct2 eq "gift4">>
+    [[Elder_Gift4]]
+  <<elseif $currentAct2 eq "gift5">>
+    [[Elder_Gift5]]
+  <<elseif $currentAct2 eq "final" and $currentAct eq "final">>
+    [[Elder_Final]]
+  <<endif>>
+<<endif>>
 ===
 title: Godzilla
 tags: Godzilla Main
@@ -648,7 +656,7 @@ position: 1745,-2073
 << if $lastTakenItem eq ("chair")>> 
   GOT THE CHAIR!!
   << set $giftCount to ($giftCount+1)>> 
-  << set $currentAct to "gift2">>
+  << set $currentAct to "gift3">>
   << set $gotChair to true>>
 << else>>
   Hunter: I wonder where we could find chairs around here...
