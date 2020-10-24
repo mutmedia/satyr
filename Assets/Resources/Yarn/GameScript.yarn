@@ -128,7 +128,7 @@ Godzilla: Great, thanks.
 
 *shopping list ui instructions set active, hunter set active*
 ===
-title: Dressmaker_Gift_1
+title: Dressmaker_Gift1
 tags: Dressmaker Gift1
 colorID: 4
 position: 553,-2549
@@ -262,7 +262,7 @@ Shopkeep: Maybe you'll find me my soul mate!!
 Shopkeep: Haha I'm just kidding, have fun with your hero-ing!
 Shopkeep: Later, man!
 ===
-title: Dressmaker_Gift_2
+title: Dressmaker_Gift2
 tags: Dressmaker Gift2
 colorID: 3
 position: 1376,-2323
@@ -414,7 +414,7 @@ DressmakersFather: Yes Stephen is a bother but he is a good kid.
 DressmakersFather: He just needs to love himself.
 DressmakersFather: That is all.
 ===
-title: Dressmaker_Gift_3
+title: Dressmaker_Gift3
 tags: Dressmaker Gift3
 colorID: 2
 position: 2078,-2507
@@ -512,11 +512,11 @@ position: -1685,-1818
 <<if $currentAct eq "intro">>
   [[Dressmaker_Intro]]
 <<elseif $currentAct eq "gift1">>
-  [[Dressmaker_Gift_1]]
+  [[Dressmaker_Gift1]]
 <<elseif $currentAct eq "gift2">>
-  [[Dressmaker_Gift_2]]
+  [[Dressmaker_Gift2]]
 <<elseif $currentAct eq "gift3">>
-  [[Dressmaker_Gift_3]]
+  [[Dressmaker_Gift3]]
 <<endif>>
 ===
 title: Shopkeep
