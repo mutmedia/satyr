@@ -458,6 +458,7 @@ position: -1684,-2524
 
 << event takeItem elder>>
 <<if $lastTakenItem eq "elder">>
+  << set $lastTakenItem to "empty">> 
   [[Godzilla_Final]]
 <<else>>
   [[ Godzilla_2 ]]
@@ -639,6 +640,7 @@ position: 957,-2047
 ---
 <<event takeItem dress>>
 << if $lastTakenItem eq ("dress")>> 
+  << set $lastTakenItem to "empty">> 
   GOT THE DRESS!!
   << set $giftCount to ($giftCount+1)>> 
   << set $currentAct to "gift2">>
@@ -654,6 +656,7 @@ position: 1745,-2073
 ---
 <<event takeItem chair>>
 << if $lastTakenItem eq ("chair")>> 
+  << set $lastTakenItem to "empty">> 
   GOT THE CHAIR!!
   << set $giftCount to ($giftCount+1)>> 
   << set $currentAct to "gift3">>
@@ -669,6 +672,7 @@ position: 2493,-2091
 ---
 <<event takeItem ring>>
 << if $lastTakenItem eq ("ring")>> 
+  << set $lastTakenItem to "empty">> 
   GOT THE RING!!
   << set $giftCount to ($giftCount+1)>> 
   << set $currentAct to "gift3">>
@@ -684,6 +688,7 @@ position: 1604,-1003
 ---
 <<event takeItem bouquet>>
 << if $lastTakenItem eq ("bouquet")>> 
+  << set $lastTakenItem to "empty">> 
   GOT THE BOUQUET!!
   << set $giftCount to ($giftCount+1)>> 
   << set $currentAct2 to "gift5">>
@@ -699,6 +704,7 @@ position: 2413,-1016
 ---
 <<event takeItem shells>>
 << if $lastTakenItem eq ("shells")>> 
+  << set $lastTakenItem to "empty">> 
   GOT THE SHELLS!!
   << set $giftCount to ($giftCount+1)>> 
   << set $currentAct2 to "final">>
