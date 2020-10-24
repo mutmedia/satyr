@@ -15,44 +15,8 @@ MonoBehaviour:
   _developerDescription: 
   _id: 
   _value:
-    _serializedKeys:
-    - _usage: 0
-      _value: potatoes
-      _constant: {fileID: 0}
-      _variable: {fileID: 0}
-      _variableInstancer: {fileID: 0}
-    - _usage: 0
-      _value: currentact
-      _constant: {fileID: 0}
-      _variable: {fileID: 0}
-      _variableInstancer: {fileID: 0}
-    - _usage: 0
-      _value: currectact
-      _constant: {fileID: 0}
-      _variable: {fileID: 0}
-      _variableInstancer: {fileID: 0}
-    - _usage: 0
-      _value: showhandui
-      _constant: {fileID: 0}
-      _variable: {fileID: 0}
-      _variableInstancer: {fileID: 0}
-    - _usage: 0
-      _value: currentact2
-      _constant: {fileID: 0}
-      _variable: {fileID: 0}
-      _variableInstancer: {fileID: 0}
-    - _usage: 0
-      _value: giftholding
-      _constant: {fileID: 0}
-      _variable: {fileID: 0}
-      _variableInstancer: {fileID: 0}
-    _serializedValues:
-    - {fileID: 11400000, guid: 613d2a36f592b9448818402b175c308b, type: 2}
-    - {fileID: 11400000, guid: 4c44c49d22dcb0847a270cb5c8a11605, type: 2}
-    - {fileID: 11400000, guid: 4c44c49d22dcb0847a270cb5c8a11605, type: 2}
-    - {fileID: 11400000, guid: a8aa920de70c01b4fa55385ee54a3a1b, type: 2}
-    - {fileID: 11400000, guid: 3a932d027995a5941a2a32b98b37cd30, type: 2}
-    - {fileID: 11400000, guid: f7380fc350f91ef4b87dcb6c03eac2b7, type: 2}
+    _serializedKeys: []
+    _serializedValues: []
     _duplicateKeyIndices: 
   _added: {fileID: 0}
   _removed: {fileID: 0}

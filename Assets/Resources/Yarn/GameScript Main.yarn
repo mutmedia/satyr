@@ -311,45 +311,6 @@ DressmakersFather: Maybe ask the woodcutter, or my daughter.
 DressmakersFather: Goodbye.
 << endif >>
 ===
-title: Hunter_Bark_Dialogue
-tags: Hunter Bark
-colorID: 8
-position: 1421,-2862
----
-*dialogue appears at random times, in order, as you wander*
-
-Hunter: Hey I'm glad you're helping me out I uhmm.. think we'll be great buds.
-Hunter: Uhh so this shopping list is going to defeat Godzilla? Alright, I guess.
-Hunter: Oh uhm w-wow you're kinda strong.. Thanks for giving me a lift...
-<< if $giftCount gte 1>> 
-Hunter: Hey it was real nice of you to try to clue in the shopkeep to the dressmaker's interests but they ah.. swing the other way??
-Hunter: Maybe the woodcutter would be a better match for the dressmaker, but then who would the shopkeep be with?
-Hunter: We're doing a good thing, yeah? We'll just help out where we can!!
-Hunter: H-hey are you.. single? Oh I mean if you're comfortable answering!! Uh! Nevermind!!
-<<endif>>
-<< if $giftCount gte 2>> 
-Hunter: Oh since we're uhh setting up all these other people uhh what's your ideal date?
-Hunter: Uhh don't worry about that uhh-mmm!!
-Hunter: It's all okay I'm okay
-<<endif>>
-<< if $giftCount gte 3>> 
-Hunter: Oh you're looking really good today! 
-Hunter: O-oh uhh you don't have to say it back,,,,
-Hunter: I just think you're real nice!
-<<endif>>
-<< if $giftCount gte 4>> 
-Hunter: It's... so good you're doing this for other people...
-Hunter: Are you doing all this... for Godzilla??
-Hunter: What... what do you think of me..?? .... Do you think of me...?
-<<endif>>
-<< if $giftCount gte 5>> 
-Hunter: Hm... I am nervous that you like Godzilla more than me?
-Hunter: Maybe that's silly..
-Hunter: But maybe I am just a silly hunter.. I cannot even defeat Godzilla on my own...
-<<endif>>
-
-<<set $hunterBark to $hunterBark + 1>>
-===
 title: Godzilla_2
 tags: Godzilla Intro
 colorID: 8
@@ -640,26 +601,26 @@ colorID: 0
 position: -1237,68
 ---
 <<if $currentAct eq "gift1">>
-  [[GiftBox_Gift1]]
+  [[GiftBox_GiftDress]]
 <<elseif $currentAct eq "gift2">>
   [[GiftBox_Gift2]]
 <<elseif $currentAct eq "gift3">>
   [[GiftBox_Gift3]]
 <<endif>>
 ===
-title: GiftBox_Gift1
+title: GiftBox_GiftDress
 tags: 
 colorID: 0
 position: 957,-2047
 ---
-<< if $giftHolding eq ("Dress")>> 
-Current act is 2
-
-<< set $giftCount to ($giftCount +1)>> 
-
-<< set $currentAct to "gift2">>
-
-
+<<event takeItem dress>>
+<< if $lastTakenItem eq ("dress")>> 
+  GOT THE DRESS
+  << set $giftCount to ($giftCount +1)>> 
+  << set $currentAct to "gift2">>
+  << set $gotDress to true>>
+<< else>>
+  Hunter: We should go find a beautiful dress. What kind of dress do you like?
 << endif >>
 ===
 title: GiftBox_Gift2

@@ -17,6 +17,12 @@ public class ChangePortraitWithString : MonoBehaviour
 
   public void SetPortraitByString(string text)
   {
+    if (string.IsNullOrWhiteSpace(text))
+    {
+      img.enabled = false;
+      return;
+    }
+
     var newSprite = sprites.FirstOrDefault(sprite => sprite.name.ToLowerInvariant().Contains(text.ToLowerInvariant()));
     img.sprite = newSprite ?? emptySprite;
     if (newSprite == null)

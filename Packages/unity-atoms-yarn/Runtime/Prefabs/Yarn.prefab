@@ -131,6 +131,7 @@ MonoBehaviour:
   LoadNamedSpeakersFromResources: 1
   NamedSpeakersPath: Yarn/Speakers
   NamedSpeakers: {fileID: 11400000, guid: e0b8e02cbf6bb8a42b0091dd6005e6e7, type: 2}
+  CurrentText: {fileID: 0}
   CurrentSpeaker: {fileID: 11400000, guid: 6c2acfbcc81e71948bd24682eb201b72, type: 2}
   onDialogueStart:
     m_PersistentCalls:
@@ -152,6 +153,17 @@ MonoBehaviour:
       - m_Target: {fileID: 11400000, guid: 6d725ce94c8963c46b33f80e769d6a9a, type: 2}
         m_MethodName: Raise
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 3356e94f0b2e846458946eae664c976c, type: 2}
+        m_MethodName: set_Value
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -201,6 +213,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 3356e94f0b2e846458946eae664c976c, type: 2}
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
   onLineEnd:
     m_PersistentCalls:

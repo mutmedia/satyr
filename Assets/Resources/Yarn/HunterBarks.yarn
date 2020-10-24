@@ -3,7 +3,6 @@ tags: Hunter Bark
 colorID: 8
 position: 1421,-2862
 ---
-*dialogue appears at random times, in order, as you wander*
 <<if not visited("Hunter_Bark_0")>>
   [[Hunter_Bark_0]]
 <<elseif not visited("Hunter_Bark_1")>>
