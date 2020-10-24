@@ -456,9 +456,7 @@ position: -1684,-2524
   [[Godzilla_Intro]]
 <<endif>>
 
-<< event takeItem elder>>
-<<if $lastTakenItem eq "elder">>
-  << set $lastTakenItem to "empty">> 
+<<if $currentAct2 eq "final" and $currentAct eq "final">>
   [[Godzilla_Final]]
 <<else>>
   [[ Godzilla_2 ]]
@@ -675,7 +673,7 @@ position: 2493,-2091
   << set $lastTakenItem to "empty">> 
   GOT THE RING!!
   << set $giftCount to ($giftCount+1)>> 
-  << set $currentAct to "gift3">>
+  << set $currentAct to "final">>
   << set $gotRing to true>>
 << else>>
   Hunter: I too want a beautiful ring one day! Hope we can find two.
@@ -858,29 +856,31 @@ tags: Godzilla Final
 colorID: 8
 position: 3368,-2158
 ---
-<<if visited("Elder_Final")>>
-Godzilla: Ah you brought him!!
-Godzilla: I knew it was you, shouting from this hilltop!!
-Godzilla: You, who asked for lifelong accompaniment!!
-Godzilla: Elder of this village!!!!!!
-Elder: .....
-Godzilla: I ask for your hand in marriage!!
-Godzilla: So that we can go off, and destroy capitalism!!!
-Godzilla: Together!!!!!
-Elder: !! Oh-ho!! Uh-humm!!
-Elder: Y-yes I do believe I can.. I could do that!!
-Godzilla: Excellent!! We will be married at once!!
-<<set $showHandUI to false>>
-*camera spins and all the townspeople are in a crowd behind you*
-Yay!!! Hooray!! Yay!!
+<< event takeItem elder>>
+<<if $lastTakenItem eq "elder">>
+  << set $lastTakenItem to "empty">> 
+  Godzilla: Ah you brought him!!
+  Godzilla: I knew it was you, shouting from this hilltop!!
+  Godzilla: You, who asked for lifelong accompaniment!!
+  Godzilla: Elder of this village!!!!!!
+  Elder: .....
+  Godzilla: I ask for your hand in marriage!!
+  Godzilla: So that we can go off, and destroy capitalism!!!
+  Godzilla: Together!!!!!
+  Elder: !! Oh-ho!! Uh-humm!!
+  Elder: Y-yes I do believe I can.. I could do that!!
+  Godzilla: Excellent!! We will be married at once!!
+  <<set $showHandUI to false>>
+  *camera spins and all the townspeople are in a crowd behind you*
+  Yay!!! Hooray!! Yay!!
   [[Hunter_Final]]
 << else >> 
-Godzilla: Ah yessss, all of the gifts!!
-Godzilla: Thank you little hero.
-Godzilla: Now I only need one more thing!!
-Godzilla: I need.... the hand of the one who summoned me!!
-Godzilla: I will give you no hints, fool!!!!!!
-Godzilla: Have fun, bubye!!!
+  Godzilla: Ah yessss, all of the gifts!!
+  Godzilla: Thank you little hero.
+  Godzilla: Now I only need one more thing!!
+  Godzilla: I need.... the hand of the one who summoned me!!
+  Godzilla: I will give you no hints, fool!!!!!!
+  Godzilla: Have fun, bubye!!!
 << endif >>
 ===
 title: DressmakersFather_Final
