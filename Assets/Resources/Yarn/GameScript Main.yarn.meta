@@ -8,7 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: 
+  baseLanguageID: en-US
   stringIDs:
   - GameScript Main-Dressmaker_Intro-0
   - GameScript Main-Dressmaker_Intro-1
@@ -50,18 +50,18 @@ ScriptedImporter:
   - GameScript Main-Hunter_Intro-37
   - GameScript Main-Hunter_Intro-38
   - GameScript Main-Hunter_Intro-39
-  - GameScript Main-Hunter_Intro-40
-  - GameScript Main-Start-41
-  - GameScript Main-Start-42
-  - GameScript Main-Start-43
-  - GameScript Main-Start-44
-  - GameScript Main-Start-45
-  - GameScript Main-Start-46
-  - GameScript Main-Start-47
-  - GameScript Main-Start-48
-  - GameScript Main-Start-49
-  - GameScript Main-Start-50
-  - GameScript Main-Godzilla_Intro-51
+  - GameScript Main-Elder_Driving-40
+  - GameScript Main-Elder_Driving-41
+  - GameScript Main-Elder_Driving-42
+  - GameScript Main-Elder_Driving-43
+  - GameScript Main-Elder_Driving-44
+  - GameScript Main-Elder_Driving-45
+  - GameScript Main-Elder_Driving-46
+  - GameScript Main-Elder_Driving-47
+  - GameScript Main-Elder_Driving-48
+  - GameScript Main-Elder_Driving-49
+  - GameScript Main-Elder_Driving-50
+  - GameScript Main-Elder_Driving-51
   - GameScript Main-Godzilla_Intro-52
   - GameScript Main-Godzilla_Intro-53
   - GameScript Main-Godzilla_Intro-54
@@ -70,24 +70,24 @@ ScriptedImporter:
   - GameScript Main-Godzilla_Intro-57
   - GameScript Main-Godzilla_Intro-58
   - GameScript Main-Godzilla_Intro-59
-  - GameScript Main-Dressmaker_Gift_1-60
-  - GameScript Main-Dressmaker_Gift_1-61
-  - GameScript Main-Dressmaker_Gift_1-62
-  - GameScript Main-Dressmaker_Gift_1-63
-  - GameScript Main-Dressmaker_Gift_1-64
-  - GameScript Main-Dressmaker_Gift_1-65
-  - GameScript Main-Dressmaker_Gift_1-66
-  - GameScript Main-Dressmaker_Gift_1-67
-  - GameScript Main-Dressmaker_Gift_1-68
-  - GameScript Main-Dressmaker_Gift_1-69
-  - GameScript Main-Dressmaker_Gift_1-70
-  - GameScript Main-Dressmaker_Gift_1-71
-  - GameScript Main-Dressmaker_Gift_1-72
-  - GameScript Main-StephenTheDisaster_Gift1-73
+  - GameScript Main-Godzilla_Intro-60
+  - GameScript Main-Dressmaker_Gift1-61
+  - GameScript Main-Dressmaker_Gift1-62
+  - GameScript Main-Dressmaker_Gift1-63
+  - GameScript Main-Dressmaker_Gift1-64
+  - GameScript Main-Dressmaker_Gift1-65
+  - GameScript Main-Dressmaker_Gift1-66
+  - GameScript Main-Dressmaker_Gift1-67
+  - GameScript Main-Dressmaker_Gift1-68
+  - GameScript Main-Dressmaker_Gift1-69
+  - GameScript Main-Dressmaker_Gift1-70
+  - GameScript Main-Dressmaker_Gift1-71
+  - GameScript Main-Dressmaker_Gift1-72
+  - GameScript Main-Dressmaker_Gift1-73
   - GameScript Main-StephenTheDisaster_Gift1-74
   - GameScript Main-StephenTheDisaster_Gift1-75
   - GameScript Main-StephenTheDisaster_Gift1-76
-  - GameScript Main-Shopkeep_Gift1-77
+  - GameScript Main-StephenTheDisaster_Gift1-77
   - GameScript Main-Shopkeep_Gift1-78
   - GameScript Main-Shopkeep_Gift1-79
   - GameScript Main-Shopkeep_Gift1-80
@@ -100,7 +100,7 @@ ScriptedImporter:
   - GameScript Main-Shopkeep_Gift1-87
   - GameScript Main-Shopkeep_Gift1-88
   - GameScript Main-Shopkeep_Gift1-89
-  - GameScript Main-Woofcutter_and_DressmakersFather_Gift1-90
+  - GameScript Main-Shopkeep_Gift1-90
   - GameScript Main-Woofcutter_and_DressmakersFather_Gift1-91
   - GameScript Main-Woofcutter_and_DressmakersFather_Gift1-92
   - GameScript Main-Woofcutter_and_DressmakersFather_Gift1-93
@@ -145,22 +145,22 @@ ScriptedImporter:
   - GameScript Main-Shopkeep_Gift2-132
   - GameScript Main-Shopkeep_Gift2-133
   - GameScript Main-Shopkeep_Gift2-134
-  - GameScript Main-Dressmaker_Gift_2-135
-  - GameScript Main-Dressmaker_Gift_2-136
-  - GameScript Main-Dressmaker_Gift_2-137
-  - GameScript Main-Dressmaker_Gift_2-138
-  - GameScript Main-Dressmaker_Gift_2-139
-  - GameScript Main-Dressmaker_Gift_2-140
-  - GameScript Main-Dressmaker_Gift_2-141
-  - GameScript Main-Dressmaker_Gift_2-142
-  - GameScript Main-Dressmaker_Gift_2-143
-  - GameScript Main-Dressmaker_Gift_2-144
-  - GameScript Main-Dressmaker_Gift_2-145
-  - GameScript Main-Dressmaker_Gift_2-146
-  - GameScript Main-Dressmaker_Gift_2-147
-  - GameScript Main-Dressmaker_Gift_2-148
-  - GameScript Main-Dressmaker_Gift_2-149
-  - GameScript Main-Dressmaker_Gift_2-150
+  - GameScript Main-Dressmaker_Gift2-135
+  - GameScript Main-Dressmaker_Gift2-136
+  - GameScript Main-Dressmaker_Gift2-137
+  - GameScript Main-Dressmaker_Gift2-138
+  - GameScript Main-Dressmaker_Gift2-139
+  - GameScript Main-Dressmaker_Gift2-140
+  - GameScript Main-Dressmaker_Gift2-141
+  - GameScript Main-Dressmaker_Gift2-142
+  - GameScript Main-Dressmaker_Gift2-143
+  - GameScript Main-Dressmaker_Gift2-144
+  - GameScript Main-Dressmaker_Gift2-145
+  - GameScript Main-Dressmaker_Gift2-146
+  - GameScript Main-Dressmaker_Gift2-147
+  - GameScript Main-Dressmaker_Gift2-148
+  - GameScript Main-Dressmaker_Gift2-149
+  - GameScript Main-Dressmaker_Gift2-150
   - GameScript Main-DressmakersFather_Gift2-151
   - GameScript Main-DressmakersFather_Gift2-152
   - GameScript Main-DressmakersFather_Gift2-153
@@ -171,93 +171,93 @@ ScriptedImporter:
   - GameScript Main-DressmakersFather_Gift2-158
   - GameScript Main-DressmakersFather_Gift2-159
   - GameScript Main-DressmakersFather_Gift2-160
-  - GameScript Main-Hunter_Bark_Dialogue-161
-  - GameScript Main-Hunter_Bark_Dialogue-162
-  - GameScript Main-Hunter_Bark_Dialogue-163
-  - GameScript Main-Hunter_Bark_Dialogue-164
-  - GameScript Main-Hunter_Bark_Dialogue-165
-  - GameScript Main-Hunter_Bark_Dialogue-166
-  - GameScript Main-Hunter_Bark_Dialogue-167
-  - GameScript Main-Hunter_Bark_Dialogue-168
-  - GameScript Main-Hunter_Bark_Dialogue-169
-  - GameScript Main-Hunter_Bark_Dialogue-170
-  - GameScript Main-Hunter_Bark_Dialogue-171
-  - GameScript Main-Hunter_Bark_Dialogue-172
-  - GameScript Main-Hunter_Bark_Dialogue-173
-  - GameScript Main-Hunter_Bark_Dialogue-174
-  - GameScript Main-Hunter_Bark_Dialogue-175
-  - GameScript Main-Hunter_Bark_Dialogue-176
-  - GameScript Main-Hunter_Bark_Dialogue-177
-  - GameScript Main-Hunter_Bark_Dialogue-178
-  - GameScript Main-Hunter_Bark_Dialogue-179
-  - GameScript Main-Hunter_Bark_Dialogue-180
-  - GameScript Main-Godzilla_2-181
-  - GameScript Main-Godzilla_2-182
-  - GameScript Main-Godzilla_2-183
-  - GameScript Main-Godzilla_2-184
-  - GameScript Main-Godzilla_2-185
-  - GameScript Main-Godzilla_2-186
-  - GameScript Main-Godzilla_2-187
-  - GameScript Main-Godzilla_2-188
-  - GameScript Main-StephenTheDisaster_Gift3-189
-  - GameScript Main-StephenTheDisaster_Gift3-190
-  - GameScript Main-StephenTheDisaster_Gift3-191
-  - GameScript Main-StephenTheDisaster_Gift3-192
-  - GameScript Main-StephenTheDisaster_Gift3-193
-  - GameScript Main-StephenTheDisaster_Gift3-194
-  - GameScript Main-StephenTheDisaster_Gift3-195
-  - GameScript Main-StephenTheDisaster_Gift3-196
-  - GameScript Main-StephenTheDisaster_Gift3-197
-  - GameScript Main-StephenTheDisaster_Gift3-198
-  - GameScript Main-StephenTheDisaster_Gift3-199
-  - GameScript Main-StephenTheDisaster_Gift3-200
-  - GameScript Main-StephenTheDisaster_Gift3-201
-  - GameScript Main-StephenTheDisaster_Gift3-202
-  - GameScript Main-StephenTheDisaster_Gift3-203
-  - GameScript Main-StephenTheDisaster_Gift3-204
-  - GameScript Main-StephenTheDisaster_Gift3-205
-  - GameScript Main-StephenTheDisaster_Gift3-206
-  - GameScript Main-StephenTheDisaster_Gift3-207
-  - GameScript Main-StephenTheDisaster_Gift3-208
-  - GameScript Main-Shopkeep_Gift3-209
-  - GameScript Main-Shopkeep_Gift3-210
-  - GameScript Main-Shopkeep_Gift3-211
-  - GameScript Main-Shopkeep_Gift3-212
-  - GameScript Main-Shopkeep_Gift3-213
-  - GameScript Main-Shopkeep_Gift3-214
-  - GameScript Main-Shopkeep_Gift3-215
-  - GameScript Main-Shopkeep_Gift3-216
-  - GameScript Main-Shopkeep_Gift3-217
-  - GameScript Main-Shopkeep_Gift3-218
-  - GameScript Main-Shopkeep_Gift3-219
-  - GameScript Main-DressmakersFather_Gift3-220
-  - GameScript Main-DressmakersFather_Gift3-221
-  - GameScript Main-DressmakersFather_Gift3-222
-  - GameScript Main-DressmakersFather_Gift3-223
-  - GameScript Main-Dressmaker_Gift_3-224
-  - GameScript Main-Dressmaker_Gift_3-225
-  - GameScript Main-Dressmaker_Gift_3-226
-  - GameScript Main-Dressmaker_Gift_3-227
-  - GameScript Main-Dressmaker_Gift_3-228
-  - GameScript Main-Dressmaker_Gift_3-229
-  - GameScript Main-Dressmaker_Gift_3-230
-  - GameScript Main-Dressmaker_Gift_3-231
-  - GameScript Main-Woofcutter_Gift3-232
-  - GameScript Main-Woofcutter_Gift3-233
-  - GameScript Main-Woofcutter_Gift3-234
-  - GameScript Main-Woofcutter_Gift3-235
-  - GameScript Main-Woofcutter_Gift3-236
-  - GameScript Main-Woofcutter_Gift3-237
-  - GameScript Main-Elder_Intro-238
-  - GameScript Main-List-239
-  - GameScript Main-List-240
-  - GameScript Main-List-241
-  - GameScript Main-List-242
-  - GameScript Main-List-243
-  - GameScript Main-List-244
-  - GameScript Main-GiftBox_Gift1-245
-  - GameScript Main-GiftBox_Gift2-246
-  - GameScript Main-GiftBox_Gift3-247
+  - GameScript Main-Godzilla_2-161
+  - GameScript Main-Godzilla_2-162
+  - GameScript Main-Godzilla_2-163
+  - GameScript Main-Godzilla_2-164
+  - GameScript Main-Godzilla_2-165
+  - GameScript Main-Godzilla_2-166
+  - GameScript Main-Godzilla_2-167
+  - GameScript Main-Godzilla_2-168
+  - GameScript Main-StephenTheDisaster_Gift3-169
+  - GameScript Main-StephenTheDisaster_Gift3-170
+  - GameScript Main-StephenTheDisaster_Gift3-171
+  - GameScript Main-StephenTheDisaster_Gift3-172
+  - GameScript Main-StephenTheDisaster_Gift3-173
+  - GameScript Main-StephenTheDisaster_Gift3-174
+  - GameScript Main-StephenTheDisaster_Gift3-175
+  - GameScript Main-StephenTheDisaster_Gift3-176
+  - GameScript Main-StephenTheDisaster_Gift3-177
+  - GameScript Main-StephenTheDisaster_Gift3-178
+  - GameScript Main-StephenTheDisaster_Gift3-179
+  - GameScript Main-StephenTheDisaster_Gift3-180
+  - GameScript Main-StephenTheDisaster_Gift3-181
+  - GameScript Main-StephenTheDisaster_Gift3-182
+  - GameScript Main-StephenTheDisaster_Gift3-183
+  - GameScript Main-StephenTheDisaster_Gift3-184
+  - GameScript Main-StephenTheDisaster_Gift3-185
+  - GameScript Main-StephenTheDisaster_Gift3-186
+  - GameScript Main-StephenTheDisaster_Gift3-187
+  - GameScript Main-StephenTheDisaster_Gift3-188
+  - GameScript Main-Shopkeep_Gift3-189
+  - GameScript Main-Shopkeep_Gift3-190
+  - GameScript Main-Shopkeep_Gift3-191
+  - GameScript Main-Shopkeep_Gift3-192
+  - GameScript Main-Shopkeep_Gift3-193
+  - GameScript Main-Shopkeep_Gift3-194
+  - GameScript Main-Shopkeep_Gift3-195
+  - GameScript Main-Shopkeep_Gift3-196
+  - GameScript Main-Shopkeep_Gift3-197
+  - GameScript Main-Shopkeep_Gift3-198
+  - GameScript Main-Shopkeep_Gift3-199
+  - GameScript Main-DressmakersFather_Gift3-200
+  - GameScript Main-DressmakersFather_Gift3-201
+  - GameScript Main-DressmakersFather_Gift3-202
+  - GameScript Main-DressmakersFather_Gift3-203
+  - GameScript Main-Dressmaker_Gift3-204
+  - GameScript Main-Dressmaker_Gift3-205
+  - GameScript Main-Dressmaker_Gift3-206
+  - GameScript Main-Dressmaker_Gift3-207
+  - GameScript Main-Dressmaker_Gift3-208
+  - GameScript Main-Dressmaker_Gift3-209
+  - GameScript Main-Dressmaker_Gift3-210
+  - GameScript Main-Dressmaker_Gift3-211
+  - GameScript Main-Woofcutter_Gift3-212
+  - GameScript Main-Woofcutter_Gift3-213
+  - GameScript Main-Woofcutter_Gift3-214
+  - GameScript Main-Woofcutter_Gift3-215
+  - GameScript Main-Woofcutter_Gift3-216
+  - GameScript Main-Woofcutter_Gift3-217
+  - GameScript Main-Elder_Intro-218
+  - GameScript Main-List-219
+  - GameScript Main-List-220
+  - GameScript Main-List-221
+  - GameScript Main-List-222
+  - GameScript Main-List-223
+  - GameScript Main-List-224
+  - GameScript Main-GiftBox_AllItems-225
+  - GameScript Main-GiftBox_AllItems-226
+  - GameScript Main-GiftBox_AllItems-227
+  - GameScript Main-GiftBox_AllItems-228
+  - GameScript Main-GiftBox_AllItems-229
+  - GameScript Main-GiftBox_AllItems-230
+  - GameScript Main-GiftBox_AllItems-231
+  - GameScript Main-GiftBox_Gift1_Dress-232
+  - GameScript Main-GiftBox_Gift1_Dress-233
+  - GameScript Main-GiftBox_Gift2_Chair-234
+  - GameScript Main-GiftBox_Gift2_Chair-235
+  - GameScript Main-GiftBox_Gift3_Ring-236
+  - GameScript Main-GiftBox_Gift3_Ring-237
+  - GameScript Main-GiftBox_Gift4_Bouquet-238
+  - GameScript Main-GiftBox_Gift4_Bouquet-239
+  - GameScript Main-GiftBox_Gift5_Shells-240
+  - GameScript Main-GiftBox_Gift5_Shells-241
+  - GameScript Main-GiftBox_Gift5_Shells-242
+  - GameScript Main-FlowerWoman_Gift4-243
+  - GameScript Main-FlowerWoman_Gift4-244
+  - GameScript Main-FlowerWoman_Gift4-245
+  - GameScript Main-FlowerWoman_Gift4-246
+  - GameScript Main-FlowerWoman_Gift4-247
   - GameScript Main-FlowerWoman_Gift4-248
   - GameScript Main-FlowerWoman_Gift4-249
   - GameScript Main-FlowerWoman_Gift4-250
@@ -266,20 +266,20 @@ ScriptedImporter:
   - GameScript Main-FlowerWoman_Gift4-253
   - GameScript Main-FlowerWoman_Gift4-254
   - GameScript Main-FlowerWoman_Gift4-255
-  - GameScript Main-FlowerWoman_Gift4-256
-  - GameScript Main-FlowerWoman_Gift4-257
-  - GameScript Main-FlowerWoman_Gift4-258
-  - GameScript Main-FlowerWoman_Gift4-259
-  - GameScript Main-FlowerWoman_Gift4-260
-  - GameScript Main-LostBoys_Gift4-261
-  - GameScript Main-LostBoys_Gift4-262
-  - GameScript Main-LostBoys_Gift4-263
+  - GameScript Main-LostBoys_Gift4-256
+  - GameScript Main-LostBoys_Gift4-257
+  - GameScript Main-LostBoys_Gift4-258
+  - GameScript Main-SeaWoman_Gift4-259
+  - GameScript Main-SeaWoman_Gift4-260
+  - GameScript Main-SeaWoman_Gift4-261
+  - GameScript Main-SeaWoman_Gift4-262
+  - GameScript Main-SeaWoman_Gift4-263
   - GameScript Main-SeaWoman_Gift4-264
-  - GameScript Main-SeaWoman_Gift4-265
-  - GameScript Main-SeaWoman_Gift4-266
-  - GameScript Main-SeaWoman_Gift4-267
-  - GameScript Main-SeaWoman_Gift4-268
-  - GameScript Main-SeaWoman_Gift4-269
+  - GameScript Main-Elder_Gift4-265
+  - GameScript Main-Elder_Gift4-266
+  - GameScript Main-Elder_Gift4-267
+  - GameScript Main-Elder_Gift4-268
+  - GameScript Main-Elder_Gift4-269
   - GameScript Main-Elder_Gift4-270
   - GameScript Main-Elder_Gift4-271
   - GameScript Main-Elder_Gift4-272
@@ -288,46 +288,46 @@ ScriptedImporter:
   - GameScript Main-Elder_Gift4-275
   - GameScript Main-Elder_Gift4-276
   - GameScript Main-Elder_Gift4-277
-  - GameScript Main-Elder_Gift4-278
-  - GameScript Main-Elder_Gift4-279
-  - GameScript Main-Elder_Gift4-280
-  - GameScript Main-Elder_Gift4-281
-  - GameScript Main-Elder_Gift4-282
-  - GameScript Main-GiftBox_Gift4-283
+  - GameScript Main-SeaWoman_Gift5-278
+  - GameScript Main-SeaWoman_Gift5-279
+  - GameScript Main-SeaWoman_Gift5-280
+  - GameScript Main-SeaWoman_Gift5-281
+  - GameScript Main-SeaWoman_Gift5-282
+  - GameScript Main-SeaWoman_Gift5-283
   - GameScript Main-SeaWoman_Gift5-284
   - GameScript Main-SeaWoman_Gift5-285
   - GameScript Main-SeaWoman_Gift5-286
   - GameScript Main-SeaWoman_Gift5-287
-  - GameScript Main-SeaWoman_Gift5-288
-  - GameScript Main-SeaWoman_Gift5-289
-  - GameScript Main-SeaWoman_Gift5-290
-  - GameScript Main-SeaWoman_Gift5-291
-  - GameScript Main-SeaWoman_Gift5-292
-  - GameScript Main-Elder_Gift5-293
-  - GameScript Main-Elder_Gift5-294
-  - GameScript Main-Elder_Gift5-295
-  - GameScript Main-Elder_Gift5-296
+  - GameScript Main-Elder_Gift5-288
+  - GameScript Main-Elder_Gift5-289
+  - GameScript Main-Elder_Gift5-290
+  - GameScript Main-Elder_Gift5-291
+  - GameScript Main-FlowerWoman_Gift5-292
+  - GameScript Main-FlowerWoman_Gift5-293
+  - GameScript Main-FlowerWoman_Gift5-294
+  - GameScript Main-FlowerWoman_Gift5-295
+  - GameScript Main-FlowerWoman_Gift5-296
   - GameScript Main-FlowerWoman_Gift5-297
-  - GameScript Main-FlowerWoman_Gift5-298
-  - GameScript Main-FlowerWoman_Gift5-299
-  - GameScript Main-FlowerWoman_Gift5-300
-  - GameScript Main-FlowerWoman_Gift5-301
-  - GameScript Main-FlowerWoman_Gift5-302
+  - GameScript Main-LostBoys_Gift5-298
+  - GameScript Main-LostBoys_Gift5-299
+  - GameScript Main-LostBoys_Gift5-300
+  - GameScript Main-LostBoys_Gift5-301
+  - GameScript Main-LostBoys_Gift5-302
   - GameScript Main-LostBoys_Gift5-303
-  - GameScript Main-LostBoys_Gift5-304
-  - GameScript Main-LostBoys_Gift5-305
-  - GameScript Main-LostBoys_Gift5-306
-  - GameScript Main-LostBoys_Gift5-307
-  - GameScript Main-LostBoys_Gift5-308
-  - GameScript Main-GiftBox_Gift5-309
+  - GameScript Main-Hunter_Final-304
+  - GameScript Main-Hunter_Final-305
+  - GameScript Main-Hunter_Final-306
+  - GameScript Main-Hunter_Final-307
+  - GameScript Main-Hunter_Final-308
+  - GameScript Main-Hunter_Final-309
   - GameScript Main-Hunter_Final-310
   - GameScript Main-Hunter_Final-311
-  - GameScript Main-Hunter_Final-312
-  - GameScript Main-Hunter_Final-313
-  - GameScript Main-Hunter_Final-314
-  - GameScript Main-Hunter_Final-315
-  - GameScript Main-Hunter_Final-316
-  - GameScript Main-Hunter_Final-317
+  - GameScript Main-Godzilla_Final-312
+  - GameScript Main-Godzilla_Final-313
+  - GameScript Main-Godzilla_Final-314
+  - GameScript Main-Godzilla_Final-315
+  - GameScript Main-Godzilla_Final-316
+  - GameScript Main-Godzilla_Final-317
   - GameScript Main-Godzilla_Final-318
   - GameScript Main-Godzilla_Final-319
   - GameScript Main-Godzilla_Final-320
@@ -341,86 +341,80 @@ ScriptedImporter:
   - GameScript Main-Godzilla_Final-328
   - GameScript Main-Godzilla_Final-329
   - GameScript Main-Godzilla_Final-330
-  - GameScript Main-Godzilla_Final-331
-  - GameScript Main-Godzilla_Final-332
-  - GameScript Main-Godzilla_Final-333
-  - GameScript Main-Godzilla_Final-334
-  - GameScript Main-Godzilla_Final-335
-  - GameScript Main-Godzilla_Final-336
-  - GameScript Main-DressmakersFather_Final-337
-  - GameScript Main-DressmakersFather_Final-338
-  - GameScript Main-DressmakersFather_Final-339
+  - GameScript Main-DressmakersFather_Final-331
+  - GameScript Main-DressmakersFather_Final-332
+  - GameScript Main-DressmakersFather_Final-333
+  - GameScript Main-LostBoys_Final-334
+  - GameScript Main-LostBoys_Final-335
+  - GameScript Main-LostBoys_Final-336
+  - GameScript Main-LostBoys_Final-337
+  - GameScript Main-LostBoys_Final-338
+  - GameScript Main-LostBoys_Final-339
   - GameScript Main-LostBoys_Final-340
-  - GameScript Main-LostBoys_Final-341
-  - GameScript Main-LostBoys_Final-342
-  - GameScript Main-LostBoys_Final-343
-  - GameScript Main-LostBoys_Final-344
-  - GameScript Main-LostBoys_Final-345
-  - GameScript Main-LostBoys_Final-346
-  - GameScript Main-Dressmaker_Final-347
-  - GameScript Main-Dressmaker_Final-348
-  - GameScript Main-Dressmaker_Final-349
-  - GameScript Main-Dressmaker_Final-350
-  - GameScript Main-Dressmaker_Final-351
+  - GameScript Main-Dressmaker_Final-341
+  - GameScript Main-Dressmaker_Final-342
+  - GameScript Main-Dressmaker_Final-343
+  - GameScript Main-Dressmaker_Final-344
+  - GameScript Main-Dressmaker_Final-345
+  - GameScript Main-StephenTheDisaster_Final-346
+  - GameScript Main-StephenTheDisaster_Final-347
+  - GameScript Main-StephenTheDisaster_Final-348
+  - GameScript Main-StephenTheDisaster_Final-349
+  - GameScript Main-StephenTheDisaster_Final-350
+  - GameScript Main-StephenTheDisaster_Final-351
   - GameScript Main-StephenTheDisaster_Final-352
-  - GameScript Main-StephenTheDisaster_Final-353
-  - GameScript Main-StephenTheDisaster_Final-354
-  - GameScript Main-StephenTheDisaster_Final-355
-  - GameScript Main-StephenTheDisaster_Final-356
-  - GameScript Main-StephenTheDisaster_Final-357
-  - GameScript Main-StephenTheDisaster_Final-358
-  - GameScript Main-SeaWoman_Final-359
-  - GameScript Main-SeaWoman_Final-360
-  - GameScript Main-SeaWoman_Final-361
-  - GameScript Main-SeaWoman_Final-362
-  - GameScript Main-SeaWoman_Final-363
+  - GameScript Main-SeaWoman_Final-353
+  - GameScript Main-SeaWoman_Final-354
+  - GameScript Main-SeaWoman_Final-355
+  - GameScript Main-SeaWoman_Final-356
+  - GameScript Main-SeaWoman_Final-357
+  - GameScript Main-FlowerWoman_Final-358
+  - GameScript Main-FlowerWoman_Final-359
+  - GameScript Main-FlowerWoman_Final-360
+  - GameScript Main-FlowerWoman_Final-361
+  - GameScript Main-FlowerWoman_Final-362
+  - GameScript Main-FlowerWoman_Final-363
   - GameScript Main-FlowerWoman_Final-364
-  - GameScript Main-FlowerWoman_Final-365
-  - GameScript Main-FlowerWoman_Final-366
-  - GameScript Main-FlowerWoman_Final-367
-  - GameScript Main-FlowerWoman_Final-368
-  - GameScript Main-FlowerWoman_Final-369
-  - GameScript Main-FlowerWoman_Final-370
+  - GameScript Main-Shopkeep_Final-365
+  - GameScript Main-Shopkeep_Final-366
+  - GameScript Main-Shopkeep_Final-367
+  - GameScript Main-Shopkeep_Final-368
+  - GameScript Main-Shopkeep_Final-369
+  - GameScript Main-Shopkeep_Final-370
   - GameScript Main-Shopkeep_Final-371
   - GameScript Main-Shopkeep_Final-372
-  - GameScript Main-Shopkeep_Final-373
-  - GameScript Main-Shopkeep_Final-374
-  - GameScript Main-Shopkeep_Final-375
-  - GameScript Main-Shopkeep_Final-376
-  - GameScript Main-Shopkeep_Final-377
-  - GameScript Main-Shopkeep_Final-378
+  - GameScript Main-Elder_Final-373
+  - GameScript Main-Elder_Final-374
+  - GameScript Main-Elder_Final-375
+  - GameScript Main-Elder_Final-376
+  - GameScript Main-Elder_Final-377
+  - GameScript Main-Elder_Final-378
   - GameScript Main-Elder_Final-379
   - GameScript Main-Elder_Final-380
   - GameScript Main-Elder_Final-381
   - GameScript Main-Elder_Final-382
   - GameScript Main-Elder_Final-383
   - GameScript Main-Elder_Final-384
-  - GameScript Main-Elder_Final-385
-  - GameScript Main-Elder_Final-386
-  - GameScript Main-Elder_Final-387
-  - GameScript Main-Elder_Final-388
-  - GameScript Main-Elder_Final-389
-  - GameScript Main-Elder_Final-390
-  - GameScript Main-Elder_Final-391
+  - GameScript Main-Woofcutter_Final-385
+  - GameScript Main-Woofcutter_Final-386
+  - GameScript Main-Woofcutter_Final-387
+  - GameScript Main-Woofcutter_Final-388
+  - GameScript Main-Woofcutter_Final-389
+  - GameScript Main-Woofcutter_Final-390
+  - GameScript Main-Woofcutter_Final-391
   - GameScript Main-Woofcutter_Final-392
   - GameScript Main-Woofcutter_Final-393
-  - GameScript Main-Woofcutter_Final-394
-  - GameScript Main-Woofcutter_Final-395
-  - GameScript Main-Woofcutter_Final-396
-  - GameScript Main-Woofcutter_Final-397
-  - GameScript Main-Woofcutter_Final-398
-  - GameScript Main-Woofcutter_Final-399
-  - GameScript Main-Woofcutter_Final-400
-  - GameScript Main-HunterYes-401
-  - GameScript Main-HunterYes-402
-  - GameScript Main-HunterYes-403
-  - GameScript Main-HunterYes-404
-  - GameScript Main-HunterNo-405
-  - GameScript Main-HunterNo-406
-  - GameScript Main-HunterNo-407
-  - GameScript Main-HunterNo-408
+  - GameScript Main-HunterYes-394
+  - GameScript Main-HunterYes-395
+  - GameScript Main-HunterYes-396
+  - GameScript Main-HunterYes-397
+  - GameScript Main-HunterNo-398
+  - GameScript Main-HunterNo-399
+  - GameScript Main-HunterNo-400
+  - GameScript Main-HunterNo-401
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
-  baseLanguage: {instanceID: 0}
+  baseLanguage: {fileID: 7128917941130120860, guid: bff15c1da0b8480429b3dfdd0e2fc073,
+    type: 3}
   localizations: []

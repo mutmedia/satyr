@@ -186,7 +186,7 @@ GameObject:
   m_Layer: 8
   m_Name: Raycast Interactable
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -198,7 +198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5016651375641576798}
   m_LocalRotation: {x: 0, y: 0.6737673, z: 0, w: 0.7389436}
-  m_LocalPosition: {x: -6.080002, y: -10.29, z: 2.08}
+  m_LocalPosition: {x: 0, y: 0, z: 2.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5016651375900167499}

@@ -194,24 +194,23 @@ colorID: 4
 position: 565,-2113
 ---
 <<if visited("Shopkeep_Gift1")>>
-Woofcutter: Hey come on, I left this wood outside your house this morning!!
-DressmakersFather: Not here.
-Woofcutter: I know it!! It was here.
-DressmakersFather: Hmm... Yes hero?
-Woofcutter: I was talking to you!!
-DressmakersFather: The dress is here, yes.
-Woofcutter: It's not a dress it's wood!! It's wood I know it is!
-DressmakersFather: Open the box, hero.
-
-<<event giveItem dress>>
-
-Woofcutter: I- Oh.
-DressmakersFather: Hmm...
-Woofcutter: Welp! Must get back to my wood! Chop chop!!
+  Woofcutter: Hey come on, I left this wood outside your house this morning!!
+  DressmakersFather: Not here.
+  Woofcutter: I know it!! It was here.
+  DressmakersFather: Hmm... Yes hero?
+  Woofcutter: I was talking to you!!
+  DressmakersFather: The dress is here, yes.
+  Woofcutter: It's not a dress it's wood!! It's wood I know it is!
+  DressmakersFather: Open the box, hero.
+  <<event spawnDress>>
+  <<set $currentAct to "gift2">>
+  Woofcutter: I- Oh.
+  DressmakersFather: Hmm...
+  Woofcutter: Welp! Must get back to my wood! Chop chop!!
 << else >> 
-Woofcutter: Hey come on, I left this wood outside your house this morning!!
-DressmakersFather: Not here.
-Woofcutter: Mrrrghh...
+  Woofcutter: Hey come on, I left this wood outside your house this morning!!
+  DressmakersFather: Not here.
+  Woofcutter: Mrrrghh...
 << endif >>
 ===
 title: Stage_Direction
@@ -244,7 +243,8 @@ Woofcutter: Alright! All the chairs are here!
 Woofcutter: Oh! Uhh thanks for talking to the dressmaker for me.
 Woofcutter: I.. Yeah we'll talk in person later...
 Woofcutter: Uhh you can just take these now.
-<<event giveItem chair>>
+<<event spawnChair>>
+<< set $currentAct to "gift3">>
 Woofcutter: Bye!!
 << else >>
 Woofcutter: Oh hey, how's it going?
@@ -352,9 +352,10 @@ position: 2135,-2299
   StephenTheDisaster: Ohmygod he's wayyy out of my league??????
   StephenTheDisaster: I have to clean up!!
   StephenTheDisaster: Ahhhhhghgh!!
+  <<event spawnRing>>
   StephenTheDisaster: Take this ring I don't know what I'd do with it anyway.
-  <<event giveItem ring>>
   StephenTheDisaster: Go away go away, I gotta clean!!!
+  <<set $currentAct to "final">>
 << else >> 
   StephenTheDisaster: You are back in my home!!
   StephenTheDisaster: I cannot believe this!!
@@ -442,7 +443,7 @@ position: -1685,-2771
     [[Elder_Gift4]]
   <<elseif $currentAct2 eq "gift5">>
     [[Elder_Gift5]]
-  <<elseif $currentAct2 eq "final" and $currentAct eq "final">>
+  <<elseif $godzillaAskedForHand>>
     [[Elder_Final]]
   <<endif>>
 <<endif>>
@@ -456,7 +457,7 @@ position: -1684,-2524
   [[Godzilla_Intro]]
 <<endif>>
 
-<<if $currentAct2 eq "final" and $currentAct eq "final">>
+<<if $giftCount eq 5>>
   [[Godzilla_Final]]
 <<else>>
   [[ Godzilla_2 ]]
@@ -608,7 +609,7 @@ You need {$giftsNeeded} more gifts.
 << endif >>
 ===
 title: GiftBox_AllItems
-tags: GiftBox All
+tags: GiftBox
 colorID: 0
 position: -1237,68
 ---
@@ -694,7 +695,7 @@ position: -681,72
 <<endif>>
 ===
 title: GiftBox_Gift1_Dress
-tags: GiftBox Gift1 Dress
+tags: GiftBox Gift1 Dress Deprecated
 colorID: 0
 position: 957,-2047
 ---
@@ -710,7 +711,7 @@ position: 957,-2047
 << endif >>
 ===
 title: GiftBox_Gift2_Chair
-tags: GiftBox Gift2 Chair
+tags: GiftBox Gift2 Chair Deprecated
 colorID: 0
 position: 1745,-2073
 ---
@@ -726,7 +727,7 @@ position: 1745,-2073
 << endif >>
 ===
 title: GiftBox_Gift3_Ring
-tags: GiftBox Gift3 Ring
+tags: GiftBox Gift3 Ring Deprecated
 colorID: 0
 position: 2493,-2091
 ---
@@ -742,7 +743,7 @@ position: 2493,-2091
 << endif >>
 ===
 title: GiftBox_Gift4_Bouquet
-tags: GiftBox Gift4 Bouquet
+tags: GiftBox Gift4 Bouquet Deprecated
 colorID: 0
 position: 1604,-1003
 ---
@@ -751,14 +752,13 @@ position: 1604,-1003
   << set $lastTakenItem to "empty">> 
   GOT THE BOUQUET!!
   << set $giftCount to ($giftCount+1)>> 
-  << set $currentAct2 to "gift5">>
   << set $gotBouquet to true>>
 << else>>
   Hunter: There are some lovely flowers around here! Let's try to figure each others favorites...
 << endif >>
 ===
 title: GiftBox_Gift5_Shells
-tags: GiftBox Gift5 Shells
+tags: GiftBox Gift5 Shells Deprecated
 colorID: 0
 position: 2413,-1016
 ---
@@ -780,21 +780,22 @@ colorID: 6
 position: 1208,-1330
 ---
 <<if visited("SeaWoman_Gift4")>>
-FlowerWoman: Oh, has no one caught your eye?
-FlowerWoman: Do not worry my dear, I have your bouquet.
-<<event giveItem bouquet>>
-FlowerWoman: Thank you for trying, anyways.
+  FlowerWoman: Oh, has no one caught your eye?
+  FlowerWoman: Do not worry my dear, I have your bouquet.
+  <<event spawnBouquet>>
+  FlowerWoman: Thank you for trying, anyways.
+  << set $currentAct2 to "gift5">>
 << else >> 
-FlowerWoman: Oh hello, dear. What do you need?
-FlowerWoman: Flowers? Well.. this bouquet was for someone I could love..
-FlowerWoman: But I could make you another, darling!
-FlowerWoman: Sadly... I do not have someone to love yet.
-FlowerWoman: Maybe...
-FlowerWoman: Dearie, while I am making this bouquet
-FlowerWoman: If it is not too much trouble..
-FlowerWoman: Will you please see if there is someone around who will love me?
-FlowerWoman: I do not usually leave this field, so I do not really know.
-FlowerWoman: Thank you my dear, I will see you soon.
+  FlowerWoman: Oh hello, dear. What do you need?
+  FlowerWoman: Flowers? Well.. this bouquet was for someone I could love..
+  FlowerWoman: But I could make you another, darling!
+  FlowerWoman: Sadly... I do not have someone to love yet.
+  FlowerWoman: Maybe...
+  FlowerWoman: Dearie, while I am making this bouquet
+  FlowerWoman: If it is not too much trouble..
+  FlowerWoman: Will you please see if there is someone around who will love me?
+  FlowerWoman: I do not usually leave this field, so I do not really know.
+  FlowerWoman: Thank you my dear, I will see you soon.
 << endif >>
 ===
 title: LostBoys_Gift4
@@ -848,23 +849,25 @@ colorID: 7
 position: 2085,-1340
 ---
 <<if visited("FlowerWoman_Gift5")>>
-SeaWoman: Oh!! Someone wants to love me??
-SeaWoman: I will go, immediately!! Take these shells!!
-*sea woman disappears, and goes to the flower woman's side. You have shells in your hand now*
-<<event giveItem shells>>
+  SeaWoman: Oh!! Someone wants to love me??
+  SeaWoman: Take these shells!!
+  <<event spawnShells>>
+  *sea woman disappears, and goes to the flower woman's side. You have shells in your hand now*
+  SeaWoman: I will go, immediately!! 
+  << set $currentAct2 to "final">>
 << else >> 
-SeaWoman: Hmm-mm! Yeah I have some more shells now!
-SeaWoman: But I could get many more... if you find me someone to love!!
-SeaWoman: I know you mentioned it but... I am not interested in you!
-SeaWoman: I have been with my shells for so long, I do not know who could love me!
-SeaWoman: Please! You will have many many more shells if you do this!!
-SeaWoman: Goodbye and good luck, hero!!
+  SeaWoman: Hmm-mm! Yeah I have some more shells now!
+  SeaWoman: But I could get many more... if you find me someone to love!!
+  SeaWoman: I know you mentioned it but... I am not interested in you!
+  SeaWoman: I have been with my shells for so long, I do not know who could love me!
+  SeaWoman: Please! You will have many many more shells if you do this!!
+  SeaWoman: Goodbye and good luck, hero!!
 << endif >>
 ===
 title: Elder_Gift5
 tags: Elder Intro
 colorID: 7
-position: 2148,-807
+position: 2115,-1340
 ---
 Elder: Oh how I love to see my friends fall in love...
 Elder: Maybe someday, I will feel that love as well.
@@ -943,6 +946,7 @@ position: 3368,-2158
   Godzilla: I need.... the hand of the one who summoned me!!
   Godzilla: I will give you no hints, fool!!!!!!
   Godzilla: Have fun, bubye!!!
+  <<set $godzillaAskedForHand to true>>
 << endif >>
 ===
 title: DressmakersFather_Final
