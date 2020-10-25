@@ -633,6 +633,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 0785fd80bdc569d48abbdd61dcb3c456, type: 3}
   - {fileID: 21300000, guid: f8a39cc553938e3428b1548a429d47a7, type: 3}
   - {fileID: 21300000, guid: 6f698ead5695617459adddd387b2de07, type: 3}
+  - {fileID: 21300000, guid: 0f6607aeeb858c34abf5651597ab0689, type: 3}
+  - {fileID: 21300000, guid: f1df2f19c8ec83f41b7b418423e5d08a, type: 3}
   emptySprite: {fileID: 21300000, guid: 528a6dd601766934abb8b1053bd798ef, type: 3}
 --- !u!114 &4055946176664247763
 MonoBehaviour:
