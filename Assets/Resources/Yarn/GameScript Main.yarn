@@ -607,6 +607,68 @@ Shells
 You need {$giftsNeeded} more gifts.
 << endif >>
 ===
+title: GiftBox_AllItems
+tags: GiftBox All
+colorID: 0
+position: -1237,68
+---
+<< set $deliveredItem to false>>
+
+<< if $leftHand == "dress" or $rightHand == "dress">>
+  <<event takeItem dress>>
+  <<set $lastTakenItem to "empty">>
+  Hunter: got dress!
+  << set $giftCount to ($giftCount+1)>> 
+  << set $currentAct to "gift2">>
+  << set $gotDress to true>>
+  << set $deliveredItem to true>>
+<<endif>>
+
+<< if $leftHand == "chair" or $rightHand == "chair">>
+  <<event takeItem chair>>
+  <<set $lastTakenItem to "empty">>
+  Hunter: got chair!
+  << set $giftCount to ($giftCount+1)>> 
+  << set $currentAct to "gift3">>
+  << set $gotChair to true>>
+  << set $deliveredItem to true>>
+<<endif>>
+
+<< if $leftHand == "ring" or $rightHand == "ring">>
+  <<event takeItem ring>>
+  <<set $lastTakenItem to "empty">>
+  Hunter: got ring!
+  << set $giftCount to ($giftCount+1)>> 
+  << set $currentAct to "final">>
+  << set $gotRing to true>>
+  << set $deliveredItem to true>>
+<<endif>>
+
+<< if $leftHand == "bouquet" or $rightHand == "bouquet">>
+  <<event takeItem bouquet>>
+  <<set $lastTakenItem to "empty">>
+  Hunter: got bouquet!
+  << set $giftCount to ($giftCount+1)>> 
+  << set $currentAct2 to "gift5">>
+  << set $gotBouquet to true>>
+  << set $deliveredItem to true>>
+<<endif>>
+
+<< if $leftHand == "shells" or $rightHand == "shells">>
+  <<event takeItem shells>>
+  <<set $lastTakenItem to "empty">>
+  << set $deliveredItem to true>>
+  << set $giftCount to ($giftCount+1)>> 
+  << set $currentAct2 to "final">>
+  << set $gotShells to true>>
+  Hunter: got shells!
+<<endif>>
+
+<< if not $deliveredItem>>
+  Hunter: Oh so nice to have a mail delivery box here so we don't have to climb up the hill all the time.
+  Hunter: I wonder who actually does the delivery...
+<<endif>>
+===
 title: GiftBox
 tags: GiftBox
 colorID: 0
