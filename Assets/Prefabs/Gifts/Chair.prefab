@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8077961088411019947}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.8, y: 0, z: -1.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -170,23 +170,22 @@ PrefabInstance:
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11400000, guid: 5a6b15bf63ae3a04991775dde0891f5f,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Raise
+      value: GiveItemToPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
@@ -196,7 +195,7 @@ PrefabInstance:
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: chair
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}

@@ -407,7 +407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2790830333126618862}
   m_Layer: 0
-  m_Name: Flowers
+  m_Name: Bouquet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2011,7 +2011,7 @@ GameObject:
   m_Layer: 0
   m_Name: Flowers
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2840,26 +2840,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Raycast Interactable
       objectReference: {fileID: 0}
+    - target: {fileID: 5016651375900167498, guid: e926a21db5a906e489d6686b06a702e7,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2.97
+      objectReference: {fileID: 0}
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11400000, guid: 5a6b15bf63ae3a04991775dde0891f5f,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Raise
+      value: GiveItemToPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
@@ -2869,7 +2873,7 @@ PrefabInstance:
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: bouquet
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}

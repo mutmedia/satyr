@@ -132,6 +132,7 @@ Godzilla: Why are you looking in my bath?
 ...
 Godzilla: Jeez, you’re a quiet thing, aren’t ya? I heard talk of a hero, is that you?
 Godzilla: Hmm.. well just in case you are, here’s my shopping list.
+<<event showShoppingList>>
 Godzilla: You can do that right? 
 Godzilla: Great, thanks.
 

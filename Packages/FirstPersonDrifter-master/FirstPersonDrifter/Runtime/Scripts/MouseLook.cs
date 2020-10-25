@@ -10,6 +10,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
+using UnityAtoms.BaseAtoms;
 
 public class MouseLook : MonoBehaviour
 {
@@ -18,8 +19,10 @@ public class MouseLook : MonoBehaviour
   public RotationAxes axes = RotationAxes.MouseX;
   public bool invertY = false;
 
-  public float sensitivityX = 10F;
-  public float sensitivityY = 9F;
+  public FloatReference SensitivityX;
+  public FloatReference SensitivityY;
+  public float sensitivityX => SensitivityX.Value;
+  public float sensitivityY => SensitivityY.Value;
 
   public float minimumX = -360F;
   public float maximumX = 360F;
@@ -106,12 +109,6 @@ public class MouseLook : MonoBehaviour
 
       transform.localRotation = originalRotation * Quaternion.AngleAxis(rotAverageY, Vector3.left);
     }
-  }
-
-  public void SetSensitivity(float s)
-  {
-    sensitivityX = s;
-    sensitivityY = s;
   }
 
   private static float ClampAngle(float angle, float min, float max)

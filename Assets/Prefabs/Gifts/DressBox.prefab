@@ -1025,23 +1025,22 @@ PrefabInstance:
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11400000, guid: 5a6b15bf63ae3a04991775dde0891f5f,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Raise
+      value: GiveItemToPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
@@ -1051,7 +1050,7 @@ PrefabInstance:
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: dress
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5016651376038706309, guid: e926a21db5a906e489d6686b06a702e7,
         type: 3}
