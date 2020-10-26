@@ -15,9 +15,11 @@ public class AttachPlayerToObject : MonoBehaviour
   public void AttachTo(Transform transform)
   {
     //attachedTo = transform;
+    var rot = drifter.transform.rotation;
     drifter.enabled = false;
     drifter.transform.parent = transform;
     drifter.transform.localPosition = Vector3.zero;
+    drifter.transform.rotation = rot;
   }
 
   public void AttachTo(GameObjectVariable goRef) => AttachTo(goRef.Value);
@@ -33,6 +35,7 @@ public class AttachPlayerToObject : MonoBehaviour
   public void Detach()
   {
     drifter.enabled = true;
+    if (drifter?.transform?.parent == null) return;
     drifter.transform.parent = initialParent;
   }
 }

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6686746539752222893}
   - component: {fileID: 4096577688327605366}
   - component: {fileID: 5745083439325226545}
-  - component: {fileID: 8243466741939577365}
   m_Layer: 0
   m_Name: alt1 4 (1)
   m_TagString: Untagged
@@ -80,20 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &8243466741939577365
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4015049829873832062}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3474386547526782354, guid: 9f004cf95d6d35345b6196d1e399032b, type: 3}
 --- !u!1 &4721244971370844031
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6419068673321885285}
   m_Layer: 0
-  m_Name: VaseFlower1
+  m_Name: VaseFlower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -137,7 +122,6 @@ GameObject:
   - component: {fileID: 3230877987524751727}
   - component: {fileID: 5502539452490627337}
   - component: {fileID: 597124136549062539}
-  - component: {fileID: 8374941181653727584}
   m_Layer: 0
   m_Name: alt2 4
   m_TagString: Untagged
@@ -206,17 +190,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &8374941181653727584
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8613356087958197898}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6115213024810385237, guid: 9f004cf95d6d35345b6196d1e399032b, type: 3}
