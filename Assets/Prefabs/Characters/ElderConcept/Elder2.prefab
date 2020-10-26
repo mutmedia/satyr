@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7327736661658367013}
   - component: {fileID: 258976828229758487}
   - component: {fileID: 1179256523051055347}
+  - component: {fileID: 1305341816970252627}
   m_Layer: 0
   m_Name: Elder2
   m_TagString: Untagged
@@ -113,6 +114,25 @@ MonoBehaviour:
   speakerText: {fileID: 11400000, guid: 74bfbd242df3da9449678d75b91b643d, type: 2}
   scriptToLoad: {fileID: 0}
   namedSpeakers: {fileID: 11400000, guid: e0b8e02cbf6bb8a42b0091dd6005e6e7, type: 2}
+--- !u!95 &1305341816970252627
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2571084783941747940}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e4d6436636231334bb77e0984a0456df, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6672088441425255592
 GameObject:
   m_ObjectHideFlags: 0

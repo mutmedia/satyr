@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 1469158181063685660}
   - component: {fileID: 7647173346520777712}
   - component: {fileID: 8408376220407773243}
+  - component: {fileID: 1864114987829982163}
   m_Layer: 0
   m_Name: Three Boys
   m_TagString: Untagged
@@ -208,6 +209,25 @@ MonoBehaviour:
   speakerText: {fileID: 11400000, guid: 180b835c975e85e479971fe36549ec58, type: 2}
   scriptToLoad: {fileID: 0}
   namedSpeakers: {fileID: 11400000, guid: e0b8e02cbf6bb8a42b0091dd6005e6e7, type: 2}
+--- !u!95 &1864114987829982163
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7128628479770269169}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c4ecf95106ed36b41899513259af11c4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7504280509809564755
 GameObject:
   m_ObjectHideFlags: 0

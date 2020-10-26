@@ -5075,6 +5075,7 @@ GameObject:
   - component: {fileID: 5162365649252956503}
   - component: {fileID: 8854186817828590329}
   - component: {fileID: 1720642444540735126}
+  - component: {fileID: 3187136941156885560}
   m_Layer: 0
   m_Name: OldWoman2
   m_TagString: Untagged
@@ -5176,6 +5177,25 @@ MonoBehaviour:
   speakerText: {fileID: 11400000, guid: 6e0eb5b34a5220c4f9c0297ecc5d81b4, type: 2}
   scriptToLoad: {fileID: 0}
   namedSpeakers: {fileID: 11400000, guid: e0b8e02cbf6bb8a42b0091dd6005e6e7, type: 2}
+--- !u!95 &3187136941156885560
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7128142400039556343}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &6436651245364929259
 PrefabInstance:
   m_ObjectHideFlags: 0
