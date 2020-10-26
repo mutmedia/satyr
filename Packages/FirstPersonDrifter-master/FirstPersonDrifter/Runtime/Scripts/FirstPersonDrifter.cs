@@ -42,7 +42,7 @@ public class FirstPersonDrifter : MonoBehaviour
   private bool grounded = false;
   private CharacterController controller;
   private Transform myTransform;
-  private float speed => (enableRunning.Value && isRunning) ? runSpeed.Value : walkSpeed.Value;
+  private float speed => (enableRunning.Value && IsRunning.Value) ? runSpeed.Value : walkSpeed.Value;
   private RaycastHit hit;
   private float fallStartLevel;
   private bool falling;
@@ -54,7 +54,7 @@ public class FirstPersonDrifter : MonoBehaviour
 
   private float inputX;
   private float inputY;
-  private bool isRunning;
+  [SerializeField] BoolReference IsRunning;
   private bool isJumping;
 
   private void Start()
@@ -167,7 +167,7 @@ public class FirstPersonDrifter : MonoBehaviour
 
   public void OnRun(InputAction.CallbackContext ctx)
   {
-    isRunning = ctx.performed;
+    IsRunning.Value = ctx.performed;
   }
 
   public void OnJump(InputAction.CallbackContext ctx)

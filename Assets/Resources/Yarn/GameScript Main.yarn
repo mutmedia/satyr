@@ -94,7 +94,7 @@ position: -619,-973
 Hunter: Ah you’re trying to get godzilla too? I’ve been trying to get ‘im for weeks. 
 Hunter: You seem like a strapping hero-type. I’ll come with you!
 <<set $showHandUI to true>>
-<<event giveItem hunter>>
+<<event giveHunter>>
 <<set $currentAct to "gift1">>
 <<set $currentAct2 to "gift4">>
 ===
@@ -1052,7 +1052,7 @@ Elder: But... alright I will come with you.
 Elder: I started this, I will see its end. No matter what it takes.
 Elder: For my friends.
 
-<<event giveItem elder >>
+<<event giveElder >>
 ===
 title: Woofcutter_Final
 tags: Woofcutter Final
