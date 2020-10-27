@@ -128,8 +128,9 @@ SubShader {
             v2f o;
             UNITY_SETUP_INSTANCE_ID(v);
             UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
-            float3 rotated = RotateAroundYInDegrees(v.vertex, _Rotation);
-            rotated = RotateAroundXInDegrees(rotated, _Pitch);
+            float3 rotated = v.vertex;
+            rotated = RotateAroundZInDegrees(rotated, _Pitch);
+            rotated = RotateAroundYInDegrees(rotated, _Rotation);
             o.vertex = UnityObjectToClipPos(rotated);
             o.texcoord = v.vertex.xyz;
 #ifdef _MAPPING_6_FRAMES_LAYOUT
@@ -217,6 +218,7 @@ SubShader {
             tc.y *= 0.5;
             tc.y += 0.5 * _TextureOffset;
             tc.y = fmod(tc.y, 1);
+            tc.x = fmod(tc.x, 1);
             half4 tex = tex2D (_MainTex, tc);
             half3 c = DecodeHDR (tex, _MainTex_HDR);
             c = c * _Tint.rgb * unity_ColorSpaceDouble.rgb;

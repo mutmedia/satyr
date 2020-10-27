@@ -1,5 +1,62 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1997563932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1997563933}
+  - component: {fileID: 1997563934}
+  m_Layer: 0
+  m_Name: RotateAtStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1997563933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997563932}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3478178959601416025}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1997563934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997563932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3f7d8f141f4254e9fcd62f78293de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3478178959062570551}
+        m_MethodName: Timeout
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3478178958381610923
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,13 +69,14 @@ GameObject:
   - component: {fileID: 3478178958381610926}
   - component: {fileID: 3478178958381610921}
   - component: {fileID: 4181005975529186772}
+  - component: {fileID: 1830889091832872263}
   m_Layer: 0
   m_Name: InterpolateDayToNight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3478178958381610920
 Transform:
   m_ObjectHideFlags: 0
@@ -31,7 +89,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3478178959601416025}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3478178958381610926
 MonoBehaviour:
@@ -110,7 +168,7 @@ MonoBehaviour:
   Callbacks:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3478178959186041340}
+      - m_Target: {fileID: 6489010196216719154}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -121,9 +179,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 3478178958381610923}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 7800212355276118605}
+        m_MethodName: Timeout
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -135,6 +193,17 @@ MonoBehaviour:
       - m_Target: {fileID: 11400000, guid: 9126df3daf4f104419b47afde027f912, type: 2}
         m_MethodName: set_Value
         m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3478178958381610923}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -181,6 +250,62 @@ MonoBehaviour:
     _list: {fileID: 0}
     _collectionInstancer: {fileID: 0}
     _listInstancer: {fileID: 0}
+--- !u!114 &1830889091832872263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3478178958381610923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8624ee775e301c4cb7ac00dd11f37b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interpolation:
+    _usage: 2
+    _value: 0
+    _constant: {fileID: 0}
+    _variable: {fileID: 11400000, guid: 9126df3daf4f104419b47afde027f912, type: 2}
+    _variableInstancer: {fileID: 0}
+  value0:
+    _usage: 0
+    _value: 180
+    _constant: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  value1:
+    _usage: 0
+    _value: 0
+    _constant: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  output: {fileID: 11400000, guid: 90a387654997540428d5de0ebaeb9d13, type: 2}
+  useCurve: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.1293482
+      outSlope: 0.1293482
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.061357703
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.057352263
+      outSlope: 0.057352263
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.06919062
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &3478178958776359454
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3478178958776359455
 Transform:
   m_ObjectHideFlags: 0
@@ -211,7 +336,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3478178959601416025}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3478178958776359452
 MonoBehaviour:
@@ -292,7 +417,7 @@ GameObject:
   - component: {fileID: 3478178959062570551}
   - component: {fileID: 3478178959062570550}
   m_Layer: 0
-  m_Name: SkyRotation
+  m_Name: SkyRotationDay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -310,7 +435,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3478178959601416025}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3478178959062570551
 MonoBehaviour:
@@ -333,7 +458,29 @@ MonoBehaviour:
   Callbacks:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3478178959062570551}
+      - m_Target: {fileID: 3478178959062570544}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3478178958381610923}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3478178958381610921}
         m_MethodName: Timeout
         m_Mode: 1
         m_Arguments:
@@ -371,15 +518,33 @@ MonoBehaviour:
     _variableInstancer: {fileID: 0}
   value1:
     _usage: 0
-    _value: 360
+    _value: 180
     _constant: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
   output: {fileID: 11400000, guid: 90a387654997540428d5de0ebaeb9d13, type: 2}
-  useCurve: 0
+  useCurve: 1
   curve:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.1293482
+      outSlope: 0.1293482
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.061357703
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.057352263
+      outSlope: 0.057352263
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.06919062
+      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -395,6 +560,7 @@ GameObject:
   - component: {fileID: 3478178959186041331}
   - component: {fileID: 3478178959186041330}
   - component: {fileID: 849307047}
+  - component: {fileID: 2989625379426684934}
   m_Layer: 0
   m_Name: InterpolateNightToDay
   m_TagString: Untagged
@@ -414,7 +580,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3478178959601416025}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3478178959186041331
 MonoBehaviour:
@@ -493,17 +659,6 @@ MonoBehaviour:
   Callbacks:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3478178958381610923}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 3478178959186041340}
         m_MethodName: SetActive
         m_Mode: 6
@@ -518,6 +673,28 @@ MonoBehaviour:
       - m_Target: {fileID: 11400000, guid: 7aab45b0f9658aa4f9d4689aca199ef6, type: 2}
         m_MethodName: set_Value
         m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3478178959062570544}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3478178959062570551}
+        m_MethodName: Timeout
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -564,6 +741,62 @@ MonoBehaviour:
     _list: {fileID: 0}
     _collectionInstancer: {fileID: 0}
     _listInstancer: {fileID: 0}
+--- !u!114 &2989625379426684934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3478178959186041340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8624ee775e301c4cb7ac00dd11f37b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interpolation:
+    _usage: 2
+    _value: 0
+    _constant: {fileID: 0}
+    _variable: {fileID: 11400000, guid: 9126df3daf4f104419b47afde027f912, type: 2}
+    _variableInstancer: {fileID: 0}
+  value0:
+    _usage: 0
+    _value: 180
+    _constant: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  value1:
+    _usage: 0
+    _value: 0
+    _constant: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  output: {fileID: 11400000, guid: 90a387654997540428d5de0ebaeb9d13, type: 2}
+  useCurve: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.1293482
+      outSlope: 0.1293482
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.061357703
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.057352263
+      outSlope: 0.057352263
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.06919062
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &3478178959601416026
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,10 +827,12 @@ Transform:
   m_LocalPosition: {x: 354.41318, y: 178.45865, z: 1273.3503}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3478178958381610920}
-  - {fileID: 3478178959186041341}
   - {fileID: 3478178959062570545}
+  - {fileID: 3478178958381610920}
+  - {fileID: 1522426340845258315}
+  - {fileID: 3478178959186041341}
   - {fileID: 3478178958776359455}
+  - {fileID: 1997563933}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -684,3 +919,146 @@ MonoBehaviour:
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 11400000, guid: 90a387654997540428d5de0ebaeb9d13, type: 2}
     _variableInstancer: {fileID: 0}
+--- !u!1 &6489010196216719154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1522426340845258315}
+  - component: {fileID: 7800212355276118605}
+  - component: {fileID: 4619984963181107278}
+  m_Layer: 0
+  m_Name: SkyRotationNight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1522426340845258315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6489010196216719154}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3478178959601416025}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7800212355276118605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6489010196216719154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106cd4097cbc9d24f83b2efa9f5bc1e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Duration:
+    _usage: 1
+    _value: 20
+    _constant: {fileID: 11400000, guid: 5abd2ded4be50dc46adf97df4dc060d2, type: 2}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  Callbacks:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6489010196216719154}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3478178959186041340}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3478178959186041330}
+        m_MethodName: Timeout
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Elapsed: {fileID: 11400000, guid: ca483e3b1eb432143bce7d6657a1ed34, type: 2}
+--- !u!114 &4619984963181107278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6489010196216719154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8624ee775e301c4cb7ac00dd11f37b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interpolation:
+    _usage: 2
+    _value: 0
+    _constant: {fileID: 0}
+    _variable: {fileID: 11400000, guid: ca483e3b1eb432143bce7d6657a1ed34, type: 2}
+    _variableInstancer: {fileID: 0}
+  value0:
+    _usage: 0
+    _value: 0
+    _constant: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  value1:
+    _usage: 0
+    _value: 180
+    _constant: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+  output: {fileID: 11400000, guid: 90a387654997540428d5de0ebaeb9d13, type: 2}
+  useCurve: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.1293482
+      outSlope: 0.1293482
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.061357703
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.057352263
+      outSlope: 0.057352263
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.06919062
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

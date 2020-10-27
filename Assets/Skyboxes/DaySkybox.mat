@@ -68,12 +68,13 @@ Material:
     - _Pitch: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Rotation: 92
+    - _Rotation: 46
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
+    - _TextureOffset: 0.25
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
