@@ -47,7 +47,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3478178959062570551}
-        m_MethodName: Timeout
+        m_MethodName: TimeoutMultiplied
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -57,6 +57,73 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &3134440188064281533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 536609247900649819}
+  - component: {fileID: 4028805077440165212}
+  m_Layer: 0
+  m_Name: ChangeMultiplier On Player Run
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &536609247900649819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3134440188064281533}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1761711720541408925}
+  m_Father: {fileID: 3478178959601416025}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4028805077440165212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3134440188064281533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6ab7cbc45164d19b20476265c251c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6370194617971697488}
+        m_MethodName: SetActive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 2
+    _event: {fileID: 0}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 11400000, guid: 52c528e24d7c0c547a68e1379d13f9c2, type: 2}
+    _variableInstancer: {fileID: 0}
 --- !u!1 &3478178958381610923
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,7 +184,7 @@ MonoBehaviour:
     _variableInstancer: {fileID: 0}
   value1:
     _usage: 0
-    _value: 2
+    _value: 0
     _constant: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
@@ -180,7 +247,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 7800212355276118605}
-        m_MethodName: Timeout
+        m_MethodName: TimeoutMultiplied
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -213,6 +280,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   Elapsed: {fileID: 11400000, guid: 9126df3daf4f104419b47afde027f912, type: 2}
+  Multiplier: {fileID: 0}
 --- !u!114 &4181005975529186772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,15 +337,15 @@ MonoBehaviour:
     _variable: {fileID: 11400000, guid: 9126df3daf4f104419b47afde027f912, type: 2}
     _variableInstancer: {fileID: 0}
   value0:
-    _usage: 0
+    _usage: 1
     _value: 180
-    _constant: {fileID: 0}
+    _constant: {fileID: 11400000, guid: 6597c02cfc56d75449ebbe93b886ec7a, type: 2}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
   value1:
-    _usage: 0
+    _usage: 1
     _value: 0
-    _constant: {fileID: 0}
+    _constant: {fileID: 11400000, guid: 4bcb95989843a144db4beb7e0e3e62bd, type: 2}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
   output: {fileID: 11400000, guid: 90a387654997540428d5de0ebaeb9d13, type: 2}
@@ -492,6 +560,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   Elapsed: {fileID: 11400000, guid: 9e3255baf17627c468036ccbfbe5fe71, type: 2}
+  Multiplier: {fileID: 11400000, guid: 5ad419492e9936648b66ebb8ab1aa7a3, type: 2}
 --- !u!114 &3478178959062570550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,15 +580,15 @@ MonoBehaviour:
     _variable: {fileID: 11400000, guid: 9e3255baf17627c468036ccbfbe5fe71, type: 2}
     _variableInstancer: {fileID: 0}
   value0:
-    _usage: 0
+    _usage: 1
     _value: 0
-    _constant: {fileID: 0}
+    _constant: {fileID: 11400000, guid: 4bcb95989843a144db4beb7e0e3e62bd, type: 2}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
   value1:
-    _usage: 0
+    _usage: 1
     _value: 180
-    _constant: {fileID: 0}
+    _constant: {fileID: 11400000, guid: 6597c02cfc56d75449ebbe93b886ec7a, type: 2}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
   output: {fileID: 11400000, guid: 90a387654997540428d5de0ebaeb9d13, type: 2}
@@ -693,7 +762,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 3478178959062570551}
-        m_MethodName: Timeout
+        m_MethodName: TimeoutMultiplied
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -704,6 +773,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   Elapsed: {fileID: 11400000, guid: 7aab45b0f9658aa4f9d4689aca199ef6, type: 2}
+  Multiplier: {fileID: 0}
 --- !u!114 &849307047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -757,18 +827,18 @@ MonoBehaviour:
     _usage: 2
     _value: 0
     _constant: {fileID: 0}
-    _variable: {fileID: 11400000, guid: 9126df3daf4f104419b47afde027f912, type: 2}
+    _variable: {fileID: 11400000, guid: 7aab45b0f9658aa4f9d4689aca199ef6, type: 2}
     _variableInstancer: {fileID: 0}
   value0:
-    _usage: 0
+    _usage: 1
     _value: 180
-    _constant: {fileID: 0}
+    _constant: {fileID: 11400000, guid: 6597c02cfc56d75449ebbe93b886ec7a, type: 2}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
   value1:
-    _usage: 0
+    _usage: 1
     _value: 0
-    _constant: {fileID: 0}
+    _constant: {fileID: 11400000, guid: 4bcb95989843a144db4beb7e0e3e62bd, type: 2}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
   output: {fileID: 11400000, guid: 90a387654997540428d5de0ebaeb9d13, type: 2}
@@ -777,8 +847,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 0
+      time: -0.0013037698
+      value: 0.003968254
       inSlope: 0.1293482
       outSlope: 0.1293482
       tangentMode: 0
@@ -833,6 +903,7 @@ Transform:
   - {fileID: 3478178959186041341}
   - {fileID: 3478178958776359455}
   - {fileID: 1997563933}
+  - {fileID: 536609247900649819}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -919,6 +990,90 @@ MonoBehaviour:
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 11400000, guid: 90a387654997540428d5de0ebaeb9d13, type: 2}
     _variableInstancer: {fileID: 0}
+--- !u!1 &6370194617971697488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1761711720541408925}
+  - component: {fileID: 3482852472245753571}
+  - component: {fileID: 6010958740823829622}
+  m_Layer: 0
+  m_Name: Toggler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1761711720541408925
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370194617971697488}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 536609247900649819}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3482852472245753571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370194617971697488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fba1c58913432224e82c2e8636b3d95f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 5ad419492e9936648b66ebb8ab1aa7a3, type: 2}
+        m_MethodName: set_Value
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 40
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6010958740823829622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370194617971697488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af664413ed77f0247a6e883b748d1279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 5ad419492e9936648b66ebb8ab1aa7a3, type: 2}
+        m_MethodName: set_Value
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6489010196216719154
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,6 +1161,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   Elapsed: {fileID: 11400000, guid: ca483e3b1eb432143bce7d6657a1ed34, type: 2}
+  Multiplier: {fileID: 11400000, guid: 5ad419492e9936648b66ebb8ab1aa7a3, type: 2}
 --- !u!114 &4619984963181107278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1025,15 +1181,15 @@ MonoBehaviour:
     _variable: {fileID: 11400000, guid: ca483e3b1eb432143bce7d6657a1ed34, type: 2}
     _variableInstancer: {fileID: 0}
   value0:
-    _usage: 0
+    _usage: 1
     _value: 0
-    _constant: {fileID: 0}
+    _constant: {fileID: 11400000, guid: 4bcb95989843a144db4beb7e0e3e62bd, type: 2}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
   value1:
-    _usage: 0
+    _usage: 1
     _value: 180
-    _constant: {fileID: 0}
+    _constant: {fileID: 11400000, guid: 6597c02cfc56d75449ebbe93b886ec7a, type: 2}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
   output: {fileID: 11400000, guid: 90a387654997540428d5de0ebaeb9d13, type: 2}

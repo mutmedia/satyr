@@ -18,9 +18,27 @@ namespace MutCommon.UnityAtoms
     [Tooltip("How much of the current timeout has elapsed (0 -> 1)")]
     private FloatVariable Elapsed;
 
+    [SerializeField]
+    [Tooltip("Custom time multiplier")]
+    private FloatVariable Multiplier;
+
+    private float multiplier => Mathf.Max(0.0001f, Multiplier.Value);
+
     public void TimeoutCustom(float duration) => StartCoroutine(DoTimeout(duration));
     public void TimeoutCustom(FloatConstant duration) => TimeoutCustom(duration.Value);
     public void Timeout() => TimeoutCustom(Duration.Value);
+
+    public void TimeoutMultiplied() => StartCoroutine(DoTimeoutMultiplied(Duration.Value));
+
+    IEnumerator DoTimeoutMultiplied(float duration)
+    {
+      if (Elapsed != null)
+        yield return CoroutineHelpers.InterpolateByTimeCustom(() => Time.deltaTime * multiplier, duration, k => Elapsed.SetValue(k));
+      else
+        yield return CoroutineHelpers.InterpolateByTimeCustom(() => Time.deltaTime * multiplier, duration, _ => { });
+
+      Callbacks?.Invoke();
+    }
 
     IEnumerator DoTimeout(float duration)
     {

@@ -7,7 +7,19 @@ using UnityEngine;
 public class AttachPlayerToObject : MonoBehaviour
 {
   public float smooth = 0.8f;
-  private FirstPersonDrifter drifter;
+  private FirstPersonDrifter _drifter;
+  private FirstPersonDrifter drifter
+  {
+    get
+    {
+      if (_drifter == null)
+      {
+        _drifter = GetComponent<FirstPersonDrifter>();
+      }
+      return _drifter;
+    }
+  }
+
   [SerializeField] private Transform attachedTo;
   private Transform initialParent;
 
@@ -28,7 +40,6 @@ public class AttachPlayerToObject : MonoBehaviour
 
   private void Awake()
   {
-    drifter = GetComponent<FirstPersonDrifter>();
     initialParent = transform.parent;
   }
 
