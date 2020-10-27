@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1811454339669449808}
   - component: {fileID: 1755541173039853411}
   - component: {fileID: 3202732676188065486}
+  - component: {fileID: 8443822079836194686}
   m_Layer: 0
   m_Name: Shopkeep
   m_TagString: Untagged
@@ -114,6 +115,25 @@ MonoBehaviour:
   speakerText: {fileID: 11400000, guid: cb47fcb83585b32439c3153e0d002af4, type: 2}
   scriptToLoad: {fileID: 0}
   namedSpeakers: {fileID: 11400000, guid: e0b8e02cbf6bb8a42b0091dd6005e6e7, type: 2}
+--- !u!95 &8443822079836194686
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151750273605435078}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3d7ceabf5a9024e4dbba91131ae0dc35, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7022394538867785831
 GameObject:
   m_ObjectHideFlags: 0

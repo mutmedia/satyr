@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3263150687699038905}
   - component: {fileID: 3344490987951784412}
   - component: {fileID: 6458459656366664261}
+  - component: {fileID: 6466008671141840671}
   m_Layer: 0
   m_Name: Dressmaker's Father
   m_TagString: Untagged
@@ -118,6 +119,25 @@ MonoBehaviour:
   speakerText: {fileID: 11400000, guid: 5f7420a87b1e4874c88e1f8f7a2a34e9, type: 2}
   scriptToLoad: {fileID: 0}
   namedSpeakers: {fileID: 11400000, guid: e0b8e02cbf6bb8a42b0091dd6005e6e7, type: 2}
+--- !u!95 &6466008671141840671
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509735786872562118}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7a85381790311ba4080df0df2f57cf14, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &604460552817361938
 GameObject:
   m_ObjectHideFlags: 0
