@@ -1340,16 +1340,23 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2949315210678551602, guid: 10fc7b31aa260f04894d547ede6506e2,
+    - target: {fileID: 2949315210678551603, guid: 10fc7b31aa260f04894d547ede6506e2,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 93.34
+      propertyPath: m_fontStyle
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2949315210678551602, guid: 10fc7b31aa260f04894d547ede6506e2,
+    - target: {fileID: 2949315210678551603, guid: 10fc7b31aa260f04894d547ede6506e2,
         type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -70.072
-      objectReference: {fileID: 0}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a7b53a19aef81bd4b8729c8b51741897,
+        type: 2}
+    - target: {fileID: 2949315210678551603, guid: 10fc7b31aa260f04894d547ede6506e2,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2325712254410184572, guid: a7b53a19aef81bd4b8729c8b51741897,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10fc7b31aa260f04894d547ede6506e2, type: 3}
 --- !u!224 &3881398209087536241 stripped
