@@ -31,10 +31,8 @@ position: -415,-1704
 ---
 << if not visited ("StephenTheDisaster_Intro0")>> 
 [[ StephenTheDisaster_Intro0 ]]
-<< elseif not visited ("StephenTheDisaster_Intro1")>> 
+<< else>> 
 [[ StephenTheDisaster_Intro1 ]]
-<< else >> 
-[[ StephenTheDisaster_Intro0 ]]
 << endif >>
 ===
 title: SeaWoman_Intro
@@ -54,10 +52,8 @@ position: -638,-1706
 ---
 << if not visited ("FlowerWoman_Intro0")>> 
 [[ FlowerWoman_Intro0 ]]
-<< elseif not visited ("FlowerWoman_Intro1")>> 
+<< else>> 
 [[ FlowerWoman_Intro1 ]]
-<< else >> 
-[[ FlowerWoman_Intro0 ]]
 << endif >>
 ===
 title: Shopkeep_Intro
@@ -171,12 +167,15 @@ Dressmaker: Bye!
 title: StephenTheDisaster_Gift1
 tags: StephenTheDisaster Gift1
 colorID: 4
-position: 576,-1774
+position: 642,-1751
 ---
-StephenTheDisaster: Hey you are in my house!
-StephenTheDisaster: Please leave!
-StephenTheDisaster: I'm trying to........ plan.
-StephenTheDisaster: Goodbye weirdo!!
+<< if not visited ("StephenTheDisaster_Gift1_0")>> 
+[[ StephenTheDisaster_Gift1_0 ]]
+<< elseif not visited ("StephenTheDisaster_Gift1_1")>> 
+[[ StephenTheDisaster_Gift1_1 ]]
+<< else >>
+[[ StephenTheDisaster_Gift1_0 ]]
+<< endif >>
 ===
 title: Shopkeep_Gift1
 tags: Shopkeep Gift1
@@ -228,15 +227,15 @@ position: 574,-2104
 title: StephenTheDisaster_Gift2
 tags: StephenTheDisaster Gift2
 colorID: 3
-position: 1238,-1754
+position: 1259,-1783
 ---
-StephenTheDisaster: Hmmm!!
-StephenTheDisaster: Please leave my home.
-StephenTheDisaster: I know that the dressmaker is not enamored with the shopkeep anymore....
-StephenTheDisaster: But now she is interested in the woodcutter!!!
-StephenTheDisaster: Hhghgg!!
-StephenTheDisaster: I am sadly alone in my hole!!
-StephenTheDisaster: Goodbye!!!
+<< if not visited ("StephenTheDisaster_Gift2_0")>> 
+[[ StephenTheDisaster_Gift2_0 ]]
+<< elseif not visited ("StephenTheDisaster_Gift2_1")>> 
+[[ StephenTheDisaster_Gift2_1 ]]
+<< else >>
+[[ StephenTheDisaster_Gift2_0 ]]
+<< endif >>
 ===
 title: Woofcutter_Gift2
 tags: Woofcutter Gift2
@@ -269,13 +268,15 @@ Woofcutter: Uhh bye I guess.
 title: Shopkeep_Gift2
 tags: Shopkeep Gift2
 colorID: 3
-position: 1448,-1759
+position: 1490,-1781
 ---
-Shopkeep: Oh hey brah!
-Shopkeep: I hear y'all heroes are setting people up!
-Shopkeep: Maybe you'll find me my soul mate!!
-Shopkeep: Haha I'm just kidding, have fun with your hero-ing!
-Shopkeep: Later, man!
+<< if not visited ("Shopkeep_Gift2_0")>> 
+[[ Shopkeep_Gift2_0 ]]
+<< elseif not visited ("Shopkeep_Gift2_1")>> 
+[[ Shopkeep_Gift2_1 ]]
+<< else >>
+[[ Shopkeep_Gift2_0 ]]
+<< endif >>
 ===
 title: Dressmaker_Gift2
 tags: Dressmaker Gift2
@@ -401,12 +402,15 @@ position: 2082,-2083
 title: DressmakersFather_Gift3
 tags: DressmakersFather Gift3
 colorID: 2
-position: 1980,-1757
+position: 1947,-1782
 ---
-DressmakersFather: Hm. 
-DressmakersFather: Yes Stephen is a bother but he is a good kid.
-DressmakersFather: He just needs to love himself.
-DressmakersFather: That is all.
+<< if not visited ("DressmakersFather_Gift3_0")>> 
+[[ DressmakersFather_Gift3_0 ]]
+<< elseif not visited ("DressmakersFather_Gift3_1")>> 
+[[ DressmakersFather_Gift3_1 ]]
+<< else >>
+[[ DressmakersFather_Gift3_0 ]]
+<< endif >>
 ===
 title: Dressmaker_Gift3
 tags: Dressmaker Gift3
@@ -425,14 +429,15 @@ Dressmaker: Thanks bye!!
 title: Woofcutter_Gift3
 tags: Woofcutter Gift3
 colorID: 2
-position: 2192,-1756
+position: 2159,-1781
 ---
-Woofcutter: Uhh yeah the dressmaker and I have been hanging out.
-Woofcutter: It's nice!!
-Woofcutter: She's very cool...
-Woofcutter: I think she likes me.
-Woofcutter: But yeah, Stephen likes to try to.. third wheel.
-Woofcutter: He'll figure it out though! He's doing his best, I think.
+<< if not visited ("Woofcutter_Gift3_0")>> 
+[[ Woofcutter_Gift3_0 ]]
+<< elseif not visited ("Woofcutter_Gift3_1")>> 
+[[ Woofcutter_Gift3_1 ]]
+<< else >>
+[[ Woofcutter_Gift3_0 ]]
+<< endif >>
 ===
 title: Elder
 tags: Elder Main
@@ -770,7 +775,7 @@ position: 2493,-2091
 title: GiftBox_Gift4_Bouquet
 tags: GiftBox Gift4 Bouquet Deprecated
 colorID: 0
-position: 1604,-1003
+position: 1553,-619
 ---
 <<event takeItem bouquet>>
 << if $lastTakenItem eq ("bouquet")>> 
@@ -785,7 +790,7 @@ position: 1604,-1003
 title: GiftBox_Gift5_Shells
 tags: GiftBox Gift5 Shells Deprecated
 colorID: 0
-position: 2413,-1016
+position: 2362,-632
 ---
 <<event takeItem shells>>
 << if $lastTakenItem eq ("shells")>> 
@@ -807,7 +812,7 @@ position: 2413,-1016
 title: FlowerWoman_Gift4
 tags: FlowerWoman Gift4
 colorID: 6
-position: 1208,-1330
+position: 1157,-946
 ---
 <<if visited("SeaWoman_Gift4")>>
   FlowerWoman: Oh, has no one caught your eye?
@@ -831,16 +836,20 @@ position: 1208,-1330
 title: LostBoys_Gift4
 tags: LostBoys Gift4
 colorID: 6
-position: 1202,-799
+position: 1151,-415
 ---
-LostBoys: Ohh haha why's that lady just pickin flowers? >:P
-LostBoys: Haha are you here to pick flowers too?
-LostBoys: You nerd!! |:V
+<< if not visited ("Woofcutter_Gift3_0")>> 
+[[ LostBoys_Gift4_0 ]]
+<< elseif not visited ("Woofcutter_Gift3_1")>> 
+[[ LostBoys_Gift4_1 ]]
+<< else >>
+[[ LostBoys_Gift4_0 ]]
+<< endif >>
 ===
 title: SeaWoman_Gift4
 tags: SeaWoman Intro
 colorID: 6
-position: 1323,-1113
+position: 1272,-729
 ---
 SeaWoman: Ah-hah!! Our hero!!
 SeaWoman: Oh dear! Shells? I lost all of them in the sea when Godzilla arrived.
@@ -854,7 +863,7 @@ SeaWoman: Maybe if you were a little older!
 title: Elder_Gift4
 tags: Elder Intro
 colorID: 6
-position: 1105,-1110
+position: 1054,-726
 ---
 <<if visited("FlowerWoman_Gift4")>>
 Elder: Hm-mmm??
@@ -876,7 +885,7 @@ Elder: It couldn't be because I.... No.. of course not.
 title: SeaWoman_Gift5
 tags: SeaWoman Intro
 colorID: 7
-position: 1994,-1338
+position: 1943,-954
 ---
 <<if visited("FlowerWoman_Gift5")>>
   SeaWoman: Oh!! Someone wants to love me??
@@ -898,7 +907,7 @@ position: 1994,-1338
 title: Elder_Gift5
 tags: Elder Intro
 colorID: 7
-position: 2204,-1337
+position: 2153,-953
 ---
 Elder: Oh how I love to see my friends fall in love...
 Elder: Maybe someday, I will feel that love as well.
@@ -908,7 +917,7 @@ Elder: Leave an old man to his sadness.
 title: FlowerWoman_Gift5
 tags: FlowerWoman Gift5
 colorID: 7
-position: 2078,-1125
+position: 2027,-741
 ---
 <<if visited("SeaWoman_Gift5")>>
 FlowerWoman: ... yes dear?
@@ -928,7 +937,7 @@ FlowerWoman: Ta-tah!!
 title: LostBoys_Gift5
 tags: LostBoys Gift5
 colorID: 7
-position: 1938,-803
+position: 2026,-525
 ---
 LostBoys: Hehehe that lady likes pickin flowers >:)
 LostBoys: We only do cool stuff, like skateboards!!
@@ -989,7 +998,7 @@ position: 3368,-2158
 title: DressmakersFather_Final
 tags: DressmakersFather Final
 colorID: 8
-position: 3891,-1283
+position: 3818,-1287
 ---
 DressmakersFather: Hm.
 DressmakersFather: You've done good.
@@ -998,7 +1007,7 @@ DressmakersFather: Thank you, hero.
 title: LostBoys_Final
 tags: LostBoys Final
 colorID: 8
-position: 4101,-1285
+position: 4032,-1286
 ---
 LostBoys: Heeehehee
 LostBoys: We didn't have any moms
@@ -1011,7 +1020,7 @@ LostBoys: But they're cool I guess. ¯\_(ツ)_/¯
 title: Dressmaker_Final
 tags: Dressmaker Final
 colorID: 8
-position: 3260,-1293
+position: 3187,-1297
 ---
 Dressmaker: Hmm, yes? 
 Dressmaker: Oh, hello hero!
@@ -1022,7 +1031,7 @@ Dressmaker: Mmm... thank you hero! I will see you later!
 title: StephenTheDisaster_Final
 tags: StephenTheDisaster Final
 colorID: 8
-position: 3046,-1295
+position: 2973,-1299
 ---
 << if not visited("StephenTheDisaster_Final0")>>
 [[ StephenTheDisaster_Final0 ]]
@@ -1035,7 +1044,7 @@ position: 3046,-1295
 title: SeaWoman_Final
 tags: SeaWoman Final
 colorID: 8
-position: 4525,-1282
+position: 4456,-1283
 ---
 SeaWoman: Oh, hero! You have made me very happy!!!
 SeaWoman: Thank you!! You may have as many shells as you desire!!
@@ -1046,7 +1055,7 @@ SeaWoman: I will see you later, hero!
 title: FlowerWoman_Final
 tags: FlowerWoman Final
 colorID: 8
-position: 4316,-1282
+position: 4247,-1283
 ---
 FlowerWoman: Oh, hello my dear hero.
 FlowerWoman: We are getting on just fine!
@@ -1059,7 +1068,7 @@ FlowerWoman: Maybe he will know.
 title: Shopkeep_Final
 tags: Shopkeep Final
 colorID: 8
-position: 3468,-1289
+position: 3395,-1293
 ---
 Shopkeep: Hey brah, how's it going?
 Shopkeep: Oh yeah Stephen and I are doing just fine!
@@ -1093,7 +1102,7 @@ Elder: For my friends.
 title: Woofcutter_Final
 tags: Woofcutter Final
 colorID: 8
-position: 3679,-1288
+position: 3606,-1292
 ---
 Woofcutter: Hm? O-oh yes the dressmaker and I are doing very well, thank you!
 Woofcutter: We are taking things slowly, but she is.. a very beautiful person!!
@@ -1147,7 +1156,7 @@ position: -1686,-1593
 title: StephenTheDisaster_Final0
 tags: 
 colorID: 8
-position: 2942,-990
+position: 2869,-994
 ---
 StephenTheDisaster: O-oh yes I am now glad you're in my hole.
 StephenTheDisaster: We're friends now!!
@@ -1160,7 +1169,7 @@ StephenTheDisaster: Okay okay I know you have things to do, goodbye friend!!
 title: StephenTheDisaster_Final1
 tags: 
 colorID: 8
-position: 3159,-989
+position: 3086,-993
 ---
 StephenTheDisaster: I hope your Godzilla thing goes well!
 StephenTheDisaster: Let me know if you need anything!!
@@ -1169,7 +1178,7 @@ StephenTheDisaster: Okay, goodbye friend!!
 title: StephenTheDisaster_Final2
 tags: 
 colorID: 8
-position: 3037,-781
+position: 2964,-785
 ---
 StephenTheDisaster: O-oh yes I am now glad you're in my hole.
 StephenTheDisaster: We're friends now!!
@@ -1313,4 +1322,118 @@ position: 273,-1266
 Woofcutter: Oh I'm cutting wood, do you need something?
 Woofcutter: Godzilla is up the mountain.
 Woofcutter: Mmm bye!
+===
+title: StephenTheDisaster_Gift1_1
+tags: StephenTheDisaster Gift1
+colorID: 4
+position: 627,-1332
+---
+StephenTheDisaster: HeLLO WhatAreYouDoingHereGoAWAY
+===
+title: StephenTheDisaster_Gift1_0
+tags: StephenTheDisaster Gift1
+colorID: 4
+position: 677,-1543
+---
+StephenTheDisaster: Hey you are in my house!
+StephenTheDisaster: Please leave!
+StephenTheDisaster: I'm trying to........ plan.
+StephenTheDisaster: Goodbye weirdo!!
+===
+title: StephenTheDisaster_Gift2_0
+tags: StephenTheDisaster Gift2
+colorID: 3
+position: 1314,-1568
+---
+StephenTheDisaster: Hmmm!!
+StephenTheDisaster: Please leave my home.
+StephenTheDisaster: I know that the dressmaker is not enamored with the shopkeep anymore....
+StephenTheDisaster: But now she is interested in the woodcutter!!!
+StephenTheDisaster: Hhghgg!!
+StephenTheDisaster: I am sadly alone in my hole!!
+StephenTheDisaster: Goodbye!!!
+===
+title: Shopkeep_Gift2_0
+tags: Shopkeep Gift2
+colorID: 3
+position: 1562,-1568
+---
+Shopkeep: Oh hey brah!
+Shopkeep: I hear y'all heroes are setting people up!
+Shopkeep: Maybe you'll find me my soul mate!!
+Shopkeep: Haha I'm just kidding, have fun with your hero-ing!
+Shopkeep: Later, man!
+===
+title: StephenTheDisaster_Gift2_1
+tags: StephenTheDisaster Gift2
+colorID: 3
+position: 1274,-1357
+---
+StephenTheDisaster: UHMM GoAwayPlease IAmPlanningggg
+===
+title: Shopkeep_Gift2_1
+tags: Shopkeep Gift2
+colorID: 3
+position: 1515,-1355
+---
+Shopkeep: Uhh.. seriously though dude if you find me a nice guy...
+Shopkeep: Y'know just.. let them know I'm here..
+Shopkeep: UhH Bye!!
+===
+title: DressmakersFather_Gift3_0
+tags: DressmakersFather Gift3
+colorID: 2
+position: 2027,-1569
+---
+DressmakersFather: Hm. 
+DressmakersFather: Yes Stephen is a bother but he is a good kid.
+DressmakersFather: He just needs to love himself.
+DressmakersFather: That is all.
+===
+title: Woofcutter_Gift3_0
+tags: Woofcutter Gift3
+colorID: 2
+position: 2239,-1568
+---
+Woofcutter: Uhh yeah the dressmaker and I have been hanging out.
+Woofcutter: It's nice!!
+Woofcutter: She's very cool...
+Woofcutter: I think she likes me.
+Woofcutter: But yeah, Stephen likes to try to.. third wheel.
+Woofcutter: He'll figure it out though! He's doing his best, I think.
+===
+title: DressmakersFather_Gift3_1
+tags: DressmakersFather Gift3
+colorID: 2
+position: 1959,-1349
+---
+DressmakersFather: Hmm.. You're doing good work.
+===
+title: Woofcutter_Gift3_1
+tags: Woofcutter Gift3
+colorID: 2
+position: 2171,-1348
+---
+Woofcutter: Oh uhh..
+Woofcutter: Let me know if you need anything!!
+Woofcutter: I'm here!!!
+Woofcutter: Bye!!!!
+===
+title: LostBoys_Gift4_0
+tags: LostBoys Gift4
+colorID: 6
+position: 1244,-197
+---
+LostBoys: Ohh haha why's that lady just pickin flowers? >:P
+LostBoys: Haha are you here to pick flowers too?
+LostBoys: You nerd!! |:V
+===
+title: LostBoys_Gift4_1
+tags: LostBoys Gift4
+colorID: 6
+position: 1130,8
+---
+LostBoys: We're just here
+LostBoys: Don't ask us for help
+LostBoys: We're too busy playing gameboy and skateboards >:3
 ===
