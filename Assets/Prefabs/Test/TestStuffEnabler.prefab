@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 2901080256837722515}
   - component: {fileID: 6620445141548781891}
   m_Layer: 5
-  m_Name: Bear
+  m_Name: Hunter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -162,7 +162,7 @@ RectTransform:
   m_Children:
   - {fileID: 4195511379195649683}
   m_Father: {fileID: 7144504542637874314}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -249,9 +249,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 5a6b15bf63ae3a04991775dde0891f5f, type: 2}
+      - m_Target: {fileID: 11400000, guid: d631994774e4ea0448fedfbf043688f6, type: 2}
         m_MethodName: Raise
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3594,7 +3594,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bear
+  m_text: Elder
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3898,13 +3898,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.43072927, y: 0.43072927, z: 0.43072927}
   m_Children:
+  - {fileID: 1292572741949686990}
   - {fileID: 7685636754508124340}
   - {fileID: 6291096227969022962}
   - {fileID: 2345595099037950084}
   - {fileID: 2302592154651453183}
   - {fileID: 1280838698168191990}
   - {fileID: 9201823615985183879}
-  - {fileID: 1292572741949686990}
   m_Father: {fileID: 7027050899695385009}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4710,7 +4710,7 @@ RectTransform:
   m_Children:
   - {fileID: 4408779254848861674}
   m_Father: {fileID: 7144504542637874314}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5166,7 +5166,7 @@ RectTransform:
   m_Children:
   - {fileID: 4978648377954954834}
   m_Father: {fileID: 7144504542637874314}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6877,7 +6877,7 @@ GameObject:
   - component: {fileID: 2976532491316052116}
   - component: {fileID: 7630188875718720501}
   m_Layer: 5
-  m_Name: Turtle
+  m_Name: Elder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6896,7 +6896,7 @@ RectTransform:
   m_Children:
   - {fileID: 3321138021733813515}
   m_Father: {fileID: 7144504542637874314}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6983,9 +6983,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 5a6b15bf63ae3a04991775dde0891f5f, type: 2}
+      - m_Target: {fileID: 11400000, guid: 59ffc88f9ecac0a488b185826cd32f25, type: 2}
         m_MethodName: Raise
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7026,7 +7026,7 @@ RectTransform:
   m_Children:
   - {fileID: 1489274760815460424}
   m_Father: {fileID: 7144504542637874314}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8914,7 +8914,7 @@ RectTransform:
   m_Children:
   - {fileID: 6733242663789382997}
   m_Father: {fileID: 7144504542637874314}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -10151,7 +10151,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Turtle
+  m_text: Elder
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10252,7 +10252,7 @@ RectTransform:
   m_Children:
   - {fileID: 385122377276418785}
   m_Father: {fileID: 7144504542637874314}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -11232,7 +11232,7 @@ PrefabInstance:
     - target: {fileID: 2561733017819439565, guid: 042f21041a01d3c4f92ffcf1a7ea06ec,
         type: 3}
       propertyPath: m_Value
-      value: 8.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4361378028981197874, guid: 042f21041a01d3c4f92ffcf1a7ea06ec,
         type: 3}
@@ -11378,7 +11378,7 @@ PrefabInstance:
     - target: {fileID: 6644448229195162365, guid: 042f21041a01d3c4f92ffcf1a7ea06ec,
         type: 3}
       propertyPath: m_text
-      value: 8.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6644448229195162365, guid: 042f21041a01d3c4f92ffcf1a7ea06ec,
         type: 3}
