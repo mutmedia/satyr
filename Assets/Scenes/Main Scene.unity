@@ -1723,7 +1723,7 @@ Transform:
   m_Children:
   - {fileID: 1670052955}
   m_Father: {fileID: 1348774371}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: -21.716002, y: -119.674, z: 0}
 --- !u!1 &224622028
 GameObject:
@@ -2008,6 +2008,36 @@ MonoBehaviour:
     _constant: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
+--- !u!1 &315276346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 315276347}
+  m_Layer: 0
+  m_Name: HunterEndLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &315276347
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315276346}
+  m_LocalRotation: {x: -0.15275471, y: -0.7985346, z: -0.09014767, w: 0.5752233}
+  m_LocalPosition: {x: 348.58, y: 134.9, z: 275.66}
+  m_LocalScale: {x: 1.1473565, y: 1.2155094, z: 1.471187}
+  m_Children: []
+  m_Father: {fileID: 1348774371}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: -18.645, y: -109.866005, z: 8.512}
 --- !u!43 &337222824
 Mesh:
   m_ObjectHideFlags: 0
@@ -7439,7 +7469,7 @@ Transform:
   m_Children:
   - {fileID: 2095161126}
   m_Father: {fileID: 1348774371}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: -8.3550005, y: -173.87901, z: 3.2760003}
 --- !u!43 &1176645383
 Mesh:
@@ -9570,9 +9600,11 @@ Transform:
   - {fileID: 1019547513}
   - {fileID: 1335872526}
   - {fileID: 1535036983}
+  - {fileID: 2117133088}
   - {fileID: 1152182630}
   - {fileID: 213814442}
   - {fileID: 793529406}
+  - {fileID: 315276347}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12158,7 +12190,7 @@ PrefabInstance:
     - target: {fileID: 1144767327086538258, guid: 52a002142e7b52f4f978403b8beb2c75,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1144767327086538258, guid: 52a002142e7b52f4f978403b8beb2c75,
         type: 3}
@@ -14600,6 +14632,36 @@ Transform:
   m_Father: {fileID: 1542065207}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 143.128, z: 0}
+--- !u!1 &2117133087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2117133088}
+  m_Layer: 0
+  m_Name: SeaWomanShellsLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2117133088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117133087}
+  m_LocalRotation: {x: -0, y: -0.16360655, z: -0, w: 0.98652565}
+  m_LocalPosition: {x: 126.39, y: 81.9325, z: 226.52}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1348774371}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: -18.833, z: 0}
 --- !u!1 &2127548085 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7908672014795227938, guid: 3e0ff0af023cf6b4c9543c1b33a83b61,
