@@ -606,14 +606,14 @@ You need {$giftsNeeded} more gifts.
 title: GiftBox_AllItems
 tags: GiftBox
 colorID: 0
-position: -1237,68
+position: -766,-259
 ---
 << set $deliveredItem to false>>
 
 << if $leftHand == "dress" or $rightHand == "dress">>
   <<event takeItem dress>>
   <<set $lastTakenItem to "empty">>
-  Hunter: got dress!
+  Hunter: Woah you got the dress, you only need {5 - $giftCount} more!!
   << set $giftCount to ($giftCount+1)>> 
   << set $currentAct to "gift2">>
   << set $gotDress to true>>
@@ -623,7 +623,8 @@ position: -1237,68
 << if $leftHand == "chair" or $rightHand == "chair">>
   <<event takeItem chair>>
   <<set $lastTakenItem to "empty">>
-  Hunter: got chair!
+  Hunter: Woah you got the chairs, now someone out there has the power to sit!! 
+  Hunter: You only need {5 - $giftCount} more!!
   << set $giftCount to ($giftCount+1)>> 
   << set $currentAct to "gift3">>
   << set $gotChair to true>>
@@ -633,8 +634,13 @@ position: -1237,68
 << if $leftHand == "ring" or $rightHand == "ring">>
   <<event takeItem ring>>
   <<set $lastTakenItem to "empty">>
-  Hunter: got ring!
+  Hunter: Woah you got a ring, someone out there is getting pretty saucy!
   << set $giftCount to ($giftCount+1)>> 
+  <<  if $giftCount < 5 >>
+        You only need {5 - $giftsCount} more!!
+  << elseif $giftCount == 5 >> 
+        You got all the gifts!! Go see Godzilla!!
+  << endif >> 
   << set $currentAct to "final">>
   << set $gotRing to true>>
   << set $deliveredItem to true>>
@@ -643,7 +649,8 @@ position: -1237,68
 << if $leftHand == "bouquet" or $rightHand == "bouquet">>
   <<event takeItem bouquet>>
   <<set $lastTakenItem to "empty">>
-  Hunter: got bouquet!
+  Hunter: Woah you got the bouquet!! They were lovely, I hope they're not jostled in the mail!!! 
+  Hunter: You only need {5 - $giftCount} more!!
   << set $giftCount to ($giftCount+1)>> 
   << set $currentAct2 to "gift5">>
   << set $gotBouquet to true>>
@@ -653,8 +660,14 @@ position: -1237,68
 << if $leftHand == "shells" or $rightHand == "shells">>
   <<event takeItem shells>>
   <<set $lastTakenItem to "empty">>
+  Hunter: Woah you got a ring, someone out there is getting pretty saucy!
   << set $deliveredItem to true>>
   << set $giftCount to ($giftCount+1)>> 
+  <<  if $giftCount < 5 >>
+        You only need {5 - $giftsCount} more!!
+  << elseif $giftCount == 5 >> 
+        You got all the gifts!! Go see Godzilla!!
+  << endif >> 
   << set $currentAct2 to "final">>
   << set $gotShells to true>>
   Hunter: got shells!
@@ -668,7 +681,7 @@ position: -1237,68
 title: GiftBox
 tags: GiftBox
 colorID: 0
-position: -1237,68
+position: -1192,62
 ---
 <<if $currentAct eq "gift1">>
   [[GiftBox_Gift1_Dress]]
@@ -681,7 +694,7 @@ position: -1237,68
 title: GiftBox_2
 tags: GiftBox
 colorID: 0
-position: -681,72
+position: -698,18
 ---
 <<if $currentAct2 eq "gift4">>
   [[GiftBox_Gift4_Bouquet]]
@@ -697,7 +710,7 @@ position: 957,-2047
 <<event takeItem dress>>
 << if $lastTakenItem eq ("dress")>> 
   << set $lastTakenItem to "empty">> 
-  GOT THE DRESS!!
+  Hunter: Woah you got the dress, you only need {5 - $giftCount} more!!
   << set $giftCount to ($giftCount+1)>> 
   <<event move Woofcutter woofcutterHome 1>>
   << set $currentAct to "gift2">>
@@ -714,7 +727,7 @@ position: 1745,-2073
 <<event takeItem chair>>
 << if $lastTakenItem eq ("chair")>> 
   << set $lastTakenItem to "empty">> 
-  GOT THE CHAIR!!
+  Hunter: Woah you got the chairs, now someone out there has the power to sit!! You only need {5 - $giftsCount} more!!
   << set $giftCount to ($giftCount+1)>> 
   << set $currentAct to "gift3">>
   << set $gotChair to true>>
@@ -730,8 +743,13 @@ position: 2493,-2091
 <<event takeItem ring>>
 << if $lastTakenItem eq ("ring")>> 
   << set $lastTakenItem to "empty">> 
-  GOT THE RING!!
+  Hunter: GOT THE RING!!
   << set $giftCount to ($giftCount+1)>> 
+ <<  if $giftCount < 5 >>
+        Hunter: You only need {5 - $giftCount} more!!
+  << elseif $giftCount == 5 >> 
+        Hunter: You got all the gifts!! Go see Godzilla!!
+  << endif >> 
   << set $currentAct to "final">>
   << set $gotRing to true>>
 << else>>
@@ -746,7 +764,7 @@ position: 1604,-1003
 <<event takeItem bouquet>>
 << if $lastTakenItem eq ("bouquet")>> 
   << set $lastTakenItem to "empty">> 
-  GOT THE BOUQUET!!
+  Hunter: Woah you got the bouquet!! Those were lovely, I hope they're not jostled in the mail!!! You only need {5 - $giftsCount} more!!
   << set $giftCount to ($giftCount+1)>> 
   << set $gotBouquet to true>>
 << else>>
@@ -761,8 +779,13 @@ position: 2413,-1016
 <<event takeItem shells>>
 << if $lastTakenItem eq ("shells")>> 
   << set $lastTakenItem to "empty">> 
-  GOT THE SHELLS!!
+  Hunter: Woah you got the shells!! Those were real pretty, someone out there's gonna love them.
   << set $giftCount to ($giftCount+1)>> 
+ <<  if $giftCount < 5 >>
+        Hunter: You only need {5 - $giftCount} more!!
+  << elseif $giftCount == 5 >> 
+        Hunter: You got all the gifts!! Go see Godzilla!!
+  << endif >> 
   << set $currentAct2 to "final">>
   << set $gotShells to true>>
 << else>>
