@@ -1,31 +1,41 @@
 title: Dressmaker_Intro
 tags: Dressmaker Intro
 colorID: 5
-position: -396,-1756
+position: -191,-1704
 ---
-Dressmaker: Hmm you seem a bit wimpy to be our saviour.
-Dressmaker: I don't know why the elder would pick you.
-Dressmaker: Ah, well. As long as I do not die.
-Dressmaker: Have fun defeating Godzilla! He's up there.
+<< if not visited ("Dressmaker_Intro0")>> 
+[[ Dressmaker_Intro0 ]]
+<< elseif not visited ("Dressmaker_Intro1")>> 
+[[ Dressmaker_Intro1 ]]
+<< else >> 
+[[ Dressmaker_Intro0 ]]
+<< endif >>
 ===
 title: DressmakersFather_Intro
 tags: DressmakersFather Intro
 colorID: 5
-position: -621,-1537
+position: -1080,-1705
 ---
-DressmakersFather: Hmf.
-DressmakersFather: Hmm...
-DressmakersFather: Good enough.
-DressmakersFather: Godzilla go you.
+<< if not visited ("DressmakersFather_Intro0")>> 
+[[ DressmakersFather_Intro0 ]]
+<< elseif not visited ("DressmakersFather_Intro1")>> 
+[[ DressmakersFather_Intro1 ]]
+<< else >> 
+[[ DressmakersFather_Intro0 ]]
+<< endif >>
 ===
 title: StephenTheDisaster_Intro
 tags: StephenTheDisaster Intro
 colorID: 5
-position: -620,-1756
+position: -415,-1704
 ---
-StephenTheDisaster: Hmmm what are you doing in my house??
-StephenTheDisaster: Ahhhmmmm please go away???
-StephenTheDisaster: Godzilla? Never heard of him!!
+<< if not visited ("StephenTheDisaster_Intro0")>> 
+[[ StephenTheDisaster_Intro0 ]]
+<< elseif not visited ("StephenTheDisaster_Intro1")>> 
+[[ StephenTheDisaster_Intro1 ]]
+<< else >> 
+[[ StephenTheDisaster_Intro0 ]]
+<< endif >>
 ===
 title: SeaWoman_Intro
 tags: SeaWoman Intro
@@ -40,52 +50,59 @@ SeaWoman: The sea calms my old, weathered nerves.
 title: FlowerWoman_Intro
 tags: FlowerWoman Intro
 colorID: 5
-position: -179,-1537
+position: -638,-1706
 ---
-FlowerWoman: Oh! Hmm... I do hope that nasty Godzilla goes soon.
-FlowerWoman: That is why you're here, yes?
-FlowerWoman: My bouquets are not nearly as lovely with him looming...
+<< if not visited ("FlowerWoman_Intro0")>> 
+[[ FlowerWoman_Intro0 ]]
+<< elseif not visited ("FlowerWoman_Intro1")>> 
+[[ FlowerWoman_Intro1 ]]
+<< else >> 
+[[ FlowerWoman_Intro0 ]]
+<< endif >>
 ===
 title: Shopkeep_Intro
 tags: Shopkeep Intro
 colorID: 5
-position: -182,-1753
+position: 23,-1701
 ---
-Shopkeep: Oh!! Hello hello!! Our saviour!!
-Shopkeep: Do you have any money?
-Shopkeep: To give me!!
-Shopkeep: OH! For my wares!
-Shopkeep: No?
-Shopkeep: Hm.
-Shopkeep: Okay, I will still tell everyone that the great hero who slayed Godzilla came to my store.
-Shopkeep: Have fun, buddy!!
+<< if not visited ("Shopkeep_Intro0")>> 
+[[ Shopkeep_Intro0 ]]
+<< elseif not visited ("Shopkeep_Intro1")>> 
+[[ Shopkeep_Intro1 ]]
+<< else >> 
+[[ Shopkeep_Intro0 ]]
+<< endif >>
 ===
 title: LostBoys_Intro
 tags: LostBoys Intro
 colorID: 5
-position: -400,-1539
+position: -854,-1700
 ---
-LostBoys: Oh man a new nerd!! >:P
-LostBoys: Godzilla's really riling up everyone!!
-LostBoys: We're cooler than all the weirdos here.
-LostBoys: Gonna just keep skateboarding, loser!! >:3
+<< if not visited ("LostBoys_Intro0")>> 
+[[ LostBoys_Intro0 ]]
+<< elseif not visited ("LostBoys_Intro1")>> 
+[[ LostBoys_Intro1 ]]
+<< else >> 
+[[ LostBoys_Intro0 ]]
+<< endif >>
 ===
 title: Woofcutter_Intro
 tags: Woofcutter Intro
 colorID: 5
-position: 32,-1654
+position: 237,-1698
 ---
-Woofcutter: woof woof!
-Woofcutter: A merry woodcutter I be!!
-Woofcutter: Is it Godzilla you seek?
-Woofcutter: The hunter was after him.
-Woofcutter: I wonder what became of them?
-Woofcutter: Must get back to my wood! Chop chop!!
+<< if not visited ("Woofcutter_Intro0")>> 
+[[ Woofcutter_Intro0 ]]
+<< elseif not visited ("Woofcutter_Intro1")>> 
+[[ Woofcutter_Intro1 ]]
+<< else >> 
+[[ Woofcutter_Intro0 ]]
+<< endif >>
 ===
 title: Hunter_Intro
 tags: Hunter Intro
 colorID: 5
-position: -619,-973
+position: -319,-694
 ---
 Hunter: Ah you’re trying to get godzilla too? I’ve been trying to get ‘im for weeks. 
 Hunter: You seem like a strapping hero-type. I’ll come with you!
@@ -118,7 +135,7 @@ position: -329,-2803
 title: Godzilla_Intro
 tags: Godzilla Intro
 colorID: 5
-position: -618,-1197
+position: -318,-918
 ---
 Godzilla: Why are you looking in my bath?
 ...
@@ -207,13 +224,6 @@ position: 574,-2104
   DressmakersFather: Not here.
   Woofcutter: Mrrrghh...
 << endif >>
-===
-title: Stage_Direction
-tags: Stage
-colorID: 0
-position: 301,-1669
----
-Elder is now by sea woman
 ===
 title: StephenTheDisaster_Gift2
 tags: StephenTheDisaster Gift2
@@ -588,6 +598,7 @@ colorID: 5
 position: -323,-2302
 ---
 Elder: Don't worry about me! Just parking the bench!
+Elder: Go to Godzilla, right away!!
 ===
 title: List
 tags: 
@@ -606,7 +617,7 @@ You need {$giftsNeeded} more gifts.
 title: GiftBox_AllItems
 tags: GiftBox
 colorID: 0
-position: -766,-259
+position: -808,-487
 ---
 << set $deliveredItem to false>>
 
@@ -978,7 +989,7 @@ position: 3368,-2158
 title: DressmakersFather_Final
 tags: DressmakersFather Final
 colorID: 8
-position: 3046,-1074
+position: 3891,-1283
 ---
 DressmakersFather: Hm.
 DressmakersFather: You've done good.
@@ -987,7 +998,7 @@ DressmakersFather: Thank you, hero.
 title: LostBoys_Final
 tags: LostBoys Final
 colorID: 8
-position: 3256,-1076
+position: 4101,-1285
 ---
 LostBoys: Heeehehee
 LostBoys: We didn't have any moms
@@ -1013,18 +1024,18 @@ tags: StephenTheDisaster Final
 colorID: 8
 position: 3046,-1295
 ---
-StephenTheDisaster: O-oh yes I am now glad you're in my hole.
-StephenTheDisaster: We're friends now!!
-StephenTheDisaster: Th-thank you for setting me up with the shopkeeper!!!
-StephenTheDisaster: We're doing really really well...
-StephenTheDisaster: I've been working on.. confidence and loving myself..
-StephenTheDisaster: Trying not to push people away!!
-StephenTheDisaster: Okay okay I know you have things to do, goodbye friend!!
+<< if not visited("StephenTheDisaster_Final0")>>
+[[ StephenTheDisaster_Final0 ]]
+<< elseif not visited("StephenTheDisaster_Final1")>> 
+[[ StephenTheDisaster_Final1 ]]
+<< elseif not visited("StephenTheDisaster_Final2")>> 
+[[ StephenTheDisaster_Final2 ]]
+<< endif >>
 ===
 title: SeaWoman_Final
 tags: SeaWoman Final
 colorID: 8
-position: 3680,-1073
+position: 4525,-1282
 ---
 SeaWoman: Oh, hero! You have made me very happy!!!
 SeaWoman: Thank you!! You may have as many shells as you desire!!
@@ -1035,7 +1046,7 @@ SeaWoman: I will see you later, hero!
 title: FlowerWoman_Final
 tags: FlowerWoman Final
 colorID: 8
-position: 3471,-1073
+position: 4316,-1282
 ---
 FlowerWoman: Oh, hello my dear hero.
 FlowerWoman: We are getting on just fine!
@@ -1132,4 +1143,174 @@ position: -1686,-1593
 <<elseif $currentAct eq "final">>
   [[Shopkeep_Final]]
 <<endif>>
+===
+title: StephenTheDisaster_Final0
+tags: 
+colorID: 8
+position: 2942,-990
+---
+StephenTheDisaster: O-oh yes I am now glad you're in my hole.
+StephenTheDisaster: We're friends now!!
+StephenTheDisaster: Th-thank you for setting me up with the shopkeeper!!!
+StephenTheDisaster: We're doing really really well...
+StephenTheDisaster: I've been working on.. confidence and loving myself..
+StephenTheDisaster: Trying not to push people away!!
+StephenTheDisaster: Okay okay I know you have things to do, goodbye friend!!
+===
+title: StephenTheDisaster_Final1
+tags: 
+colorID: 8
+position: 3159,-989
+---
+StephenTheDisaster: I hope your Godzilla thing goes well!
+StephenTheDisaster: Let me know if you need anything!!
+StephenTheDisaster: Okay, goodbye friend!!
+===
+title: StephenTheDisaster_Final2
+tags: 
+colorID: 8
+position: 3037,-781
+---
+StephenTheDisaster: O-oh yes I am now glad you're in my hole.
+StephenTheDisaster: We're friends now!!
+StephenTheDisaster: Th-thank you for setting me up with the shopkeeper!!!
+StephenTheDisaster: We're doing really really well...
+StephenTheDisaster: I've been working on.. confidence and loving myself..
+StephenTheDisaster: Trying not to push people away!!
+StephenTheDisaster: Okay okay I know you have things to do, goodbye friend!!
+===
+title: DressmakersFather_Intro0
+tags: DressmakersFather Intro
+colorID: 5
+position: -1135,-1487
+---
+Hmf.
+DressmakersFather: Hmm...
+DressmakersFather: Good enough.
+DressmakersFather: Godzilla go you.
+===
+title: LostBoys_Intro0
+tags: LostBoys Intro
+colorID: 5
+position: -891,-1481
+---
+LostBoys: Oh man a new nerd!! >:P
+LostBoys: Godzilla's really riling up everyone!!
+LostBoys: We're cooler than all the weirdos here.
+LostBoys: Gonna just keep skateboarding, loser!! >:3
+===
+title: FlowerWoman_Intro0
+tags: FlowerWoman Intro
+colorID: 5
+position: -656,-1482
+---
+FlowerWoman: Oh! Hmm... I do hope that nasty Godzilla goes soon.
+FlowerWoman: That is why you're here, yes?
+FlowerWoman: My bouquets are not nearly as lovely with him looming...
+===
+title: StephenTheDisaster_Intro0
+tags: StephenTheDisaster Intro
+colorID: 5
+position: -431,-1485
+---
+StephenTheDisaster: Hmmm what are you doing in my house??
+StephenTheDisaster: Ahhhmmmm please go away???
+StephenTheDisaster: Godzilla? Never heard of him!!
+===
+title: Dressmaker_Intro0
+tags: Dressmaker Intro
+colorID: 5
+position: -214,-1482
+---
+Dressmaker: Hmm you seem a bit wimpy to be our saviour.
+Dressmaker: I don't know why the elder would pick you.
+Dressmaker: Ah, well. As long as I do not die.
+Dressmaker: Have fun defeating Godzilla! He's up there.
+===
+title: Shopkeep_Intro0
+tags: Shopkeep Intro
+colorID: 5
+position: 0,-1483
+---
+Shopkeep: Oh!! Hello hello!! Our saviour!!
+Shopkeep: Do you have any money?
+Shopkeep: To give me!!
+Shopkeep: OH! For my wares!
+Shopkeep: No?
+Shopkeep: Hm.
+Shopkeep: Okay, I will still tell everyone that the great hero who slayed Godzilla came to my store.
+Shopkeep: Have fun, buddy!!
+===
+title: Woofcutter_Intro0
+tags: Woofcutter Intro
+colorID: 5
+position: 222,-1487
+---
+Woofcutter: woof woof!
+Woofcutter: A merry woodcutter I be!!
+Woofcutter: Is it Godzilla you seek?
+Woofcutter: The hunter was after him.
+Woofcutter: I wonder what became of them?
+Woofcutter: Must get back to my wood! Chop chop!!
+===
+title: DressmakersFather_Intro1
+tags: DressmakersFather Intro
+colorID: 5
+position: -1070,-1263
+---
+DressmakersFather: Hmf.
+===
+title: LostBoys_Intro1
+tags: LostBoys Intro
+colorID: 5
+position: -846,-1267
+---
+LostBoys: Hey dork!!
+LostBoys: If you like Godzilla so much...
+LostBoys: Why don't you just marry him >:3
+===
+title: FlowerWoman_Intro1
+tags: FlowerWoman Intro
+colorID: 5
+position: -620,-1268
+---
+FlowerWoman: My dear, Godzilla is up the mountain
+FlowerWoman: I would appreciate it if you got him sooner rather than later..
+FlowerWoman: Thank you!
+===
+title: StephenTheDisaster_Intro1
+tags: StephenTheDisaster Intro
+colorID: 5
+position: -392,-1266
+---
+StephenTheDisaster: UHM yesHelloPleaseGoAwayyyy??????
+===
+title: Dressmaker_Intro1
+tags: Dressmaker Intro
+colorID: 5
+position: -169,-1267
+---
+Dressmaker: Uhh... can you go get Godzilla now?
+Dressmaker: I really do not want to die
+Dressmaker: Bye?????
+===
+title: Shopkeep_Intro1
+tags: Shopkeep Intro
+colorID: 5
+position: 48,-1265
+---
+Shopkeep: Okay so I know you're not gonna buy anything.
+Shopkeep: But y'know any money you got is rad.
+Shopkeep: If not then uhh
+Shopkeep: Godzilla's up there brah
+Shopkeep: Have fun!!
+===
+title: Woofcutter_Intro1
+tags: Woofcutter Intro
+colorID: 5
+position: 273,-1266
+---
+Woofcutter: Oh I'm cutting wood, do you need something?
+Woofcutter: Godzilla is up the mountain.
+Woofcutter: Mmm bye!
 ===
