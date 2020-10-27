@@ -728,7 +728,7 @@ position: 957,-2047
   << set $lastTakenItem to "empty">> 
   Hunter: Woah you got the dress, you only need {5 - $giftCount} more!!
   << set $giftCount to ($giftCount+1)>> 
-  <<event move Woofcutter woofcutterHome 1>>
+  <<event move Woofcutter WoofcutterHome 1>>
   << set $currentAct to "gift2">>
   << set $gotDress to true>>
 << else>>
@@ -953,13 +953,14 @@ tags: Hunter Final
 colorID: 8
 position: 3606,-1823
 ---
+<<event move Hunter HunterEndLocation>>
 Hunter: I... I was so nervous that you loved Godzilla...
 Hunter: I didn't know how to tell you.... that I am really in love with you!!
 Hunter: Despite my confidence.. I am no hero, and I was never able to confront Godzilla the way you were.
 Hunter: You really saved everyone!!!
 Hunter: Would... Will you maybe.. go to the wedding.. as my date?
-[[Yes!! (Q)|HunterYes]]
-[[No (E)|HunterNo]]
+[[Yes!!|HunterYes]]
+[[No|HunterNo]]
 ===
 title: Godzilla_Final
 tags: Godzilla Final
@@ -969,7 +970,6 @@ position: 3368,-2158
 << event takeItem elder>>
 <<if $lastTakenItem eq "elder">>
   << set $lastTakenItem to "empty">> 
-  << event dropElder >>
   Godzilla: Ah you brought him!!
   Godzilla: I knew it was you, shouting from this hilltop!!
   Godzilla: You, who asked for lifelong accompaniment!!
@@ -980,10 +980,8 @@ position: 3368,-2158
   Godzilla: Together!!!!!
   Elder: !! Oh-ho!! Uh-humm!!
   Elder: Y-yes I do believe I can.. I could do that!!
-  << event move elder GodzillaHead >>
   Godzilla: Excellent!! We will be married at once!!
   <<set $showHandUI to false>>
-  << event dropHunter >>
   *camera spins and all the townspeople are in a crowd behind you*
   Yay!!! Hooray!! Yay!!
   [[Hunter_Final]]
@@ -1126,7 +1124,6 @@ tags:
 colorID: 8
 position: 4012,-1605
 ---
-<<event hunterYes>>
 Hunter: R-really?
 Hunter: I'm so glad we feel the same!!
 Hunter: We'll have a great time!!
@@ -1138,7 +1135,6 @@ tags:
 colorID: 8
 position: 4004,-2042
 ---
-<<event hunterNo>>
 Hunter: Oh, that's alright.
 Hunter: I'd still like to go as friends though.
 Hunter: We'll have a great time!!
@@ -1235,7 +1231,7 @@ Dressmaker: Have fun defeating Godzilla! He's up there.
 title: Shopkeep_Intro0
 tags: Shopkeep Intro
 colorID: 5
-position: 0,-1483
+position: 860,408
 ---
 Shopkeep: Oh!! Hello hello!! Our saviour!!
 Shopkeep: Do you have any money?
