@@ -111,6 +111,11 @@ public class MouseLook : MonoBehaviour
     }
   }
 
+  public void ResetOriginalRotation()
+  {
+    originalRotation = transform.localRotation;
+  }
+
   private static float ClampAngle(float angle, float min, float max)
   {
     angle %= 360;

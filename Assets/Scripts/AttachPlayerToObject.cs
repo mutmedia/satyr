@@ -32,6 +32,7 @@ public class AttachPlayerToObject : MonoBehaviour
     drifter.transform.parent = transform;
     drifter.transform.localPosition = Vector3.zero;
     drifter.transform.rotation = rot;
+    drifter.GetComponent<MouseLook>().ResetOriginalRotation();
   }
 
   public void AttachTo(GameObjectVariable goRef) => AttachTo(goRef.Value);
@@ -48,5 +49,6 @@ public class AttachPlayerToObject : MonoBehaviour
     drifter.enabled = true;
     if (drifter?.transform?.parent == null) return;
     drifter.transform.parent = initialParent;
+    drifter.GetComponent<MouseLook>().ResetOriginalRotation();
   }
 }
