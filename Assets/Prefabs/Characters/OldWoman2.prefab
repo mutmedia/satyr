@@ -2514,10 +2514,8 @@ MonoBehaviour:
   assetGuid: 
   m_IsSelectable: 1
   m_SelectedFaces: 
-  m_SelectedEdges:
-  - a: 60
-    b: 61
-  m_SelectedVertices: 3c0000003d000000
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!64 &3586284085066238733
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5187,7 +5185,7 @@ Animator:
   m_GameObject: {fileID: 7128142400039556343}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c4db70648d271cd49af7964484641d3b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
