@@ -32,8 +32,6 @@ tags: SeaWoman Intro
 colorID: 5
 position: -324,-2040
 ---
-*as you pass the old sea woman, she says this*
-
 SeaWoman: Oh you are here to save us? What joy! The monster has plagued our little community for so long. 
 SeaWoman: Go! Go! Up there is where Godzilla is!! 
 SeaWoman: Me? I’ll be here. 
@@ -89,8 +87,6 @@ tags: Hunter Intro
 colorID: 5
 position: -619,-973
 ---
-*As you walk down the ridge from godzilla, hunter is at the bottom. Dialogue is forced when you get close*
-
 Hunter: Ah you’re trying to get godzilla too? I’ve been trying to get ‘im for weeks. 
 Hunter: You seem like a strapping hero-type. I’ll come with you!
 <<set $showHandUI to true>>
@@ -124,8 +120,6 @@ tags: Godzilla Intro
 colorID: 5
 position: -618,-1197
 ---
-*after staring at the lava for a while, a shadow appears and this text begins*
-
 Godzilla: Why are you looking in my bath?
 ...
 ...
@@ -192,7 +186,7 @@ Shopkeep: Haha later man.
 title: Woofcutter_and_DressmakersFather_Gift1
 tags: Woofcutter DressmakersFather Gift1
 colorID: 4
-position: 565,-2113
+position: 574,-2104
 ---
 <<if visited("Shopkeep_Gift1")>>
   Woofcutter: Hey come on, I left this wood outside your house this morning!!
@@ -239,7 +233,7 @@ tags: Woofcutter Gift2
 colorID: 3
 position: 1311,-2539
 ---
-<<if visited("DressmakersFather_Gift2")>>
+<<if visited("DressmakersFather_Gift2") and visited("Dressmaker_Gift2")>>
 Woofcutter: Alright! All the chairs are here!
 Woofcutter: Oh! Uhh thanks for talking to the dressmaker for me.
 Woofcutter: I.. Yeah we'll talk in person later...
@@ -705,6 +699,7 @@ position: 957,-2047
   << set $lastTakenItem to "empty">> 
   GOT THE DRESS!!
   << set $giftCount to ($giftCount+1)>> 
+  <<event move Woofcutter woofcutterHome 1>>
   << set $currentAct to "gift2">>
   << set $gotDress to true>>
 << else>>
@@ -847,7 +842,7 @@ Elder: It couldn't be because I.... No.. of course not.
 title: SeaWoman_Gift5
 tags: SeaWoman Intro
 colorID: 7
-position: 2085,-1340
+position: 1994,-1338
 ---
 <<if visited("FlowerWoman_Gift5")>>
   SeaWoman: Oh!! Someone wants to love me??
@@ -855,6 +850,7 @@ position: 2085,-1340
   <<event spawnShells>>
   *sea woman disappears, and goes to the flower woman's side. You have shells in your hand now*
   SeaWoman: I will go, immediately!! 
+  <<event move SeaWoman SeaWomanShellsLocation 1>>
   << set $currentAct2 to "final">>
 << else >> 
   SeaWoman: Hmm-mm! Yeah I have some more shells now!
@@ -868,7 +864,7 @@ position: 2085,-1340
 title: Elder_Gift5
 tags: Elder Intro
 colorID: 7
-position: 2115,-1340
+position: 2204,-1337
 ---
 Elder: Oh how I love to see my friends fall in love...
 Elder: Maybe someday, I will feel that love as well.
@@ -887,6 +883,12 @@ FlowerWoman: Hmm.. I cannot leave though. I must care for the flowers!!
 FlowerWoman: Maybe you could.. bring them here? Thank you!
 FlowerWoman: I really appreciate it my dear.
 FlowerWoman: I will see you soon!
+<< else >>
+FlowerWoman: Oh I know you are doing important work but...
+FlowerWoman: If you just so happen to maybe find someone who could love me?
+FlowerWoman: Preferably someone with similar tastes!
+FlowerWoman: I would greatly appreciate it, my dear.
+FlowerWoman: Ta-tah!!
 << endif >>
 ===
 title: LostBoys_Gift5
@@ -908,7 +910,7 @@ tags: Hunter Final
 colorID: 8
 position: 3606,-1823
 ---
-*hunter leaves your hand and is set active in front of you, where you are still facing the crowd, you do not have camera control rn*
+<<event move Hunter HunterEndLocation>>
 Hunter: I... I was so nervous that you loved Godzilla...
 Hunter: I didn't know how to tell you.... that I am really in love with you!!
 Hunter: Despite my confidence.. I am no hero, and I was never able to confront Godzilla the way you were.
