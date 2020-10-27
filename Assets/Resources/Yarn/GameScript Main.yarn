@@ -1000,45 +1000,51 @@ tags: DressmakersFather Final
 colorID: 8
 position: 3818,-1287
 ---
-DressmakersFather: Hm.
-DressmakersFather: You've done good.
-DressmakersFather: Thank you, hero.
+<< if not visited("DressmakersFather_Final_0")>>
+[[ DressmakersFather_Final_0 ]]
+<< elseif not visited("DressmakersFather_Final_1")>> 
+[[ DressmakersFather_Final_1 ]]
+<< else>>
+[[ DressmakersFather_Final_0 ]]
+<< endif >>
 ===
 title: LostBoys_Final
 tags: LostBoys Final
 colorID: 8
 position: 4032,-1286
 ---
-LostBoys: Heeehehee
-LostBoys: We didn't have any moms
-LostBoys: Now we have two >:3
-LostBoys: We're the coolest kids here
-LostBoys: They only let us skateboard with helmets on though.
-LostBoys: Rude as hell
-LostBoys: But they're cool I guess. ¯\_(ツ)_/¯
+<< if not visited("LostBoys_Final_0")>>
+[[ LostBoys_Final_0 ]]
+<< elseif not visited("LostBoys_Final_1")>> 
+[[ LostBoys_Final_1 ]]
+<< else>>
+[[ LostBoys_Final_0 ]]
+<< endif >>
 ===
 title: Dressmaker_Final
 tags: Dressmaker Final
 colorID: 8
 position: 3187,-1297
 ---
-Dressmaker: Hmm, yes? 
-Dressmaker: Oh, hello hero!
-Dressmaker: I have been doing very well, thank you.
-Dressmaker: The woodcutter and I.. make a smashing pair, don't we?
-Dressmaker: Mmm... thank you hero! I will see you later!
+<< if not visited("Dressmaker_Final_0")>>
+[[ Dressmaker_Final_0 ]]
+<< elseif not visited("Dressmaker_Final_1")>> 
+[[ Dressmaker_Final_1 ]]
+<< else>>
+[[ Dressmaker_Final_0 ]]
+<< endif >>
 ===
 title: StephenTheDisaster_Final
 tags: StephenTheDisaster Final
 colorID: 8
-position: 2973,-1299
+position: 2973,-1301
 ---
 << if not visited("StephenTheDisaster_Final0")>>
 [[ StephenTheDisaster_Final0 ]]
 << elseif not visited("StephenTheDisaster_Final1")>> 
 [[ StephenTheDisaster_Final1 ]]
-<< elseif not visited("StephenTheDisaster_Final2")>> 
-[[ StephenTheDisaster_Final2 ]]
+<< else>>
+[[ StephenTheDisaster_Final0 ]]
 << endif >>
 ===
 title: SeaWoman_Final
@@ -1046,38 +1052,39 @@ tags: SeaWoman Final
 colorID: 8
 position: 4456,-1283
 ---
-SeaWoman: Oh, hero! You have made me very happy!!!
-SeaWoman: Thank you!! You may have as many shells as you desire!!
-SeaWoman: Oh? Who summoned Godzilla? Hmm-mm I don't know!
-SeaWoman: Maybe ask the elder? 
-SeaWoman: I will see you later, hero!
+<< if not visited("SeaWoman_Final_0")>>
+[[ SeaWoman_Final_0 ]]
+<< elseif not visited("SeaWoman_Final_1")>> 
+[[ SeaWoman_Final_1 ]]
+<< else>>
+[[ SeaWoman_Final_0 ]]
+<< endif >>
 ===
 title: FlowerWoman_Final
 tags: FlowerWoman Final
 colorID: 8
 position: 4247,-1283
 ---
-FlowerWoman: Oh, hello my dear hero.
-FlowerWoman: We are getting on just fine!
-FlowerWoman: Thank you for all your help.
-FlowerWoman: I am no longer bothered by Godzilla.
-FlowerWoman: Oh you need to know who summoned him?
-FlowerWoman: Hmm... I am not sure. The elder brought you here right, dearie?
-FlowerWoman: Maybe he will know.
+<< if not visited("FlowerWoman_Final_0")>>
+[[ FlowerWoman_Final_0 ]]
+<< elseif not visited("FlowerWoman_Final_1")>> 
+[[ FlowerWoman_Final_1 ]]
+<< else>>
+[[ FlowerWoman_Final_0 ]]
+<< endif >>
 ===
 title: Shopkeep_Final
 tags: Shopkeep Final
 colorID: 8
 position: 3395,-1293
 ---
-Shopkeep: Hey brah, how's it going?
-Shopkeep: Oh yeah Stephen and I are doing just fine!
-Shopkeep: Great dude, he's coming out of his shell, I love to see it!
-Shopkeep: Oh, you want to know who summoned Godzilla?
-Shopkeep: Hmm.. I really don't know.. everyone here wants things to stay peaceful..
-Shopkeep: I couldn't tell you!
-Shopkeep: Maybe the elder knows, he's very wise!
-Shopkeep: Later dude!
+<< if not visited("Shopkeep_Final_0")>>
+[[ Shopkeep_Final_0 ]]
+<< elseif not visited("Shopkeep_Final_1")>> 
+[[ Shopkeep_Final_1 ]]
+<< else>>
+[[ Shopkeep_Final_0 ]]
+<< endif >>
 ===
 title: Elder_Final
 tags: Elder Final
@@ -1104,15 +1111,13 @@ tags: Woofcutter Final
 colorID: 8
 position: 3606,-1292
 ---
-Woofcutter: Hm? O-oh yes the dressmaker and I are doing very well, thank you!
-Woofcutter: We are taking things slowly, but she is.. a very beautiful person!!
-Woofcutter: I like her very much!!
-Woofcutter: Oh, who summoned Godzilla??
-Woofcutter: I couldn't say I have been........ preoccupied!
-Woofcutter: Maybe.. the elder would know?
-Woofcutter: But I have no clue.
-Woofcutter: He usually solves things.
-Woofcutter: Goodbye hero!!
+<< if not visited("Woofcutter_Final_0")>>
+[[ Woofcutter_Final_0 ]]
+<< elseif not visited("Woofcutter_Final_1")>> 
+[[ Woofcutter_Final_1 ]]
+<< else>>
+[[ Woofcutter_Final_0 ]]
+<< endif >>
 ===
 title: HunterYes
 tags: 
@@ -1154,9 +1159,9 @@ position: -1686,-1593
 <<endif>>
 ===
 title: StephenTheDisaster_Final0
-tags: 
+tags: StephenTheDisaster Final
 colorID: 8
-position: 2869,-994
+position: 2937,-1083
 ---
 StephenTheDisaster: O-oh yes I am now glad you're in my hole.
 StephenTheDisaster: We're friends now!!
@@ -1167,26 +1172,13 @@ StephenTheDisaster: Trying not to push people away!!
 StephenTheDisaster: Okay okay I know you have things to do, goodbye friend!!
 ===
 title: StephenTheDisaster_Final1
-tags: 
+tags: StephenTheDisaster Final
 colorID: 8
-position: 3086,-993
+position: 2953,-870
 ---
 StephenTheDisaster: I hope your Godzilla thing goes well!
 StephenTheDisaster: Let me know if you need anything!!
 StephenTheDisaster: Okay, goodbye friend!!
-===
-title: StephenTheDisaster_Final2
-tags: 
-colorID: 8
-position: 2964,-785
----
-StephenTheDisaster: O-oh yes I am now glad you're in my hole.
-StephenTheDisaster: We're friends now!!
-StephenTheDisaster: Th-thank you for setting me up with the shopkeeper!!!
-StephenTheDisaster: We're doing really really well...
-StephenTheDisaster: I've been working on.. confidence and loving myself..
-StephenTheDisaster: Trying not to push people away!!
-StephenTheDisaster: Okay okay I know you have things to do, goodbye friend!!
 ===
 title: DressmakersFather_Intro0
 tags: DressmakersFather Intro
@@ -1436,4 +1428,146 @@ position: 1130,8
 LostBoys: We're just here
 LostBoys: Don't ask us for help
 LostBoys: We're too busy playing gameboy and skateboards >:3
+===
+title: Dressmaker_Final_0
+tags: Dressmaker Final
+colorID: 8
+position: 3158,-1079
+---
+Dressmaker: Hmm, yes? 
+Dressmaker: Oh, hello hero!
+Dressmaker: I have been doing very well, thank you.
+Dressmaker: The woodcutter and I.. make a smashing pair, don't we?
+Dressmaker: Mmm... thank you hero! I will see you later!
+===
+title: Shopkeep_Final_0
+tags: Shopkeep Final
+colorID: 8
+position: 3366,-1075
+---
+Shopkeep: Hey brah, how's it going?
+Shopkeep: Oh yeah Stephen and I are doing just fine!
+Shopkeep: Great dude, he's coming out of his shell, I love to see it!
+Shopkeep: Oh, you want to know who summoned Godzilla?
+Shopkeep: Hmm.. I really don't know.. everyone here wants things to stay peaceful..
+Shopkeep: I couldn't tell you!
+Shopkeep: Maybe the elder knows, he's very wise!
+Shopkeep: Later dude!
+===
+title: Woofcutter_Final_0
+tags: Woofcutter Final
+colorID: 8
+position: 3577,-1074
+---
+Woofcutter: Hm? O-oh yes the dressmaker and I are doing very well, thank you!
+Woofcutter: We are taking things slowly, but she is.. a very beautiful person!!
+Woofcutter: I like her very much!!
+Woofcutter: Oh, who summoned Godzilla??
+Woofcutter: I couldn't say I have been........ preoccupied!
+Woofcutter: Maybe.. the elder would know?
+Woofcutter: But I have no clue.
+Woofcutter: He usually solves things.
+Woofcutter: Goodbye hero!!
+===
+title: DressmakersFather_Final_0
+tags: DressmakersFather Final
+colorID: 8
+position: 3789,-1069
+---
+DressmakersFather: Hm.
+DressmakersFather: You've done good.
+DressmakersFather: Thank you, hero.
+===
+title: LostBoys_Final_0
+tags: LostBoys Final
+colorID: 8
+position: 4003,-1068
+---
+LostBoys: Heeehehee
+LostBoys: We didn't have any moms
+LostBoys: Now we have two >:3
+LostBoys: We're the coolest kids here
+LostBoys: They only let us skateboard with helmets on though.
+LostBoys: Rude as hell
+LostBoys: But they're cool I guess. ¯\_(ツ)_/¯
+===
+title: FlowerWoman_Final_0
+tags: FlowerWoman Final
+colorID: 8
+position: 4218,-1065
+---
+FlowerWoman: Oh, hello my dear hero.
+FlowerWoman: We are getting on just fine!
+FlowerWoman: Thank you for all your help.
+FlowerWoman: I am no longer bothered by Godzilla.
+FlowerWoman: Oh you need to know who summoned him?
+FlowerWoman: Hmm... I am not sure. The elder brought you here right, dearie?
+FlowerWoman: Maybe he will know.
+===
+title: SeaWoman_Final_0
+tags: SeaWoman Final
+colorID: 8
+position: 4427,-1065
+---
+SeaWoman: Oh, hero! You have made me very happy!!!
+SeaWoman: Thank you!! You may have as many shells as you desire!!
+SeaWoman: Oh? Who summoned Godzilla? Hmm-mm I don't know!
+SeaWoman: Maybe ask the elder? 
+SeaWoman: I will see you later, hero!
+===
+title: Dressmaker_Final_1
+tags: Dressmaker Final
+colorID: 8
+position: 3180,-868
+---
+Dressmaker: Ah.. uh good luck with that Godzilla thing!!
+Dressmaker: I hope it resolves itself!!
+Dressmaker: Goodbye!!!!
+===
+title: Shopkeep_Final_1
+tags: Shopkeep Final
+colorID: 8
+position: 3388,-864
+---
+Shopkeep: Uhh have fun with Godzilla!
+Shopkeep: See ya later!!
+===
+title: Woofcutter_Final_1
+tags: Woofcutter Final
+colorID: 8
+position: 3599,-863
+---
+Woofcutter: Yes sorry I am busy
+Woofcutter: I hope everything with Godzilla goes well, though!!
+Woofcutter: I believe in you!!
+===
+title: DressmakersFather_Final_1
+tags: DressmakersFather Final
+colorID: 8
+position: 3811,-858
+---
+DressmakersFather: Good job.
+===
+title: LostBoys_Final_1
+tags: LostBoys Final
+colorID: 8
+position: 4025,-857
+---
+LostBoys: Gonna keep skateboarding
+LostBoys: Later, nerd! >:)
+===
+title: FlowerWoman_Final_1
+tags: FlowerWoman Final
+colorID: 8
+position: 4240,-854
+---
+FlowerWoman: I am very happy
+FlowerWoman: I hope you find happiness as well!
+===
+title: SeaWoman_Final_1
+tags: SeaWoman Final
+colorID: 8
+position: 4449,-854
+---
+SeaWoman: I believe in you!! You can go get Godzilla!!
 ===
