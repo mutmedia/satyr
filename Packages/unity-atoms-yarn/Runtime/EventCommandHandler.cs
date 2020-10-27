@@ -43,9 +43,9 @@ namespace UnityAtomsYarn
 
     private void RaiseEvent(string[] parameters)
     {
-      if (parameters.Length != 1 && parameters.Length != 2)
+      if (parameters.Length == 0)
       {
-        Debug.LogError($"The Event command is with incorrect parameters {parameters.Length}");
+        Debug.LogError($"The Event command has no parameters parameters");
         return;
       }
 
@@ -58,6 +58,12 @@ namespace UnityAtomsYarn
       }
 
       bool found = false;
+
+      if (parameters.Length > 2 && !(eventTriggered is StringEvent))
+      {
+        Debug.LogWarning($"The Event command for event {eventTriggered.name} has more parameters than it should");
+      }
+
       if (parameters.Length == 1)
       {
         if (eventTriggered is VoidEvent)
@@ -74,7 +80,8 @@ namespace UnityAtomsYarn
         if (eventTriggered is StringEvent)
         {
           var stringEvent = eventTriggered as StringEvent;
-          stringEvent.Raise(param);
+          var joinedParam = string.Join(" ", parameters.Skip(1));
+          stringEvent.Raise(joinedParam);
           found = true;
         }
         else if (eventTriggered is IntEvent)

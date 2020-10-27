@@ -9,7 +9,7 @@ namespace UnityAtomsYarn
     [SerializeField] private StringVariable speakerText;
     [SerializeField] private YarnProgram scriptToLoad;
 
-    [HideInInspector] [SerializeField] private AtomCollection namedSpeakers;
+    public AtomCollection namedSpeakers;
 
     private void Reset()
     {
@@ -18,6 +18,12 @@ namespace UnityAtomsYarn
 
     private void Start()
     {
+      var val = namedSpeakers.Value.Get<StringVariable>(speakerName);
+      if (val != null)
+      {
+        namedSpeakers.Value.Remove(speakerName);
+      }
+
       namedSpeakers.Value.Add(speakerName, speakerText);
       if (scriptToLoad != null)
       {

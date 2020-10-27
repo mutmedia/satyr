@@ -25,12 +25,15 @@ public class MoveTowardsByName : MonoBehaviour
     }
 
     transform.parent = target.transform;
-    var initialPosition = transform.position;
+    var initialPosition = transform.localPosition;
     var targetPosition = target.transform.position;
+    var initialRotation = transform.localRotation;
+    var targetRotation = target.transform.rotation;
 
     StartCoroutine(CoroutineHelpers.InterpolateByTime(duration, (k) =>
     {
-      transform.position = Vector3.Slerp(initialPosition, targetPosition, moveCurve.Evaluate(k));
+      transform.localPosition = Vector3.Slerp(initialPosition, Vector3.zero, moveCurve.Evaluate(k));
+      transform.localRotation = Quaternion.Lerp(initialRotation, Quaternion.identity, moveCurve.Evaluate(k));
     }));
   }
 }
