@@ -98,7 +98,7 @@ position: 237,-1698
 title: Hunter_Intro
 tags: Hunter Intro
 colorID: 5
-position: -319,-694
+position: -331,-507
 ---
 Hunter: Ah you’re trying to get godzilla too? I’ve been trying to get ‘im for weeks. 
 Hunter: You seem like a strapping hero-type. I’ll come with you!
@@ -133,17 +133,10 @@ tags: Godzilla Intro
 colorID: 5
 position: -318,-918
 ---
-Godzilla: Why are you looking in my bath?
-...
-...
-...
-Godzilla: Jeez, you’re a quiet thing, aren’t ya? I heard talk of a hero, is that you?
-Godzilla: Hmm.. well just in case you are, here’s my shopping list.
-<<event showShoppingList>>
-Godzilla: You can do that right? 
-Godzilla: Great, thanks.
-
-<<event godzillaIntroOver>>
+<< if not visited ("Godzilla_Intro0")>> 
+[[ Godzilla_Intro0 ]]
+<< else >>
+[[ Godzilla_Intro1 ]]
 ===
 title: Dressmaker_Gift1
 tags: Dressmaker Gift1
@@ -1579,4 +1572,32 @@ position: -1677,-2996
 Picnic Table: Oh how I wish I could love you.
 Picnic Table: But sadly...
 Picnic Table: My heart yearns for the sky!!
+===
+title: Godzilla_Intro0
+tags: 
+colorID: 5
+position: -34,-998
+---
+Godzilla: Why are you looking in my bath?
+...
+...
+...
+Godzilla: Jeez, you’re a quiet thing, aren’t ya? I heard talk of a hero, is that you?
+Godzilla: Hmm.. well just in case you are, here’s my shopping list.
+<<event showShoppingList>>
+Godzilla: You can do that right? 
+Godzilla: Great, thanks.
+
+<<event godzillaIntroOver>>
+===
+title: Godzilla_Intro1
+tags: 
+colorID: 5
+position: -39,-767
+---
+Godzilla: Please get me all the things on those list now!
+Godzilla: They are very important and I am anxious to have them!
+Godzilla: I would get them myself but then it's all...
+Godzilla: "Oh nooo you're squishing my house nooooooo"
+Godzilla: Very irritating, you understand.
 ===
