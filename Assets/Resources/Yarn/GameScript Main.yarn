@@ -621,8 +621,9 @@ position: -808,-487
 
 << if $leftHand == "dress" or $rightHand == "dress">>
   <<event takeItem dress>>
+  <<event move Woofcutter WoofcutterHome 1>>
   <<set $lastTakenItem to "empty">>
-  Hunter: Woah you got the dress, you only need {5 - $giftCount} more!!
+  Hunter: Woah you got the dress, you only need {4 - $giftCount} more!!
   << set $giftCount to ($giftCount+1)>> 
   << set $currentAct to "gift2">>
   << set $gotDress to true>>
@@ -633,7 +634,7 @@ position: -808,-487
   <<event takeItem chair>>
   <<set $lastTakenItem to "empty">>
   Hunter: Woah you got the chairs, now someone out there has the power to sit!! 
-  Hunter: You only need {5 - $giftCount} more!!
+  Hunter: You only need {4 - $giftCount} more!!
   << set $giftCount to ($giftCount+1)>> 
   << set $currentAct to "gift3">>
   << set $gotChair to true>>
@@ -645,10 +646,10 @@ position: -808,-487
   <<set $lastTakenItem to "empty">>
   Hunter: Woah you got a ring, someone out there is getting pretty saucy!
   << set $giftCount to ($giftCount+1)>> 
-  <<  if $giftCount < 5 >>
-        You only need {5 - $giftsCount} more!!
-  << elseif $giftCount == 5 >> 
-        You got all the gifts!! Go see Godzilla!!
+  <<  if $giftCount < 4 >>
+        Hunter: You only need {4 - $giftsCount} more!!
+  << elseif $giftCount == 4 >> 
+        Hunter: You got all the gifts!! Go see Godzilla!!
   << endif >> 
   << set $currentAct to "final">>
   << set $gotRing to true>>
@@ -659,7 +660,7 @@ position: -808,-487
   <<event takeItem bouquet>>
   <<set $lastTakenItem to "empty">>
   Hunter: Woah you got the bouquet!! They were lovely, I hope they're not jostled in the mail!!! 
-  Hunter: You only need {5 - $giftCount} more!!
+  Hunter: You only need {4 - $giftCount} more!!
   << set $giftCount to ($giftCount+1)>> 
   << set $currentAct2 to "gift5">>
   << set $gotBouquet to true>>
@@ -669,17 +670,17 @@ position: -808,-487
 << if $leftHand == "shells" or $rightHand == "shells">>
   <<event takeItem shells>>
   <<set $lastTakenItem to "empty">>
-  Hunter: Woah you got a ring, someone out there is getting pretty saucy!
+  Hunter: Woah you got the shells!! Those were real pretty, Godzilla's gonna love them.
   << set $deliveredItem to true>>
   << set $giftCount to ($giftCount+1)>> 
-  <<  if $giftCount < 5 >>
-        You only need {5 - $giftsCount} more!!
-  << elseif $giftCount == 5 >> 
-        You got all the gifts!! Go see Godzilla!!
+  <<  if $giftCount < 4 >>
+        Hunter: You only need {5 - $giftsCount} more!!
+  << elseif $giftCount == 4 >> 
+        Hunter: You got all the gifts!! Go see Godzilla!!
   << endif >> 
   << set $currentAct2 to "final">>
   << set $gotShells to true>>
-  Hunter: got shells!
+
 <<endif>>
 
 << if not $deliveredItem>>
