@@ -98,7 +98,7 @@ position: 237,-1698
 title: Hunter_Intro
 tags: Hunter Intro
 colorID: 5
-position: -319,-694
+position: -331,-507
 ---
 Hunter: Ah you’re trying to get godzilla too? I’ve been trying to get ‘im for weeks. 
 Hunter: You seem like a strapping hero-type. I’ll come with you!
@@ -133,17 +133,10 @@ tags: Godzilla Intro
 colorID: 5
 position: -318,-918
 ---
-Godzilla: Why are you looking in my bath?
-...
-...
-...
-Godzilla: Jeez, you’re a quiet thing, aren’t ya? I heard talk of a hero, is that you?
-Godzilla: Hmm.. well just in case you are, here’s my shopping list.
-<<event showShoppingList>>
-Godzilla: You can do that right? 
-Godzilla: Great, thanks.
-
-<<event godzillaIntroOver>>
+<< if not visited ("Godzilla_Intro0")>> 
+[[ Godzilla_Intro0 ]]
+<< else >>
+[[ Godzilla_Intro1 ]]
 ===
 title: Dressmaker_Gift1
 tags: Dressmaker Gift1
@@ -628,8 +621,9 @@ position: -808,-487
 
 << if $leftHand == "dress" or $rightHand == "dress">>
   <<event takeItem dress>>
+  <<event move Woofcutter WoofcutterHome 1>>
   <<set $lastTakenItem to "empty">>
-  Hunter: Woah you got the dress, you only need {5 - $giftCount} more!!
+  Hunter: Woah you got the dress, you only need {4 - $giftCount} more!!
   << set $giftCount to ($giftCount+1)>> 
   << set $currentAct to "gift2">>
   << set $gotDress to true>>
@@ -640,7 +634,7 @@ position: -808,-487
   <<event takeItem chair>>
   <<set $lastTakenItem to "empty">>
   Hunter: Woah you got the chairs, now someone out there has the power to sit!! 
-  Hunter: You only need {5 - $giftCount} more!!
+  Hunter: You only need {4 - $giftCount} more!!
   << set $giftCount to ($giftCount+1)>> 
   << set $currentAct to "gift3">>
   << set $gotChair to true>>
@@ -652,10 +646,10 @@ position: -808,-487
   <<set $lastTakenItem to "empty">>
   Hunter: Woah you got a ring, someone out there is getting pretty saucy!
   << set $giftCount to ($giftCount+1)>> 
-  <<  if $giftCount < 5 >>
-        You only need {5 - $giftsCount} more!!
-  << elseif $giftCount == 5 >> 
-        You got all the gifts!! Go see Godzilla!!
+  <<  if $giftCount < 4 >>
+        Hunter: You only need {4 - $giftsCount} more!!
+  << elseif $giftCount == 4 >> 
+        Hunter: You got all the gifts!! Go see Godzilla!!
   << endif >> 
   << set $currentAct to "final">>
   << set $gotRing to true>>
@@ -666,7 +660,7 @@ position: -808,-487
   <<event takeItem bouquet>>
   <<set $lastTakenItem to "empty">>
   Hunter: Woah you got the bouquet!! They were lovely, I hope they're not jostled in the mail!!! 
-  Hunter: You only need {5 - $giftCount} more!!
+  Hunter: You only need {4 - $giftCount} more!!
   << set $giftCount to ($giftCount+1)>> 
   << set $currentAct2 to "gift5">>
   << set $gotBouquet to true>>
@@ -676,17 +670,17 @@ position: -808,-487
 << if $leftHand == "shells" or $rightHand == "shells">>
   <<event takeItem shells>>
   <<set $lastTakenItem to "empty">>
-  Hunter: Woah you got a ring, someone out there is getting pretty saucy!
+  Hunter: Woah you got the shells!! Those were real pretty, Godzilla's gonna love them.
   << set $deliveredItem to true>>
   << set $giftCount to ($giftCount+1)>> 
-  <<  if $giftCount < 5 >>
-        You only need {5 - $giftsCount} more!!
-  << elseif $giftCount == 5 >> 
-        You got all the gifts!! Go see Godzilla!!
+  <<  if $giftCount < 4 >>
+        Hunter: You only need {5 - $giftsCount} more!!
+  << elseif $giftCount == 4 >> 
+        Hunter: You got all the gifts!! Go see Godzilla!!
   << endif >> 
   << set $currentAct2 to "final">>
   << set $gotShells to true>>
-  Hunter: got shells!
+
 <<endif>>
 
 << if not $deliveredItem>>
@@ -1572,4 +1566,41 @@ colorID: 8
 position: 4449,-854
 ---
 SeaWoman: I believe in you!! You can go get Godzilla!!
+===
+title: PicnicTable
+tags: PicnicTable Main
+colorID: 0
+position: -1677,-2996
+---
+Picnic Table: Oh how I wish I could love you.
+Picnic Table: But sadly...
+Picnic Table: My heart yearns for the sky!!
+===
+title: Godzilla_Intro0
+tags: 
+colorID: 5
+position: -34,-998
+---
+Godzilla: Why are you looking in my bath?
+...
+...
+...
+Godzilla: Jeez, you’re a quiet thing, aren’t ya? I heard talk of a hero, is that you?
+Godzilla: Hmm.. well just in case you are, here’s my shopping list.
+<<event showShoppingList>>
+Godzilla: You can do that right? 
+Godzilla: Great, thanks.
+
+<<event godzillaIntroOver>>
+===
+title: Godzilla_Intro1
+tags: 
+colorID: 5
+position: -39,-767
+---
+Godzilla: Please get me all the things on those list now!
+Godzilla: They are very important and I am anxious to have them!
+Godzilla: I would get them myself but then it's all...
+Godzilla: "Oh nooo you're squishing my house nooooooo"
+Godzilla: Very irritating, you understand.
 ===
