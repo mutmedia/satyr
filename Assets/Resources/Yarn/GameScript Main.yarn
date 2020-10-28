@@ -953,7 +953,7 @@ tags: Hunter Final
 colorID: 8
 position: 3606,-1823
 ---
-<<event move Hunter HunterEndLocation>>
+<<event dropHunter>>
 Hunter: I... I was so nervous that you loved Godzilla...
 Hunter: I didn't know how to tell you.... that I am really in love with you!!
 Hunter: Despite my confidence.. I am no hero, and I was never able to confront Godzilla the way you were.
@@ -970,12 +970,14 @@ position: 3368,-2158
 << event takeItem elder>>
 <<if $lastTakenItem eq "elder">>
   << set $lastTakenItem to "empty">> 
+  <<event dropElder>>
   Godzilla: Ah you brought him!!
   Godzilla: I knew it was you, shouting from this hilltop!!
   Godzilla: You, who asked for lifelong accompaniment!!
   Godzilla: Elder of this village!!!!!!
   Elder: .....
   Godzilla: I ask for your hand in marriage!!
+  <<event moveEveryoneToFinalPosition>>
   Godzilla: So that we can go off, and destroy capitalism!!!
   Godzilla: Together!!!!!
   Elder: !! Oh-ho!! Uh-humm!!

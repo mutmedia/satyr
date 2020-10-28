@@ -65,7 +65,7 @@ Material:
     - _Metallic: 0
     - _MirrorOnBack: 0
     - _OcclusionStrength: 1
-    - _Pitch: 26.047768
+    - _Pitch: -5.25073
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Rotation: 181
@@ -74,7 +74,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _TextureOffset: 0.9999604
+    - _TextureOffset: 0.99953085
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:

@@ -32,6 +32,11 @@ public class AttachPlayerToObject : MonoBehaviour
     drifter.transform.parent = transform;
     drifter.transform.localPosition = Vector3.zero;
     drifter.transform.rotation = rot;
+    drifter.transform.rotation = Quaternion.Euler(
+      0,
+      rot.y,
+      0
+      );
     drifter.GetComponent<MouseLook>().ResetOriginalRotation();
   }
 
@@ -49,6 +54,11 @@ public class AttachPlayerToObject : MonoBehaviour
     drifter.enabled = true;
     if (drifter?.transform?.parent == null) return;
     drifter.transform.parent = initialParent;
+    drifter.transform.rotation = Quaternion.Euler(
+      0,
+      drifter.transform.rotation.eulerAngles.y,
+      0
+      );
     drifter.GetComponent<MouseLook>().ResetOriginalRotation();
   }
 }
