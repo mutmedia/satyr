@@ -8,6 +8,7 @@ public class MoveTowardsByName : MonoBehaviour
 {
   public AnimationCurve moveCurve;
   public FloatReference defaultDuration;
+  public bool noRotation = false;
 
   public void MoveToNewPosition(string parameters)
   {
@@ -33,7 +34,11 @@ public class MoveTowardsByName : MonoBehaviour
     StartCoroutine(CoroutineHelpers.InterpolateByTime(duration, (k) =>
     {
       transform.localPosition = Vector3.Slerp(initialPosition, Vector3.zero, moveCurve.Evaluate(k));
-      transform.localRotation = Quaternion.Lerp(initialRotation, Quaternion.identity, moveCurve.Evaluate(k));
+      if (!noRotation)
+      {
+        print($"rotating {gameObject.name}");
+        transform.localRotation = Quaternion.Lerp(initialRotation, Quaternion.identity, moveCurve.Evaluate(k));
+      }
     }));
   }
 }

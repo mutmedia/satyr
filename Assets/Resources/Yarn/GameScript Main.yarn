@@ -137,6 +137,7 @@ position: -318,-918
 [[ Godzilla_Intro0 ]]
 << else >>
 [[ Godzilla_Intro1 ]]
+<<endif>>
 ===
 title: Dressmaker_Gift1
 tags: Dressmaker Gift1
@@ -947,6 +948,7 @@ tags: Hunter Final
 colorID: 8
 position: 3606,-1823
 ---
+<<wait 1>>
 <<event dropHunter>>
 Hunter: I... I was so nervous that you loved Godzilla...
 Hunter: I didn't know how to tell you.... that I am really in love with you!!
@@ -977,12 +979,14 @@ position: 3368,-2158
   Elder: !! Oh-ho!! Uh-humm!!
   Elder: Y-yes I do believe I can.. I could do that!!
   Godzilla: Excellent!! We will be married at once!!
+  <<event movePlayerEnding>>
   <<set $showHandUI to false>>
-  *camera spins and all the townspeople are in a crowd behind you*
-  Yay!!! Hooray!! Yay!!
+  Everyone: Yay!!! Hooray!! Yay!!
+  <<event move elder GodzillaHead 1>>
   [[Hunter_Final]]
 << else >> 
   Godzilla: Ah yessss, all of the gifts!!
+  <<event hideShoppingList>>
   Godzilla: Thank you little hero.
   Godzilla: Now I only need one more thing!!
   Godzilla: I need.... the hand of the one who summoned me!!
@@ -1123,8 +1127,7 @@ position: 4012,-1605
 Hunter: R-really?
 Hunter: I'm so glad we feel the same!!
 Hunter: We'll have a great time!!
-
-*end sequence where godzilla walks off into the sunset w the elder. Sillouheted faces reach out and smooch in the foreground.*
+<<event hunterYes>>
 ===
 title: HunterNo
 tags: 
@@ -1135,7 +1138,7 @@ Hunter: Oh, that's alright.
 Hunter: I'd still like to go as friends though.
 Hunter: We'll have a great time!!
 
-*end sequence where godzilla walks off into the sunset w the elder. Sillouheted ands reach out and clasp in the foreground.*
+<<event hunterNo>>
 ===
 title: Shopkeep
 tags: Shopkeep Main
