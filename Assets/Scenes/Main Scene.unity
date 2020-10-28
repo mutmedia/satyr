@@ -247,7 +247,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3881398208504023883}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &18532393
+--- !u!114 &18532396
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14062,7 +14062,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 18532393}
+      objectReference: {fileID: 18532396}
     - target: {fileID: 2195206055149061564, guid: 7ce3927d3240ddb4ba4a5274388f41a8,
         type: 3}
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -14087,7 +14087,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 18532393}
+      objectReference: {fileID: 18532396}
     - target: {fileID: 2195206055149061564, guid: 7ce3927d3240ddb4ba4a5274388f41a8,
         type: 3}
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -14282,7 +14282,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 18532393}
+      objectReference: {fileID: 18532396}
     - target: {fileID: 4671079954410717989, guid: 7ce3927d3240ddb4ba4a5274388f41a8,
         type: 3}
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -14312,7 +14312,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 18532393}
+      objectReference: {fileID: 18532396}
     - target: {fileID: 4671079954410717989, guid: 7ce3927d3240ddb4ba4a5274388f41a8,
         type: 3}
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -15605,6 +15605,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7573300301072869058, guid: cf2a7bbf8cc11e642b1fd898185b858f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7630188875718720501, guid: cf2a7bbf8cc11e642b1fd898185b858f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -15634,6 +15639,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7888159065853583770, guid: cf2a7bbf8cc11e642b1fd898185b858f,
+        type: 3}
+      propertyPath: m_text
+      value: Hunter
       objectReference: {fileID: 0}
     - target: {fileID: 8117661553613437553, guid: cf2a7bbf8cc11e642b1fd898185b858f,
         type: 3}
