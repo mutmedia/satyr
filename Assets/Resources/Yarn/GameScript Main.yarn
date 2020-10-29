@@ -3,6 +3,8 @@ tags: Dressmaker Intro
 colorID: 5
 position: -191,-1704
 ---
+<< if visited ("Godzilla_Intro0")>> 
+[[ Dressmaker_Intro2 ]]
 << if not visited ("Dressmaker_Intro0")>> 
 [[ Dressmaker_Intro0 ]]
 << elseif not visited ("Dressmaker_Intro1")>> 
@@ -16,6 +18,8 @@ tags: DressmakersFather Intro
 colorID: 5
 position: -1080,-1705
 ---
+<< if visited ("Godzilla_Intro0")>> 
+[[ DressmakersFather_Intro2 ]]
 << if not visited ("DressmakersFather_Intro0")>> 
 [[ DressmakersFather_Intro0 ]]
 << elseif not visited ("DressmakersFather_Intro1")>> 
@@ -29,6 +33,8 @@ tags: StephenTheDisaster Intro
 colorID: 5
 position: -415,-1704
 ---
+<< if visited ("Godzilla_Intro0")>> 
+[[ StephenTheDisaster_Intro2 ]]
 << if not visited ("StephenTheDisaster_Intro0")>> 
 [[ StephenTheDisaster_Intro0 ]]
 << else>> 
@@ -50,6 +56,8 @@ tags: FlowerWoman Intro
 colorID: 5
 position: -638,-1706
 ---
+<< if visited ("Godzilla_Intro0")>> 
+[[ FlowerWoman_Intro2 ]]
 << if not visited ("FlowerWoman_Intro0")>> 
 [[ FlowerWoman_Intro0 ]]
 << else>> 
@@ -59,8 +67,10 @@ position: -638,-1706
 title: Shopkeep_Intro
 tags: Shopkeep Intro
 colorID: 5
-position: 23,-1701
+position: 21,-1701
 ---
+<< if visited ("Godzilla_Intro0")>> 
+[[ Shopkeep_Intro2 ]]
 << if not visited ("Shopkeep_Intro0")>> 
 [[ Shopkeep_Intro0 ]]
 << elseif not visited ("Shopkeep_Intro1")>> 
@@ -74,6 +84,8 @@ tags: LostBoys Intro
 colorID: 5
 position: -854,-1700
 ---
+<< if visited ("Godzilla_Intro0")>> 
+[[ LostBoys_Intro2 ]]
 << if not visited ("LostBoys_Intro0")>> 
 [[ LostBoys_Intro0 ]]
 << elseif not visited ("LostBoys_Intro1")>> 
@@ -87,6 +99,8 @@ tags: Woofcutter Intro
 colorID: 5
 position: 237,-1698
 ---
+<< if visited ("Godzilla_Intro0")>> 
+[[ Woofcutter_Intro2 ]]
 << if not visited ("Woofcutter_Intro0")>> 
 [[ Woofcutter_Intro0 ]]
 << elseif not visited ("Woofcutter_Intro1")>> 
@@ -98,7 +112,7 @@ position: 237,-1698
 title: Hunter_Intro
 tags: Hunter Intro
 colorID: 5
-position: -331,-507
+position: -82,-279
 ---
 Hunter: Ah you’re trying to get godzilla too? I’ve been trying to get ‘im for weeks. 
 Hunter: You seem like a strapping hero-type. I’ll come with you!
@@ -131,13 +145,12 @@ position: -329,-2803
 title: Godzilla_Intro
 tags: Godzilla Intro
 colorID: 5
-position: -318,-918
+position: -82,-625
 ---
 << if not visited ("Godzilla_Intro0")>> 
 [[ Godzilla_Intro0 ]]
 << else >>
 [[ Godzilla_Intro1 ]]
-<<endif>>
 ===
 title: Dressmaker_Gift1
 tags: Dressmaker Gift1
@@ -948,8 +961,7 @@ tags: Hunter Final
 colorID: 8
 position: 3606,-1823
 ---
-<<wait 1>>
-<<event dropHunter>>
+<<event move Hunter HunterEndLocation>>
 Hunter: I... I was so nervous that you loved Godzilla...
 Hunter: I didn't know how to tell you.... that I am really in love with you!!
 Hunter: Despite my confidence.. I am no hero, and I was never able to confront Godzilla the way you were.
@@ -966,27 +978,23 @@ position: 3368,-2158
 << event takeItem elder>>
 <<if $lastTakenItem eq "elder">>
   << set $lastTakenItem to "empty">> 
-  <<event dropElder>>
   Godzilla: Ah you brought him!!
   Godzilla: I knew it was you, shouting from this hilltop!!
   Godzilla: You, who asked for lifelong accompaniment!!
   Godzilla: Elder of this village!!!!!!
   Elder: .....
   Godzilla: I ask for your hand in marriage!!
-  <<event moveEveryoneToFinalPosition>>
   Godzilla: So that we can go off, and destroy capitalism!!!
   Godzilla: Together!!!!!
   Elder: !! Oh-ho!! Uh-humm!!
   Elder: Y-yes I do believe I can.. I could do that!!
   Godzilla: Excellent!! We will be married at once!!
-  <<event movePlayerEnding>>
   <<set $showHandUI to false>>
-  Everyone: Yay!!! Hooray!! Yay!!
-  <<event move elder GodzillaHead 1>>
+  *camera spins and all the townspeople are in a crowd behind you*
+  Yay!!! Hooray!! Yay!!
   [[Hunter_Final]]
 << else >> 
   Godzilla: Ah yessss, all of the gifts!!
-  <<event hideShoppingList>>
   Godzilla: Thank you little hero.
   Godzilla: Now I only need one more thing!!
   Godzilla: I need.... the hand of the one who summoned me!!
@@ -1127,7 +1135,8 @@ position: 4012,-1605
 Hunter: R-really?
 Hunter: I'm so glad we feel the same!!
 Hunter: We'll have a great time!!
-<<event hunterYes>>
+
+*end sequence where godzilla walks off into the sunset w the elder. Sillouheted faces reach out and smooch in the foreground.*
 ===
 title: HunterNo
 tags: 
@@ -1138,7 +1147,7 @@ Hunter: Oh, that's alright.
 Hunter: I'd still like to go as friends though.
 Hunter: We'll have a great time!!
 
-<<event hunterNo>>
+*end sequence where godzilla walks off into the sunset w the elder. Sillouheted ands reach out and clasp in the foreground.*
 ===
 title: Shopkeep
 tags: Shopkeep Main
@@ -1230,7 +1239,7 @@ Dressmaker: Have fun defeating Godzilla! He's up there.
 title: Shopkeep_Intro0
 tags: Shopkeep Intro
 colorID: 5
-position: 860,408
+position: 7,-1482
 ---
 Shopkeep: Oh!! Hello hello!! Our saviour!!
 Shopkeep: Do you have any money?
@@ -1582,7 +1591,7 @@ Picnic Table: My heart yearns for the sky!!
 title: Godzilla_Intro0
 tags: 
 colorID: 5
-position: -34,-998
+position: 202,-705
 ---
 Godzilla: Why are you looking in my bath?
 ...
@@ -1599,11 +1608,71 @@ Godzilla: Great, thanks.
 title: Godzilla_Intro1
 tags: 
 colorID: 5
-position: -39,-767
+position: 197,-474
 ---
 Godzilla: Please get me all the things on those list now!
 Godzilla: They are very important and I am anxious to have them!
 Godzilla: I would get them myself but then it's all...
 Godzilla: "Oh nooo you're squishing my house nooooooo"
 Godzilla: Very irritating, you understand.
+===
+title: DressmakersFather_Intro2
+tags: DressmakersFather Intro
+colorID: 5
+position: -1111,-1051
+---
+DressmakersFather: Hm.
+DressmakersFather: You seen the Hunter? He seeks you.
+===
+title: LostBoys_Intro2
+tags: LostBoys Intro
+colorID: 5
+position: -887,-1055
+---
+LostBoys: Hey dork!!
+LostBoys: If you like Godzilla so much...
+LostBoys: Why don't you just marry him >:3
+===
+title: FlowerWoman_Intro2
+tags: FlowerWoman Intro
+colorID: 5
+position: -661,-1056
+---
+FlowerWoman: My dear have you seen the Hunter?
+FlowerWoman: I believe he's interested in helping you out!
+===
+title: StephenTheDisaster_Intro2
+tags: StephenTheDisaster Intro
+colorID: 5
+position: -433,-1054
+---
+StephenTheDisaster: UHM yesHelloPleaseGoAwayyyy??????
+===
+title: Dressmaker_Intro2
+tags: Dressmaker Intro
+colorID: 5
+position: -210,-1055
+---
+Dressmaker: Uh.. the Hunter is right there...
+Dressmaker: I think maybe he's... looking for you.
+Dressmaker: Do you think he's into you?
+Dressmaker: Go get 'em, you'd look so good together!!
+===
+title: Shopkeep_Intro2
+tags: Shopkeep Intro
+colorID: 5
+position: 7,-1053
+---
+Shopkeep: Okay so I dunno if you know...
+Shopkeep: The Hunter is lookin for you brah
+Shopkeep: Go get em tiger!!
+===
+title: Woofcutter_Intro2
+tags: Woofcutter Intro
+colorID: 5
+position: 230,-1049
+---
+Woofcutter: Oh I'm cutting wood, do you need something?
+Woofcutter: The Hunter is looking for youuu!!!
+Woofcutter: Mmm bye!
 ===
