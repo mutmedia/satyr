@@ -4,13 +4,13 @@ colorID: 5
 position: -191,-1704
 ---
 << if visited ("Godzilla_Intro0")>> 
-[[ Dressmaker_Intro2 ]]
-<< if not visited ("Dressmaker_Intro0")>> 
-[[ Dressmaker_Intro0 ]]
+  [[ Dressmaker_Intro2 ]]
+<< elseif not visited ("Dressmaker_Intro0")>> 
+  [[ Dressmaker_Intro0 ]]
 << elseif not visited ("Dressmaker_Intro1")>> 
-[[ Dressmaker_Intro1 ]]
+  [[ Dressmaker_Intro1 ]]
 << else >> 
-[[ Dressmaker_Intro0 ]]
+  [[ Dressmaker_Intro0 ]]
 << endif >>
 ===
 title: DressmakersFather_Intro
@@ -20,7 +20,7 @@ position: -1080,-1705
 ---
 << if visited ("Godzilla_Intro0")>> 
 [[ DressmakersFather_Intro2 ]]
-<< if not visited ("DressmakersFather_Intro0")>> 
+<< elseif not visited ("DressmakersFather_Intro0")>> 
 [[ DressmakersFather_Intro0 ]]
 << elseif not visited ("DressmakersFather_Intro1")>> 
 [[ DressmakersFather_Intro1 ]]
@@ -35,7 +35,7 @@ position: -415,-1704
 ---
 << if visited ("Godzilla_Intro0")>> 
 [[ StephenTheDisaster_Intro2 ]]
-<< if not visited ("StephenTheDisaster_Intro0")>> 
+<< elseif not visited ("StephenTheDisaster_Intro0")>> 
 [[ StephenTheDisaster_Intro0 ]]
 << else>> 
 [[ StephenTheDisaster_Intro1 ]]
@@ -58,7 +58,7 @@ position: -638,-1706
 ---
 << if visited ("Godzilla_Intro0")>> 
 [[ FlowerWoman_Intro2 ]]
-<< if not visited ("FlowerWoman_Intro0")>> 
+<< elseif not visited ("FlowerWoman_Intro0")>> 
 [[ FlowerWoman_Intro0 ]]
 << else>> 
 [[ FlowerWoman_Intro1 ]]
@@ -71,7 +71,7 @@ position: 21,-1701
 ---
 << if visited ("Godzilla_Intro0")>> 
 [[ Shopkeep_Intro2 ]]
-<< if not visited ("Shopkeep_Intro0")>> 
+<< elseif not visited ("Shopkeep_Intro0")>> 
 [[ Shopkeep_Intro0 ]]
 << elseif not visited ("Shopkeep_Intro1")>> 
 [[ Shopkeep_Intro1 ]]
@@ -86,7 +86,7 @@ position: -854,-1700
 ---
 << if visited ("Godzilla_Intro0")>> 
 [[ LostBoys_Intro2 ]]
-<< if not visited ("LostBoys_Intro0")>> 
+<< elseif not visited ("LostBoys_Intro0")>> 
 [[ LostBoys_Intro0 ]]
 << elseif not visited ("LostBoys_Intro1")>> 
 [[ LostBoys_Intro1 ]]
@@ -101,7 +101,7 @@ position: 237,-1698
 ---
 << if visited ("Godzilla_Intro0")>> 
 [[ Woofcutter_Intro2 ]]
-<< if not visited ("Woofcutter_Intro0")>> 
+<< elseif not visited ("Woofcutter_Intro0")>> 
 [[ Woofcutter_Intro0 ]]
 << elseif not visited ("Woofcutter_Intro1")>> 
 [[ Woofcutter_Intro1 ]]
@@ -151,6 +151,7 @@ position: -82,-625
 [[ Godzilla_Intro0 ]]
 << else >>
 [[ Godzilla_Intro1 ]]
+<<endif>>
 ===
 title: Dressmaker_Gift1
 tags: Dressmaker Gift1
@@ -626,6 +627,17 @@ Shells
 You need {$giftsNeeded} more gifts.
 << endif >>
 ===
+title: GiftBox_GotEverythingOrNot
+tags: GiftBox
+colorID: 0
+position: -838,-487
+---
+<<  if $giftCount < 5 >>
+  Hunter: You only need {5 - $giftCount} gifts more!!
+<< elseif $giftCount == 5 >> 
+  Hunter: You got all the gifts!! Go see Godzilla!!
+<<endif>>
+===
 title: GiftBox_AllItems
 tags: GiftBox
 colorID: 0
@@ -637,22 +649,20 @@ position: -808,-487
   <<event takeItem dress>>
   <<event move Woofcutter WoofcutterHome 1>>
   <<set $lastTakenItem to "empty">>
-  Hunter: Woah you got the dress, you only need {4 - $giftCount} more!!
   << set $giftCount to ($giftCount+1)>> 
-  << set $currentAct to "gift2">>
   << set $gotDress to true>>
   << set $deliveredItem to true>>
+  [[GiftBox_GotEverythingOrNot]]
 <<endif>>
 
 << if $leftHand == "chair" or $rightHand == "chair">>
   <<event takeItem chair>>
   <<set $lastTakenItem to "empty">>
   Hunter: Woah you got the chairs, now someone out there has the power to sit!! 
-  Hunter: You only need {4 - $giftCount} more!!
   << set $giftCount to ($giftCount+1)>> 
-  << set $currentAct to "gift3">>
   << set $gotChair to true>>
   << set $deliveredItem to true>>
+  [[GiftBox_GotEverythingOrNot]]
 <<endif>>
 
 << if $leftHand == "ring" or $rightHand == "ring">>
@@ -660,25 +670,19 @@ position: -808,-487
   <<set $lastTakenItem to "empty">>
   Hunter: Woah you got a ring, someone out there is getting pretty saucy!
   << set $giftCount to ($giftCount+1)>> 
-  <<  if $giftCount < 4 >>
-        Hunter: You only need {4 - $giftsCount} more!!
-  << elseif $giftCount == 4 >> 
-        Hunter: You got all the gifts!! Go see Godzilla!!
-  << endif >> 
-  << set $currentAct to "final">>
   << set $gotRing to true>>
   << set $deliveredItem to true>>
+  [[GiftBox_GotEverythingOrNot]]
 <<endif>>
 
 << if $leftHand == "bouquet" or $rightHand == "bouquet">>
   <<event takeItem bouquet>>
   <<set $lastTakenItem to "empty">>
   Hunter: Woah you got the bouquet!! They were lovely, I hope they're not jostled in the mail!!! 
-  Hunter: You only need {4 - $giftCount} more!!
   << set $giftCount to ($giftCount+1)>> 
-  << set $currentAct2 to "gift5">>
   << set $gotBouquet to true>>
   << set $deliveredItem to true>>
+  [[GiftBox_GotEverythingOrNot]]
 <<endif>>
 
 << if $leftHand == "shells" or $rightHand == "shells">>
@@ -687,14 +691,8 @@ position: -808,-487
   Hunter: Woah you got the shells!! Those were real pretty, Godzilla's gonna love them.
   << set $deliveredItem to true>>
   << set $giftCount to ($giftCount+1)>> 
-  <<  if $giftCount < 4 >>
-        Hunter: You only need {5 - $giftsCount} more!!
-  << elseif $giftCount == 4 >> 
-        Hunter: You got all the gifts!! Go see Godzilla!!
-  << endif >> 
-  << set $currentAct2 to "final">>
   << set $gotShells to true>>
-
+  [[GiftBox_GotEverythingOrNot]]
 <<endif>>
 
 << if not $deliveredItem>>
@@ -899,9 +897,8 @@ position: 1943,-954
   SeaWoman: Oh!! Someone wants to love me??
   SeaWoman: Take these shells!!
   <<event spawnShells>>
-  *sea woman disappears, and goes to the flower woman's side. You have shells in your hand now*
   SeaWoman: I will go, immediately!! 
-  <<event move SeaWoman SeaWomanShellsLocation 1>>
+  <<event move SeaWoman SeaWomanShellsLocation 10>>
   << set $currentAct2 to "final">>
 << else >> 
   SeaWoman: Hmm-mm! Yeah I have some more shells now!
@@ -961,7 +958,8 @@ tags: Hunter Final
 colorID: 8
 position: 3606,-1823
 ---
-<<event move Hunter HunterEndLocation>>
+<<wait 1>>
+<<event dropHunter>>
 Hunter: I... I was so nervous that you loved Godzilla...
 Hunter: I didn't know how to tell you.... that I am really in love with you!!
 Hunter: Despite my confidence.. I am no hero, and I was never able to confront Godzilla the way you were.
@@ -978,23 +976,27 @@ position: 3368,-2158
 << event takeItem elder>>
 <<if $lastTakenItem eq "elder">>
   << set $lastTakenItem to "empty">> 
+  <<event dropElder>>
   Godzilla: Ah you brought him!!
   Godzilla: I knew it was you, shouting from this hilltop!!
   Godzilla: You, who asked for lifelong accompaniment!!
   Godzilla: Elder of this village!!!!!!
   Elder: .....
   Godzilla: I ask for your hand in marriage!!
+  <<event moveEveryoneToFinalPosition>>
   Godzilla: So that we can go off, and destroy capitalism!!!
   Godzilla: Together!!!!!
   Elder: !! Oh-ho!! Uh-humm!!
   Elder: Y-yes I do believe I can.. I could do that!!
   Godzilla: Excellent!! We will be married at once!!
+  <<event movePlayerEnding>>
   <<set $showHandUI to false>>
-  *camera spins and all the townspeople are in a crowd behind you*
-  Yay!!! Hooray!! Yay!!
+  Everyone: Yay!!! Hooray!! Yay!!
+  <<event move elder GodzillaHead 1>>
   [[Hunter_Final]]
 << else >> 
   Godzilla: Ah yessss, all of the gifts!!
+  <<event hideShoppingList>>
   Godzilla: Thank you little hero.
   Godzilla: Now I only need one more thing!!
   Godzilla: I need.... the hand of the one who summoned me!!
@@ -1111,7 +1113,6 @@ Elder: Nonono I will give you no such thing!!
 Elder: But... alright I will come with you.
 Elder: I started this, I will see its end. No matter what it takes.
 Elder: For my friends.
-
 <<event giveElder >>
 ===
 title: Woofcutter_Final
@@ -1135,8 +1136,7 @@ position: 4012,-1605
 Hunter: R-really?
 Hunter: I'm so glad we feel the same!!
 Hunter: We'll have a great time!!
-
-*end sequence where godzilla walks off into the sunset w the elder. Sillouheted faces reach out and smooch in the foreground.*
+<<event hunterYes>>
 ===
 title: HunterNo
 tags: 
@@ -1146,8 +1146,7 @@ position: 4004,-2042
 Hunter: Oh, that's alright.
 Hunter: I'd still like to go as friends though.
 Hunter: We'll have a great time!!
-
-*end sequence where godzilla walks off into the sunset w the elder. Sillouheted ands reach out and clasp in the foreground.*
+<<event hunterNo>>
 ===
 title: Shopkeep
 tags: Shopkeep Main
@@ -1193,7 +1192,7 @@ tags: DressmakersFather Intro
 colorID: 5
 position: -1135,-1487
 ---
-Hmf.
+DressmakersFather: Hmf.
 DressmakersFather: Hmm...
 DressmakersFather: Good enough.
 DressmakersFather: Godzilla go you.
@@ -1676,3 +1675,4 @@ Woofcutter: Oh I'm cutting wood, do you need something?
 Woofcutter: The Hunter is looking for youuu!!!
 Woofcutter: Mmm bye!
 ===
+
