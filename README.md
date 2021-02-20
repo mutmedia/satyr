@@ -1,5 +1,7 @@
-[Summer All the Year Round](https://steamedbunnies.itch.io/summer-all-the-year-round)
+Summer All the Year Round 
 ===
+
+play now at: https://steamedbunnies.itch.io/summer-all-the-year-round
 
 **Some of the gift interaction colliders are a bit finicky, be persistent, they're there! <3**
 
