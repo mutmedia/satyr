@@ -29,7 +29,7 @@ Made by:
 - mut [@mutmedia](https://twitter.com/mutmedia)
 - Jen [@SteamedBunnys](https://twitter.com/SteamedBunnys)
 
-Made using the Everything Pack by David O'Reily, Emma Theme by Rachel Portman, and Romeo and Juliet Fantasy Overture by Tchaikovsky.
+Made using the [Everything Pack by David O'Reily](http://www.davidoreilly.com/library), Emma Theme by Rachel Portman, and Romeo and Juliet Fantasy Overture by Tchaikovsky.
 
 Please don't hesitate to reach out with any bugs or accessibility issues!
 
